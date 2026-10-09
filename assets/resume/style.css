@@ -1,0 +1,105 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+	font-family: Georgia, Times, 'Times New Roman', serif;
+	color: #222;
+	line-height: 1.4em;
+	padding: 0;
+	margin: 0;
+}
+
+h1 {
+	margin-bottom: .25em;
+}
+
+h2 {
+	color: #999;
+	margin-top: .5em;
+	font-size: 1.2em;
+}
+
+header ul {
+	list-style: none;
+	padding-left: 0;
+}
+
+h3 {
+	/* border-left: 1px solid #BBB; */
+	border-bottom: 1px solid #BBB;
+	padding: 0 0 .4em 0;
+	margin-top: 1.5em;
+	color: #666;
+}
+
+h4 {
+	margin-bottom: 1em;
+	font-size: 110%;
+}
+
+h5 {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+h5 .timeframe {
+	color: #999;
+}
+
+body>section>section {
+	margin: 0 .5em 0 .5em; 
+}
+
+div.page {
+	padding: 1em;
+}
+
+.brandImage {
+	vertical-align: middle;
+	margin-right: 11px;
+}
+
+@media (min-width: 800px) {
+	body {
+		background-color: #F3F3F3;
+	}
+
+	div.page {
+		background-color: #FFF;
+		width: 800px;
+		margin: 1.5em auto;
+		padding: 1em;
+		border: 1px solid #B3B3B3;
+	}
+
+}
+
+.skill {
+	background-color: #FFF;
+	border: 1px solid #DDD;
+	padding: .3em;
+    line-height: 2.2em;
+    white-space: nowrap;
+}
+
+.category {
+	/* border: 1px solid #ddd; */
+	background: #DDD;
+	font-weight: bold;
+}
+
+.skillSection {
+	padding-top: 8px;
+}
+
+h4 .address {
+	color: #999;
+}
+
+section>ul {
+	margin-top: .5em;
+}

@@ -1,0 +1,10 @@
+# Sitemap for implementationdetails.dev, built from the query index.
+# Applied via the configuration service:
+#   curl -X POST https://admin.hlx.page/config/blefebvre/sites/da-impl-det-blog/content/sitemap.yaml \
+#     -H 'content-type: text/yaml' --data-binary @tools/config/sitemap.yaml
+sitemaps:
+  default:
+    origin: https://implementationdetails.dev
+    source: /query-index.json
+    destination: /sitemap.xml
+    lastmod: YYYY-MM-DD

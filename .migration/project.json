@@ -1,0 +1,10 @@
+{
+  "type": "da",
+  "sites": {
+    "da-impl-det-blog": {
+      "previewOrg": "blefebvre",
+      "previewSite": "da-impl-det-blog",
+      "libraryUrl": "https://main--sta-boilerplate--aemdemos.aem.page/tools/sidekick/library.json"
+    }
+  }
+}

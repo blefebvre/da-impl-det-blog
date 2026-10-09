@@ -10,7 +10,9 @@ import {
   loadSections,
   loadCSS,
   buildBlock,
+  getMetadata,
 } from './aem.js';
+import { formatDate } from './blog.js';
 
 if (window.trustedTypes && window.trustedTypes.createPolicy) {
   const innerTT = window.trustedTypes.createPolicy('tt-inner', {
@@ -74,11 +76,63 @@ function buildWidgetAutoBlocks(main) {
 }
 
 /**
+ * Adds the post meta line (date, author, read time) and the post footer
+ * (share link, author bio fragment, comments) to blog posts.
+ * @param {Element} main The container element
+ */
+function buildBlogPostAutoBlocks(main) {
+  if (!main.isConnected || !document.body.classList.contains('blog-post')) return;
+
+  // read time follows the original theme: words / 180, "1 minute" below 360 words
+  const words = main.textContent.trim().split(/\s+/).length;
+  const minutes = words < 360 ? 1 : Math.floor(words / 180);
+
+  const meta = document.createElement('p');
+  meta.className = 'post-meta';
+  const date = getMetadata('date');
+  if (date) {
+    const time = document.createElement('time');
+    time.dateTime = date;
+    time.textContent = formatDate(date);
+    meta.append(time, ', ');
+  }
+  const author = getMetadata('author');
+  if (author) {
+    const authorLink = getMetadata('author-link');
+    let name = document.createTextNode(author);
+    if (authorLink) {
+      name = document.createElement('a');
+      name.href = authorLink;
+      name.textContent = author;
+    }
+    meta.append('by ', name);
+  }
+  const readTime = document.createElement('span');
+  readTime.className = 'post-read-time';
+  readTime.textContent = `${minutes} minute read`;
+  meta.append(readTime);
+  const h1 = main.querySelector('h1');
+  if (h1) h1.after(meta);
+  else main.querySelector(':scope > div')?.prepend(meta);
+
+  const footer = document.createElement('div');
+  footer.className = 'post-footer';
+  const bio = document.createElement('p');
+  const bioLink = document.createElement('a');
+  bioLink.href = '/fragments/author-bio';
+  bioLink.textContent = bioLink.href;
+  bio.append(bioLink);
+  footer.append(buildBlock('share', ''), bio, buildBlock('comments', ''));
+  main.append(footer);
+}
+
+/**
  * Builds all synthetic blocks in a container element.
  * @param {Element} main The container element
  */
 function buildAutoBlocks(main) {
   try {
+    buildBlogPostAutoBlocks(main);
     // auto load `*/fragments/*` references
     const fragments = [...main.querySelectorAll('a[href*="/fragments/"]')].filter((f) => !f.closest('.fragment'));
     if (fragments.length > 0) {
