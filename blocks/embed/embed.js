@@ -1,6 +1,8 @@
 /**
  * Embed block: turns an authored link into a lazily loaded, responsive iframe.
  * Optional second cell: aspect ratio as "width:height" (default 16:9).
+ * Values of 100 or more are treated as an authored pixel size (e.g. "476:400"),
+ * which also caps the frame width.
  */
 export default function decorate(block) {
   const link = block.querySelector('a');
@@ -21,6 +23,7 @@ export default function decorate(block) {
   const wrapper = document.createElement('div');
   wrapper.className = 'embed-frame';
   wrapper.style.aspectRatio = `${w} / ${h}`;
+  if (w >= 100) block.style.setProperty('--embed-max-width', `${w}px`);
 
   const placeholder = document.createElement('a');
   placeholder.href = url.href;

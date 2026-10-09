@@ -1,20 +1,31 @@
 footer {
+  border-top: thin solid var(--border-light-color);
+  padding: 2rem;
   background-color: var(--light-color);
+  color: var(--dark-color);
   font-size: var(--body-font-size-xs);
+  font-weight: 300;
+  text-align: center;
 }
 
-footer .footer > div {
-  margin: auto;
-  max-width: 1200px;
-  padding: 40px 24px 24px;
-}
-
-footer .footer p {
+footer .footer-section p {
   margin: 0;
+  color: var(--dark-color);
+  font-size: 0.707rem;
+
+  /* the source sets its small text inside 0.75rem lines */
+  line-height: calc(var(--body-font-size-xs) * 1.5);
 }
 
-@media (width >= 900px) {
-  footer .footer > div {
-    padding: 40px 32px 24px;
-  }
+footer .footer-section a:any-link {
+  color: var(--link-color);
+  background-image: var(--link-underline);
+  text-shadow: var(--background-color) 1px 0 0, var(--background-color) -1px 0 0;
+}
+
+footer .footer-section a:hover,
+footer .footer-section a:focus,
+footer .footer-section a:active {
+  color: var(--link-hover-color);
+  background-image: var(--link-hover-underline);
 }

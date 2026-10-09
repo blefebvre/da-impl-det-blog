@@ -1,20 +1,38 @@
-import { getMetadata } from '../../scripts/aem.js';
-import { loadFragment } from '../fragment/fragment.js';
+/**
+ * Fetches the footer fragment: the local content folder first, then the site root (DA/EDS).
+ * @returns {Promise<string|null>} The fragment HTML
+ */
+async function fetchFooter() {
+  let resp = await fetch('/content/footer.plain.html');
+  if (!resp.ok) resp = await fetch('/footer.plain.html');
+  return resp.ok ? resp.text() : null;
+}
 
 /**
- * loads and decorates the footer
+ * Footer: renders the fragment's sections; links to other sites open in a new tab.
  * @param {Element} block The footer block element
  */
 export default async function decorate(block) {
-  // load footer as fragment
-  const footerMeta = getMetadata('footer');
-  const footerPath = footerMeta ? new URL(footerMeta, window.location).pathname : '/footer';
-  const fragment = await loadFragment(footerPath);
+  const html = await fetchFooter();
+  if (!html) return;
 
-  // decorate footer DOM
-  block.textContent = '';
-  const footer = document.createElement('div');
-  while (fragment.firstElementChild) footer.append(fragment.firstElementChild);
+  const fragment = document.createElement('div');
+  fragment.innerHTML = html;
 
-  block.append(footer);
+  const sections = [...fragment.querySelectorAll(':scope > div')].map((section) => {
+    section.classList.add('footer-section');
+    return section;
+  });
+
+  sections.forEach((section) => {
+    section.querySelectorAll('a[href]').forEach((a) => {
+      const url = new URL(a.href, window.location.href);
+      if (url.origin !== window.location.origin && url.protocol.startsWith('http')) {
+        a.target = '_blank';
+        a.rel = 'noopener';
+      }
+    });
+  });
+
+  block.replaceChildren(...sections);
 }
