@@ -6,13 +6,14 @@
  *   node tools/da-upload/upload.mjs                 # dry run: lists what would be uploaded
  *   node tools/da-upload/upload.mjs --run           # upload images, pages and redirects; preview
  *   node tools/da-upload/upload.mjs --run --publish # ...and publish
+ *   node tools/da-upload/upload.mjs --run --paths=/nav,/footer  # only these documents
  *
  * Images are uploaded to DA at their original path (e.g. /images/aem/trial/foo.png) so links to
  * them from outside the site keep working after the domain switch. Credentials for admin.da.live
  * and admin.hlx.page are expected to be provided by the environment.
  */
 import { readdirSync, readFileSync } from 'node:fs';
-import { join, relative } from 'node:path';
+import { extname, join, relative } from 'node:path';
 
 const ORG = 'blefebvre';
 const REPO = 'da-impl-det-blog';
@@ -26,12 +27,16 @@ const SKIP = new Set(['/nav', '/footer']);
 const args = process.argv.slice(2);
 const run = args.includes('--run');
 const publish = args.includes('--publish');
+const only = (args.find((a) => a.startsWith('--paths=')) || '').slice(8).split(',').filter(Boolean);
+const MIME = {
+  '.svg': 'image/svg+xml', '.png': 'image/png', '.jpg': 'image/jpeg', '.jpeg': 'image/jpeg', '.gif': 'image/gif', '.webp': 'image/webp',
+};
 
 /**
  * Content paths are served lowercase with anything but [a-z0-9] turned into hyphens,
  * so e.g. /images/app_screenshot.png must be stored as /images/app-screenshot.png.
  */
-export function sanitizePath(path) {
+function sanitizePath(path) {
   return path.split('/').map((segment) => {
     const dot = segment.lastIndexOf('.');
     const [name, ext] = dot > 0 ? [segment.slice(0, dot), segment.slice(dot)] : [segment, ''];
@@ -69,32 +74,43 @@ async function admin(action, path) {
 const pages = walk('content')
   .filter((f) => f.endsWith('.plain.html'))
   .map((f) => ({ file: f, path: `/${relative('content', f).replace(/\.plain\.html$/, '')}` }))
-  .filter((p) => !SKIP.has(p.path));
+  .filter((p) => (only.length ? only.includes(p.path) : !SKIP.has(p.path)));
 
-const images = new Set();
+// site path -> local file for images stored next to the content, or null to download from source
+const images = new Map();
 pages.forEach((p) => {
   p.html = readFileSync(p.file, 'utf8');
   for (const [, src] of p.html.matchAll(/src="(https?:\/\/implementationdetails\.dev\/[^"]+)"/g)) {
-    images.add(new URL(src).pathname);
+    images.set(new URL(src).pathname, null);
   }
   p.html = p.html.replace(
     /(src|srcset)="https?:\/\/implementationdetails\.dev(\/[^"]+)"/g,
     (_, attr, path) => `${attr}="${DA_CONTENT}${sanitizePath(new URL(path, SOURCE_ORIGIN).pathname)}"`,
   );
+  p.html = p.html.replace(/src="(?![a-z]+:|\/)([^"]+)"/g, (_, src) => {
+    const { pathname } = new URL(src, `${SOURCE_ORIGIN}${p.path}`);
+    images.set(pathname, join('content', pathname));
+    return `src="${DA_CONTENT}${sanitizePath(pathname)}"`;
+  });
 });
+const withRedirects = !only.length;
 
-console.log(`${pages.length} pages, ${images.size} images, 1 redirects sheet`);
+console.log(`${pages.length} pages, ${images.size} images${withRedirects ? ', 1 redirects sheet' : ''}`);
 if (!run) {
   pages.forEach((p) => console.log(`  page  ${p.path}`));
-  [...images].forEach((i) => console.log(`  image ${i}`));
+  [...images.keys()].forEach((i) => console.log(`  image ${i}`));
   console.log('Dry run only. Re-run with --run to upload.');
   process.exit(0);
 }
 
-for (const image of images) {
-  const resp = await fetch(`${SOURCE_ORIGIN}${image}`);
-  await check(resp, `download ${image}`);
-  await daPut(sanitizePath(image), await resp.arrayBuffer(), resp.headers.get('content-type') || 'application/octet-stream');
+for (const [image, localFile] of images) {
+  if (localFile) {
+    await daPut(sanitizePath(image), readFileSync(localFile), MIME[extname(localFile)] || 'application/octet-stream');
+  } else {
+    const resp = await fetch(`${SOURCE_ORIGIN}${image}`);
+    await check(resp, `download ${image}`);
+    await daPut(sanitizePath(image), await resp.arrayBuffer(), resp.headers.get('content-type') || 'application/octet-stream');
+  }
   console.log(`uploaded ${sanitizePath(image)}`);
 }
 
@@ -104,10 +120,16 @@ for (const page of pages) {
   console.log(`uploaded ${page.path}`);
 }
 
-await daPut('/redirects.json', readFileSync('tools/config/redirects.json', 'utf8'), 'application/json');
-console.log('uploaded /redirects.json');
+if (withRedirects) {
+  await daPut('/redirects.json', readFileSync('tools/config/redirects.json', 'utf8'), 'application/json');
+  console.log('uploaded /redirects.json');
+}
 
-const targets = [...[...images].map(sanitizePath), '/redirects.json', ...pages.map((p) => p.path)];
+const targets = [
+  ...[...images.keys()].map(sanitizePath),
+  ...(withRedirects ? ['/redirects.json'] : []),
+  ...pages.map((p) => p.path),
+];
 for (const action of publish ? ['preview', 'live'] : ['preview']) {
   for (const target of targets) {
     await admin(action, target);

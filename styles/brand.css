@@ -1,0 +1,78 @@
+/* design tokens migrated from the Pixyll theme of implementationdetails.dev */
+:root {
+  /* colors */
+  --background-color: #fff;
+  --light-color: #fafafa;
+  --border-light-color: #f3f3f3;
+  --rule-color: #ccc;
+  --dark-color: #7a7a7a;
+  --text-color: #333;
+  --code-background-color: #eee;
+  --image-border-color: #999;
+  --link-color: #0076df;
+  --link-hover-color: #000a13;
+  --link-underline: linear-gradient(to top, transparent 13%, rgb(0 118 223 / 80%) 13%, rgb(0 118 223 / 80%) 18%, transparent 17%);
+  --link-hover-underline: linear-gradient(to top, transparent 13%, rgb(0 10 19 / 80%) 13%, rgb(0 10 19 / 80%) 17%, transparent 17%);
+  --title-underline-color: rgb(255 105 97 / 50%);
+
+  /* fonts */
+  --body-font-family: merriweather, merriweather-fallback, 'PT Serif', georgia, 'Times New Roman', serif;
+  --heading-font-family: lato, lato-fallback, 'Helvetica Neue', helvetica, sans-serif;
+  --code-font-family: 'Source Code Pro', consolas, monospace;
+
+  /*
+   * The theme sizes everything in rem against a root size that steps up with the
+   * viewport (14px / 16px / 18px / 20px), so sizes here are in rem as well.
+   */
+  --root-font-size: 14px;
+  --body-font-size-m: 1rem;
+  --body-font-size-l: 1.25rem;
+  --body-font-size-s: 0.875rem;
+  --body-font-size-xs: 0.75rem;
+
+  /* heading sizes */
+  --heading-font-size-xxl: 2.998rem;
+  --heading-font-size-xl: 1.5rem;
+  --heading-font-size-l: 1.25rem;
+  --heading-font-size-m: 1rem;
+  --heading-font-size-s: 0.875rem;
+  --heading-font-size-xs: 0.75rem;
+
+  /* layout */
+  --content-max-width: 42rem;
+  --section-padding: 1rem;
+  --nav-height: 5.8rem;
+}
+
+@media (width >= 32em) {
+  :root {
+    --root-font-size: 16px;
+    --nav-height: 2.875rem;
+  }
+}
+
+@media (width >= 48em) {
+  :root {
+    --root-font-size: 18px;
+  }
+}
+
+@media (width >= 64em) {
+  :root {
+    --root-font-size: 20px;
+  }
+}
+
+/* fallback fonts, metric-adjusted to limit layout shift while web fonts load */
+@font-face {
+  font-family: merriweather-fallback;
+  size-adjust: 113%;
+  ascent-override: 87%;
+  src: local('Georgia');
+}
+
+@font-face {
+  font-family: lato-fallback;
+  size-adjust: 97%;
+  src: local('Arial');
+}

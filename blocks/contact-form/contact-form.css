@@ -1,31 +1,57 @@
+/*
+ * contact-form: mirrors the theme's .form-stacked form with .field-light fields.
+ * Labels stay inline, so each label's text sits on its own line above a
+ * full-width field, exactly as on the source.
+ * Text weight is inherited (300): the source asks for 400 but only loads
+ * Merriweather/Lato 300, so 300 is what it actually renders.
+ */
 .contact-form form {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-  padding: 16px 0;
-}
-
-.contact-form label {
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-  font-weight: 600;
+  margin: 0;
+  padding: 1rem 0;
 }
 
 .contact-form input,
 .contact-form textarea {
-  padding: 8px;
-  border: 1px solid #ccc;
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0 0 0.5rem;
+  border: 1px solid var(--rule-color);
   border-radius: 3px;
-  font: inherit;
-  font-weight: normal;
+  padding: 0.5rem;
+  background-color: var(--background-color);
+  color: #000;
+  font-family: inherit;
+  font-size: 1rem;
+  transition: box-shadow 0.2s;
+}
+
+.contact-form input {
+  height: 2.25rem;
+  line-height: normal;
+  vertical-align: middle;
+  appearance: none;
 }
 
 .contact-form textarea {
+  line-height: 1.75;
   resize: vertical;
 }
 
-.contact-form button {
-  align-self: flex-start;
-  cursor: pointer;
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: var(--link-color);
+  box-shadow: 0 0 2px rgb(0 118 223 / 50%);
+}
+
+/* the source flags :invalid; :user-invalid avoids marking required fields red before any input */
+.contact-form input:user-invalid,
+.contact-form textarea:user-invalid {
+  border-color: #f95020;
+}
+
+/* .button-blue.button-big.mobile-block: a full-width submit (the source's form-stacked input) */
+.contact-form button.button {
+  width: 100%;
+  letter-spacing: normal;
 }
