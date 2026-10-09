@@ -6,3 +6,9 @@ package.json
 package-lock.json
 test/*
 sync-block-collection.sh
+migration-work/*
+tools/importer/*
+tools/config/*
+tools/da-upload/*
+tools/feed/*
+content/*

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Dependencies &#8211; implementationDetails()</title>
+    <link rel="dns-prefetch" href="//maxcdn.bootstrapcdn.com">
+    <link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Articles on AEM, React Native, TypeScript, and more.">
+    <meta name="robots" content="all">
+    <meta name="author" content="Bruce Lefebvre">
+    
+    
+    <link rel="canonical" href="https://implementationdetails.dev/assets/evolve13-cq-mobile-apps/css/theme/">
+    <link rel="alternate" type="application/rss+xml" title="RSS Feed for implementationDetails()" href="/feed.xml" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/pixyll.css?202310181532" type="text/css">
+
+    <!-- Fonts -->
+    
+    <link href='//fonts.googleapis.com/css?family=Merriweather:900,900italic,300,300italic' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Lato:900,300' rel='stylesheet' type='text/css'>
+    
+    
+      <link href="//maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
+    
+
+    <!-- MathJax -->
+    
+
+    <!-- Verifications -->
+    
+    
+
+    <!-- Open Graph -->
+    <!-- From: https://github.com/mmistakes/hpstr-jekyll-theme/blob/master/_includes/head.html -->
+    <meta property="og:locale" content="en_US">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Dependencies">
+    <meta property="og:description" content="Articles on AEM, React Native, TypeScript, and more.">
+    <meta property="og:url" content="https://implementationdetails.dev/assets/evolve13-cq-mobile-apps/css/theme/">
+    <meta property="og:site_name" content="implementationDetails()">
+    
+    
+    
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    
+        <meta name="twitter:site" content="@brucelefebvre" />
+        <meta name="twitter:creator" content="@brucelefebvre" />
+    
+    <meta name="twitter:title" content="Dependencies" />
+    <meta name="twitter:description" content="Articles on AEM, React Native, TypeScript, and more." />
+    <meta name="twitter:url" content="https://implementationdetails.dev/assets/evolve13-cq-mobile-apps/css/theme/" />
+    
+    
+    
+
+    <!-- Icons -->
+    <link href="/favicon.png" rel="icon">
+    <link href="/favicon.png" rel="shortcut icon">
+
+    
+    <script type="text/javascript">
+       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+       })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+       ga('create', 'UA-41891145-1', 'auto');
+       ga('send', 'pageview');
+    </script>
+    
+</head>
+
+<body class="site">
+  
+	
+
+  <div class="site-wrap">
+    <div id="cta">
+  <span id="mailbox-emoj">📬</span>
+  <span class="mono">blog.addEventListener()?</span>
+  <a id="subscribe" href="https://tinyletter.com/heybruce" target="_blank">Sign me up</a> | 
+  <a id="no-subscribe" href="javascript:void(0)">No, thanks</a>
+</div>
+<header class="site-header px2 px-responsive">
+  <div class="mt2 wrap">
+    <div class="measure">
+      <a href="https://implementationdetails.dev" class="site-title">implementationDetails()</a>
+      <!-- sitenav and clearfix div hidden since there are no header_pages in _config.yml -->
+      
+        <div class="social-icons">
+  <div class="social-icons-right">
+    
+      <a class="fa fa-github" href="https://github.com/blefebvre"></a>
+    
+    
+    
+    
+    
+      <a class="fa fa-twitter" href="https://twitter.com/brucelefebvre"></a>
+    
+    
+    
+    
+    
+      <a class="fa fa-envelope" href="mailto:bruce@brucelefebvre.com"></a>
+    
+    
+      <a class="fa fa-linkedin" href="https://www.linkedin.com/in/brucelefebvre"></a>
+    
+    
+    
+    
+    
+    <a class="fa fa-rss" href="/feed.xml"></a>
+  </div>
+  <div class="right">
+    
+    
+    
+  </div>
+</div>
+<div class="clearfix"></div>
+
+      
+    </div>
+  </div>
+</header>
+
+
+    <div class="post p2 p-responsive wrap" role="main">
+      <div class="measure">
+        <div class="post">
+  <header class="post-header">
+    <h1 class="h2">Dependencies</h1>
+  </header>
+  <article class="post-content">
+  <h2 id="dependencies">Dependencies</h2>
+
+<p>Themes are written using Sass to keep things modular and reduce the need for repeated selectors across files. Make sure that you have the reveal.js development environment including the Grunt dependencies installed before proceding: https://github.com/hakimel/reveal.js#full-setup</p>
+
+<h2 id="creating-a-theme">Creating a Theme</h2>
+
+<p>To create your own theme, start by duplicating any <code class="language-plaintext highlighter-rouge">.scss</code> file in <a href="https://github.com/hakimel/reveal.js/blob/master/css/theme/source">/css/theme/source</a> and adding it to the compilation list in the <a href="https://github.com/hakimel/reveal.js/blob/master/Gruntfile.js">Gruntfile</a>.</p>
+
+<p>Each theme file does four things in the following order:</p>
+
+<ol>
+  <li>
+    <p><strong>Include <a href="https://github.com/hakimel/reveal.js/blob/master/css/theme/template/mixins.scss">/css/theme/template/mixins.scss</a></strong>
+Shared utility functions.</p>
+  </li>
+  <li>
+    <p><strong>Include <a href="https://github.com/hakimel/reveal.js/blob/master/css/theme/template/settings.scss">/css/theme/template/settings.scss</a></strong>
+Declares a set of custom variables that the template file (step 4) expects. Can be overridden in step 3.</p>
+  </li>
+  <li>
+    <p><strong>Override</strong>
+This is where you override the default theme. Either by specifying variables (see <a href="https://github.com/hakimel/reveal.js/blob/master/css/theme/template/settings.scss">settings.scss</a> for reference) or by adding full selectors with hardcoded styles.</p>
+  </li>
+  <li>
+    <p><strong>Include <a href="https://github.com/hakimel/reveal.js/blob/master/css/theme/template/theme.scss">/css/theme/template/theme.scss</a></strong>
+The template theme file which will generate final CSS output based on the currently defined variables.</p>
+  </li>
+</ol>
+
+  </article>
+</div>
+
+      </div>
+    </div>
+  </div>
+
+  <footer class="center">
+  <div class="measure">
+    <small>
+      Content © 2013-present <a href="https://twitter.com/brucelefebvre" target="_blank">Bruce Lefebvre</a>. All Rights Reserved.<br/>
+      Theme based on <a href="https://github.com/johnotander/pixyll" target="_blank">Pixyll</a>.
+    </small>
+  </div>
+</footer>
+
+
+</body>
+</html>

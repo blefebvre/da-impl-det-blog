@@ -323,3 +323,32 @@ main .section.highlight {
   margin: 0;
   padding: 40px 0;
 }
+
+/* blog post */
+.blog-post main .post-meta {
+  color: var(--dark-color);
+  font-size: var(--body-font-size-xs);
+}
+
+.blog-post main .post-read-time {
+  display: block;
+}
+
+.blog-post main img {
+  max-width: 100%;
+  height: auto;
+}
+
+main > .section.post-footer .default-content-wrapper picture img {
+  float: left;
+  width: 80px;
+  height: 80px;
+  margin: 0 16px 16px 0;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+main > .section.post-footer .default-content-wrapper {
+  display: flow-root;
+  font-size: var(--body-font-size-s);
+}

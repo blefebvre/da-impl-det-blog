@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>implementationDetails()</title>
+    <description>Articles on AEM, React Native, TypeScript, and more.</description>
+    <link>https://implementationdetails.dev/</link>
+    <atom:link href="https://implementationdetails.dev/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>What can you do with an AEM Headless Trial?</title>
+      <description>Let's dig into an Adobe Experience Manager Headless trial and see what you get in the box.</description>
+      <pubDate>Tue, 17 Oct 2023 00:00:00 +0000</pubDate>
+      <link>https://implementationdetails.dev/blog/2023/10/17/aem-trial-whats-in-the-box</link>
+      <guid isPermaLink="false">https://implementationdetails.dev/blog/2023/10/17/aem-trial-whats-in-the-box/</guid>
+    </item>
+    <item>
+      <title>AEM Content Transfer Tool: Tips and tricks for a successful (and fast!) Extraction</title>
+      <description>From content paths to 'Overwrite staging container' to logs, get acquainted with the CTT Extraction phase.</description>
+      <pubDate>Thu, 05 Aug 2021 00:00:00 +0000</pubDate>
+      <link>https://implementationdetails.dev/blog/2021/08/05/ctt-extraction-deep-dive</link>
+      <guid isPermaLink="false">https://implementationdetails.dev/blog/2021/08/05/ctt-extraction-deep-dive/</guid>
+    </item>
+    <item>
+      <title>Introducing the AEM Dispatcher Optimizer Tool</title>
+      <description>We've released a new tool to help on your journey in pursuit of an optimal Dispatcher configuration.</description>
+      <pubDate>Mon, 08 Mar 2021 00:00:00 +0000</pubDate>
+      <link>https://implementationdetails.dev/blog/2021/03/08/meet-the-aem-dispatcher-optimizer-tool</link>
+      <guid isPermaLink="false">https://implementationdetails.dev/blog/2021/03/08/meet-the-aem-dispatcher-optimizer-tool/</guid>
+    </item>
+    <item>
+      <title>Adding macOS support to an existing React Native app</title>
+      <description>Microsoft recently introduced a package to enable React Native apps to be built and run on macOS. This post covers some gotchas that I encountered while adding support to an existing app of mine.</description>
+      <pubDate>Sun, 31 Jan 2021 00:00:00 +0000</pubDate>
+      <link>https://implementationdetails.dev/blog/2021/01/31/macos-existing-react-native-app-gotchas</link>
+      <guid isPermaLink="false">https://implementationdetails.dev/blog/2021/01/31/macos-existing-react-native-app-gotchas/</guid>
+    </item>
+    <item>
+      <title>Step through the source code of AEM's Apache Sling Engine</title>
+      <description>Sling's interpretation of a request may differ from your own. Hook up a debugger to see how its working behind the scenes.</description>
+      <pubDate>Wed, 30 Sep 2020 00:00:00 +0000</pubDate>
+      <link>https://implementationdetails.dev/blog/2020/09/30/stepping-through-the-sling-engine-source</link>
+      <guid isPermaLink="false">https://implementationdetails.dev/blog/2020/09/30/stepping-through-the-sling-engine-source/</guid>
+    </item>
+    <item>
+      <title>Get to know the Adobe Experience Manager Dispatcher</title>
+      <description>The dispatcher is a critical component of a secure, stable, fault-tolerant and lightning fast AEM implementation. Get to know some of its key configurations with a series of hands-on experiments.</description>
+      <pubDate>Thu, 13 Aug 2020 00:00:00 +0000</pubDate>
+      <link>https://implementationdetails.dev/blog/2020/08/13/get-to-know-the-aem-dispatcher</link>
+      <guid isPermaLink="false">https://implementationdetails.dev/blog/2020/08/13/get-to-know-the-aem-dispatcher/</guid>
+    </item>
+    <item>
+      <title>Building an offline first app with React Native and SQLite: 2020 refresh</title>
+      <description>Get started with SQLite in a React Native app. Refreshed for 2020 to feature Hooks, Context, and React Native 0.61.5!</description>
+      <pubDate>Sun, 03 May 2020 00:00:00 +0000</pubDate>
+      <link>https://implementationdetails.dev/blog/2020/05/03/react-native-offline-first-db-with-sqlite-hooks</link>
+      <guid isPermaLink="false">https://implementationdetails.dev/blog/2020/05/03/react-native-offline-first-db-with-sqlite-hooks/</guid>
+    </item>
+    <item>
+      <title>Building a basic single-page site with deep linking and analytics</title>
+      <description>Shedding all the frameworks and libraries in pursuit of a simple, accessible, highly performant site (and a perfect Lighthouse score).</description>
+      <pubDate>Mon, 30 Dec 2019 00:00:00 +0000</pubDate>
+      <link>https://implementationdetails.dev/blog/2019/12/30/basic-spa-with-deep-linking-and-analytics</link>
+      <guid isPermaLink="false">https://implementationdetails.dev/blog/2019/12/30/basic-spa-with-deep-linking-and-analytics/</guid>
+    </item>
+    <item>
+      <title>Resolving React Native Paper 'No overload matches this call' TypeScript errors</title>
+      <description>Quick tip for getting past one of the more frustrating and cryptic TypeScript errors I've run into.</description>
+      <pubDate>Tue, 26 Nov 2019 00:00:00 +0000</pubDate>
+      <link>https://implementationdetails.dev/blog/2019/11/26/typescript-react-native-paper</link>
+      <guid isPermaLink="false">https://implementationdetails.dev/blog/2019/11/26/typescript-react-native-paper/</guid>
+    </item>
+    <item>
+      <title>Tips and Tricks from my first month with Python</title>
+      <description>A few things I learned in my first month of an Applied Machine Learning in Python course.</description>
+      <pubDate>Sun, 27 Oct 2019 00:00:00 +0000</pubDate>
+      <link>https://implementationdetails.dev/blog/2019/10/27/a-month-with-python</link>
+      <guid isPermaLink="false">https://implementationdetails.dev/blog/2019/10/27/a-month-with-python/</guid>
+    </item>
+  </channel>
+</rss>

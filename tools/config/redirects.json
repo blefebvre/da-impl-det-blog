@@ -1,0 +1,660 @@
+{
+  "total": 163,
+  "limit": 163,
+  "offset": 0,
+  "data": [
+    {
+      "Source": "/blog/2013/06/20/cqcon-2013-mobile-first/",
+      "Destination": "/blog/2013/06/20/cqcon-2013-mobile-first"
+    },
+    {
+      "Source": "/blog/2013/06/20/cqcon-2013-mobile-first/index.html",
+      "Destination": "/blog/2013/06/20/cqcon-2013-mobile-first"
+    },
+    {
+      "Source": "/blog/2013/08/22/setting-up-a-dispatcher-on-os-x/",
+      "Destination": "/blog/2013/08/22/setting-up-a-dispatcher-on-os-x"
+    },
+    {
+      "Source": "/blog/2013/08/22/setting-up-a-dispatcher-on-os-x/index.html",
+      "Destination": "/blog/2013/08/22/setting-up-a-dispatcher-on-os-x"
+    },
+    {
+      "Source": "/blog/2013/08/28/evolve-2013-cq-mobile-apps/",
+      "Destination": "/blog/2013/08/28/evolve-2013-cq-mobile-apps"
+    },
+    {
+      "Source": "/blog/2013/08/28/evolve-2013-cq-mobile-apps/index.html",
+      "Destination": "/blog/2013/08/28/evolve-2013-cq-mobile-apps"
+    },
+    {
+      "Source": "/blog/2013/09/18/cq-gems-mobile-first-development/",
+      "Destination": "/blog/2013/09/18/cq-gems-mobile-first-development"
+    },
+    {
+      "Source": "/blog/2013/09/18/cq-gems-mobile-first-development/index.html",
+      "Destination": "/blog/2013/09/18/cq-gems-mobile-first-development"
+    },
+    {
+      "Source": "/blog/2014/03/14/so-you-want-to-build-an-app/",
+      "Destination": "/blog/2014/03/14/so-you-want-to-build-an-app"
+    },
+    {
+      "Source": "/blog/2014/03/14/so-you-want-to-build-an-app/index.html",
+      "Destination": "/blog/2014/03/14/so-you-want-to-build-an-app"
+    },
+    {
+      "Source": "/blog/2014/04/10/aemhub-mobile-apps-in-aem/",
+      "Destination": "/blog/2014/04/10/aemhub-mobile-apps-in-aem"
+    },
+    {
+      "Source": "/blog/2014/04/10/aemhub-mobile-apps-in-aem/index.html",
+      "Destination": "/blog/2014/04/10/aemhub-mobile-apps-in-aem"
+    },
+    {
+      "Source": "/blog/2014/05/30/mobile-apps-made-and-managed-in-aem/",
+      "Destination": "/blog/2014/05/30/mobile-apps-made-and-managed-in-aem"
+    },
+    {
+      "Source": "/blog/2014/05/30/mobile-apps-made-and-managed-in-aem/index.html",
+      "Destination": "/blog/2014/05/30/mobile-apps-made-and-managed-in-aem"
+    },
+    {
+      "Source": "/blog/2014/06/06/iot-day-in-ottawa/",
+      "Destination": "/blog/2014/06/06/iot-day-in-ottawa"
+    },
+    {
+      "Source": "/blog/2014/06/06/iot-day-in-ottawa/index.html",
+      "Destination": "/blog/2014/06/06/iot-day-in-ottawa"
+    },
+    {
+      "Source": "/blog/2014/08/24/adaptto-2014-mobile-apps/",
+      "Destination": "/blog/2014/08/24/adaptto-2014-mobile-apps"
+    },
+    {
+      "Source": "/blog/2014/08/24/adaptto-2014-mobile-apps/index.html",
+      "Destination": "/blog/2014/08/24/adaptto-2014-mobile-apps"
+    },
+    {
+      "Source": "/blog/2014/09/23/adaptto-2014-mobile-app-dev-with-cordova/",
+      "Destination": "/blog/2014/09/23/adaptto-2014-mobile-app-dev-with-cordova"
+    },
+    {
+      "Source": "/blog/2014/09/23/adaptto-2014-mobile-app-dev-with-cordova/index.html",
+      "Destination": "/blog/2014/09/23/adaptto-2014-mobile-app-dev-with-cordova"
+    },
+    {
+      "Source": "/blog/2014/11/17/aem-apps-featurepack-updates/",
+      "Destination": "/blog/2014/11/17/aem-apps-featurepack-updates"
+    },
+    {
+      "Source": "/blog/2014/11/17/aem-apps-featurepack-updates/index.html",
+      "Destination": "/blog/2014/11/17/aem-apps-featurepack-updates"
+    },
+    {
+      "Source": "/blog/2015/02/05/summit-2015-mobile-app-dev-and-content-management-with-aem/",
+      "Destination": "/blog/2015/02/05/summit-2015-mobile-app-dev-and-content-management-with-aem"
+    },
+    {
+      "Source": "/blog/2015/02/05/summit-2015-mobile-app-dev-and-content-management-with-aem/index.html",
+      "Destination": "/blog/2015/02/05/summit-2015-mobile-app-dev-and-content-management-with-aem"
+    },
+    {
+      "Source": "/blog/2015/06/18/aem-6-dot-1-apps-starter-kit-improvements/",
+      "Destination": "/blog/2015/06/18/aem-6-dot-1-apps-starter-kit-improvements"
+    },
+    {
+      "Source": "/blog/2015/06/18/aem-6-dot-1-apps-starter-kit-improvements/index.html",
+      "Destination": "/blog/2015/06/18/aem-6-dot-1-apps-starter-kit-improvements"
+    },
+    {
+      "Source": "/blog/2015/08/19/using-ssl-locally-for-aem-development/",
+      "Destination": "/blog/2015/08/19/using-ssl-locally-for-aem-development"
+    },
+    {
+      "Source": "/blog/2015/08/19/using-ssl-locally-for-aem-development/index.html",
+      "Destination": "/blog/2015/08/19/using-ssl-locally-for-aem-development"
+    },
+    {
+      "Source": "/blog/2015/10/14/debugging-an-aem-app/",
+      "Destination": "/blog/2015/10/14/debugging-an-aem-app"
+    },
+    {
+      "Source": "/blog/2015/10/14/debugging-an-aem-app/index.html",
+      "Destination": "/blog/2015/10/14/debugging-an-aem-app"
+    },
+    {
+      "Source": "/blog/2017/03/10/build-an-app-with-content-services-at-adobe-summit-2017/",
+      "Destination": "/blog/2017/03/10/build-an-app-with-content-services-at-adobe-summit-2017"
+    },
+    {
+      "Source": "/blog/2017/03/10/build-an-app-with-content-services-at-adobe-summit-2017/index.html",
+      "Destination": "/blog/2017/03/10/build-an-app-with-content-services-at-adobe-summit-2017"
+    },
+    {
+      "Source": "/blog/2018/10/12/react-native-typescript-cocoapods/",
+      "Destination": "/blog/2018/10/12/react-native-typescript-cocoapods"
+    },
+    {
+      "Source": "/blog/2018/10/12/react-native-typescript-cocoapods/index.html",
+      "Destination": "/blog/2018/10/12/react-native-typescript-cocoapods"
+    },
+    {
+      "Source": "/blog/2018/11/06/react-native-offline-first-db-with-sqlite/",
+      "Destination": "/blog/2018/11/06/react-native-offline-first-db-with-sqlite"
+    },
+    {
+      "Source": "/blog/2018/11/06/react-native-offline-first-db-with-sqlite/index.html",
+      "Destination": "/blog/2018/11/06/react-native-offline-first-db-with-sqlite"
+    },
+    {
+      "Source": "/blog/2018/12/05/sync-react-native-sqlite-db-with-dropbox/",
+      "Destination": "/blog/2018/12/05/sync-react-native-sqlite-db-with-dropbox"
+    },
+    {
+      "Source": "/blog/2018/12/05/sync-react-native-sqlite-db-with-dropbox/index.html",
+      "Destination": "/blog/2018/12/05/sync-react-native-sqlite-db-with-dropbox"
+    },
+    {
+      "Source": "/blog/2019/01/31/dealing-with-monetary-values-react-native/",
+      "Destination": "/blog/2019/01/31/dealing-with-monetary-values-react-native"
+    },
+    {
+      "Source": "/blog/2019/01/31/dealing-with-monetary-values-react-native/index.html",
+      "Destination": "/blog/2019/01/31/dealing-with-monetary-values-react-native"
+    },
+    {
+      "Source": "/blog/2019/03/03/upgrading-react-native-with-rn-diff-purge/",
+      "Destination": "/blog/2019/03/03/upgrading-react-native-with-rn-diff-purge"
+    },
+    {
+      "Source": "/blog/2019/03/03/upgrading-react-native-with-rn-diff-purge/index.html",
+      "Destination": "/blog/2019/03/03/upgrading-react-native-with-rn-diff-purge"
+    },
+    {
+      "Source": "/blog/2019/04/03/react-native-upgrade-by-example/",
+      "Destination": "/blog/2019/04/03/react-native-upgrade-by-example"
+    },
+    {
+      "Source": "/blog/2019/04/03/react-native-upgrade-by-example/index.html",
+      "Destination": "/blog/2019/04/03/react-native-upgrade-by-example"
+    },
+    {
+      "Source": "/blog/2019/04/28/react-ottawa-dealing-with-monetary-values/",
+      "Destination": "/blog/2019/04/28/react-ottawa-dealing-with-monetary-values"
+    },
+    {
+      "Source": "/blog/2019/04/28/react-ottawa-dealing-with-monetary-values/index.html",
+      "Destination": "/blog/2019/04/28/react-ottawa-dealing-with-monetary-values"
+    },
+    {
+      "Source": "/blog/2019/06/02/react-native-responsive-table-with-hooks/",
+      "Destination": "/blog/2019/06/02/react-native-responsive-table-with-hooks"
+    },
+    {
+      "Source": "/blog/2019/06/02/react-native-responsive-table-with-hooks/index.html",
+      "Destination": "/blog/2019/06/02/react-native-responsive-table-with-hooks"
+    },
+    {
+      "Source": "/blog/2019/06/27/sqlite-dates-in-react-native/",
+      "Destination": "/blog/2019/06/27/sqlite-dates-in-react-native"
+    },
+    {
+      "Source": "/blog/2019/06/27/sqlite-dates-in-react-native/index.html",
+      "Destination": "/blog/2019/06/27/sqlite-dates-in-react-native"
+    },
+    {
+      "Source": "/blog/2019/07/29/tidy-sqlite-statements-with-js-template-literals/",
+      "Destination": "/blog/2019/07/29/tidy-sqlite-statements-with-js-template-literals"
+    },
+    {
+      "Source": "/blog/2019/07/29/tidy-sqlite-statements-with-js-template-literals/index.html",
+      "Destination": "/blog/2019/07/29/tidy-sqlite-statements-with-js-template-literals"
+    },
+    {
+      "Source": "/blog/2019/08/26/cypress-gotchas-with-promises/",
+      "Destination": "/blog/2019/08/26/cypress-gotchas-with-promises"
+    },
+    {
+      "Source": "/blog/2019/08/26/cypress-gotchas-with-promises/index.html",
+      "Destination": "/blog/2019/08/26/cypress-gotchas-with-promises"
+    },
+    {
+      "Source": "/blog/2019/09/30/react-native-version-mismatch/",
+      "Destination": "/blog/2019/09/30/react-native-version-mismatch"
+    },
+    {
+      "Source": "/blog/2019/09/30/react-native-version-mismatch/index.html",
+      "Destination": "/blog/2019/09/30/react-native-version-mismatch"
+    },
+    {
+      "Source": "/blog/2019/10/27/a-month-with-python/",
+      "Destination": "/blog/2019/10/27/a-month-with-python"
+    },
+    {
+      "Source": "/blog/2019/10/27/a-month-with-python/index.html",
+      "Destination": "/blog/2019/10/27/a-month-with-python"
+    },
+    {
+      "Source": "/blog/2019/11/26/typescript-react-native-paper/",
+      "Destination": "/blog/2019/11/26/typescript-react-native-paper"
+    },
+    {
+      "Source": "/blog/2019/11/26/typescript-react-native-paper/index.html",
+      "Destination": "/blog/2019/11/26/typescript-react-native-paper"
+    },
+    {
+      "Source": "/blog/2019/12/30/basic-spa-with-deep-linking-and-analytics/",
+      "Destination": "/blog/2019/12/30/basic-spa-with-deep-linking-and-analytics"
+    },
+    {
+      "Source": "/blog/2019/12/30/basic-spa-with-deep-linking-and-analytics/index.html",
+      "Destination": "/blog/2019/12/30/basic-spa-with-deep-linking-and-analytics"
+    },
+    {
+      "Source": "/blog/2020/05/03/react-native-offline-first-db-with-sqlite-hooks/",
+      "Destination": "/blog/2020/05/03/react-native-offline-first-db-with-sqlite-hooks"
+    },
+    {
+      "Source": "/blog/2020/05/03/react-native-offline-first-db-with-sqlite-hooks/index.html",
+      "Destination": "/blog/2020/05/03/react-native-offline-first-db-with-sqlite-hooks"
+    },
+    {
+      "Source": "/blog/2020/08/13/get-to-know-the-aem-dispatcher/",
+      "Destination": "/blog/2020/08/13/get-to-know-the-aem-dispatcher"
+    },
+    {
+      "Source": "/blog/2020/08/13/get-to-know-the-aem-dispatcher/index.html",
+      "Destination": "/blog/2020/08/13/get-to-know-the-aem-dispatcher"
+    },
+    {
+      "Source": "/blog/2020/09/30/stepping-through-the-sling-engine-source/",
+      "Destination": "/blog/2020/09/30/stepping-through-the-sling-engine-source"
+    },
+    {
+      "Source": "/blog/2020/09/30/stepping-through-the-sling-engine-source/index.html",
+      "Destination": "/blog/2020/09/30/stepping-through-the-sling-engine-source"
+    },
+    {
+      "Source": "/blog/2021/01/31/macos-existing-react-native-app-gotchas/",
+      "Destination": "/blog/2021/01/31/macos-existing-react-native-app-gotchas"
+    },
+    {
+      "Source": "/blog/2021/01/31/macos-existing-react-native-app-gotchas/index.html",
+      "Destination": "/blog/2021/01/31/macos-existing-react-native-app-gotchas"
+    },
+    {
+      "Source": "/blog/2021/03/08/meet-the-aem-dispatcher-optimizer-tool/",
+      "Destination": "/blog/2021/03/08/meet-the-aem-dispatcher-optimizer-tool"
+    },
+    {
+      "Source": "/blog/2021/03/08/meet-the-aem-dispatcher-optimizer-tool/index.html",
+      "Destination": "/blog/2021/03/08/meet-the-aem-dispatcher-optimizer-tool"
+    },
+    {
+      "Source": "/blog/2021/08/05/ctt-extraction-deep-dive/",
+      "Destination": "/blog/2021/08/05/ctt-extraction-deep-dive"
+    },
+    {
+      "Source": "/blog/2021/08/05/ctt-extraction-deep-dive/index.html",
+      "Destination": "/blog/2021/08/05/ctt-extraction-deep-dive"
+    },
+    {
+      "Source": "/blog/2023/10/17/aem-trial-whats-in-the-box/",
+      "Destination": "/blog/2023/10/17/aem-trial-whats-in-the-box"
+    },
+    {
+      "Source": "/blog/2023/10/17/aem-trial-whats-in-the-box/index.html",
+      "Destination": "/blog/2023/10/17/aem-trial-whats-in-the-box"
+    },
+    {
+      "Source": "/page2/",
+      "Destination": "/?page=2"
+    },
+    {
+      "Source": "/page2",
+      "Destination": "/?page=2"
+    },
+    {
+      "Source": "/page2/index.html",
+      "Destination": "/?page=2"
+    },
+    {
+      "Source": "/page3/",
+      "Destination": "/?page=3"
+    },
+    {
+      "Source": "/page3",
+      "Destination": "/?page=3"
+    },
+    {
+      "Source": "/page3/index.html",
+      "Destination": "/?page=3"
+    },
+    {
+      "Source": "/page4/",
+      "Destination": "/?page=4"
+    },
+    {
+      "Source": "/page4",
+      "Destination": "/?page=4"
+    },
+    {
+      "Source": "/page4/index.html",
+      "Destination": "/?page=4"
+    },
+    {
+      "Source": "/page5/",
+      "Destination": "/?page=5"
+    },
+    {
+      "Source": "/page5",
+      "Destination": "/?page=5"
+    },
+    {
+      "Source": "/page5/index.html",
+      "Destination": "/?page=5"
+    },
+    {
+      "Source": "/page6/",
+      "Destination": "/?page=6"
+    },
+    {
+      "Source": "/page6",
+      "Destination": "/?page=6"
+    },
+    {
+      "Source": "/page6/index.html",
+      "Destination": "/?page=6"
+    },
+    {
+      "Source": "/page7/",
+      "Destination": "/?page=7"
+    },
+    {
+      "Source": "/page7",
+      "Destination": "/?page=7"
+    },
+    {
+      "Source": "/page7/index.html",
+      "Destination": "/?page=7"
+    },
+    {
+      "Source": "/page8/",
+      "Destination": "/?page=8"
+    },
+    {
+      "Source": "/page8",
+      "Destination": "/?page=8"
+    },
+    {
+      "Source": "/page8/index.html",
+      "Destination": "/?page=8"
+    },
+    {
+      "Source": "/page9/",
+      "Destination": "/?page=9"
+    },
+    {
+      "Source": "/page9",
+      "Destination": "/?page=9"
+    },
+    {
+      "Source": "/page9/index.html",
+      "Destination": "/?page=9"
+    },
+    {
+      "Source": "/page10/",
+      "Destination": "/?page=10"
+    },
+    {
+      "Source": "/page10",
+      "Destination": "/?page=10"
+    },
+    {
+      "Source": "/page10/index.html",
+      "Destination": "/?page=10"
+    },
+    {
+      "Source": "/index.html",
+      "Destination": "/"
+    },
+    {
+      "Source": "/contact/",
+      "Destination": "/contact"
+    },
+    {
+      "Source": "/contact/index.html",
+      "Destination": "/contact"
+    },
+    {
+      "Source": "/thanks/",
+      "Destination": "/thanks"
+    },
+    {
+      "Source": "/thanks/index.html",
+      "Destination": "/thanks"
+    },
+    {
+      "Source": "/assets/resume/",
+      "Destination": "/assets/resume/index.html"
+    },
+    {
+      "Source": "/assets/resume",
+      "Destination": "/assets/resume/index.html"
+    },
+    {
+      "Source": "/assets/cqcon-mobile-first/",
+      "Destination": "/assets/cqcon-mobile-first/index.html"
+    },
+    {
+      "Source": "/assets/cqcon-mobile-first",
+      "Destination": "/assets/cqcon-mobile-first/index.html"
+    },
+    {
+      "Source": "/assets/evolve13-cq-mobile-apps/",
+      "Destination": "/assets/evolve13-cq-mobile-apps/index.html"
+    },
+    {
+      "Source": "/assets/evolve13-cq-mobile-apps",
+      "Destination": "/assets/evolve13-cq-mobile-apps/index.html"
+    },
+    {
+      "Source": "/assets/mobile-apps-m-and-m-in-aem/",
+      "Destination": "/assets/mobile-apps-m-and-m-in-aem/index.html"
+    },
+    {
+      "Source": "/assets/mobile-apps-m-and-m-in-aem",
+      "Destination": "/assets/mobile-apps-m-and-m-in-aem/index.html"
+    },
+    {
+      "Source": "/blog",
+      "Destination": "/"
+    },
+    {
+      "Source": "/blog/",
+      "Destination": "/"
+    },
+    {
+      "Source": "/assets/evolve13-cq-mobile-apps/plugin/markdown/example/",
+      "Destination": "/assets/evolve13-cq-mobile-apps/plugin/markdown/example/index.html"
+    },
+    {
+      "Source": "/assets/evolve13-cq-mobile-apps/css/theme/",
+      "Destination": "/assets/evolve13-cq-mobile-apps/css/theme/index.html"
+    },
+    {
+      "Source": "/assets/mobile-apps-m-and-m-in-aem/css/theme/",
+      "Destination": "/assets/mobile-apps-m-and-m-in-aem/css/theme/index.html"
+    },
+    {
+      "Source": "/images/app_screenshot.png",
+      "Destination": "/images/app-screenshot.png"
+    },
+    {
+      "Source": "/images/phonegap_cq_notes.jpeg",
+      "Destination": "/images/phonegap-cq-notes.jpeg"
+    },
+    {
+      "Source": "/images/starter-kit-improvements/phonegap_cli_5.gif",
+      "Destination": "/images/starter-kit-improvements/phonegap-cli-5.gif"
+    },
+    {
+      "Source": "/images/starter-kit-improvements/responsive_sim.gif",
+      "Destination": "/images/starter-kit-improvements/responsive-sim.gif"
+    },
+    {
+      "Source": "/images/debug-apps/app_init_fail.png",
+      "Destination": "/images/debug-apps/app-init-fail.png"
+    },
+    {
+      "Source": "/images/debug-apps/develop_menu.png",
+      "Destination": "/images/debug-apps/develop-menu.png"
+    },
+    {
+      "Source": "/images/debug-apps/reload_app.png",
+      "Destination": "/images/debug-apps/reload-app.png"
+    },
+    {
+      "Source": "/images/debug-apps/console_output.png",
+      "Destination": "/images/debug-apps/console-output.png"
+    },
+    {
+      "Source": "/images/debug-apps/chrome_inspect.png",
+      "Destination": "/images/debug-apps/chrome-inspect.png"
+    },
+    {
+      "Source": "/images/debug-apps/chrome_console.png",
+      "Destination": "/images/debug-apps/chrome-console.png"
+    },
+    {
+      "Source": "/images/react-native/sqlite-offline/props-in-SFC.png",
+      "Destination": "/images/react-native/sqlite-offline/props-in-sfc.png"
+    },
+    {
+      "Source": "/images/react-native/dropbox-sync/linked_with_dropbox.png",
+      "Destination": "/images/react-native/dropbox-sync/linked-with-dropbox.png"
+    },
+    {
+      "Source": "/images/react-native/dropbox-sync/deep_links_xcode_setup.png",
+      "Destination": "/images/react-native/dropbox-sync/deep-links-xcode-setup.png"
+    },
+    {
+      "Source": "/images/react-native/dropbox-sync/authorize_on_dropbox.png",
+      "Destination": "/images/react-native/dropbox-sync/authorize-on-dropbox.png"
+    },
+    {
+      "Source": "/images/react-native/dropbox-sync/open_in_app.png",
+      "Destination": "/images/react-native/dropbox-sync/open-in-app.png"
+    },
+    {
+      "Source": "/images/react-native/dropbox-sync/replace_local_db.png",
+      "Destination": "/images/react-native/dropbox-sync/replace-local-db.png"
+    },
+    {
+      "Source": "/images/react-native/decimal_math.png",
+      "Destination": "/images/react-native/decimal-math.png"
+    },
+    {
+      "Source": "/images/react-native/upgrade/app_name_in_diffs.png",
+      "Destination": "/images/react-native/upgrade/app-name-in-diffs.png"
+    },
+    {
+      "Source": "/images/react-native/upgrade/packager_restart.png",
+      "Destination": "/images/react-native/upgrade/packager-restart.png"
+    },
+    {
+      "Source": "/images/react-native/upgrade/version_mismatch.png",
+      "Destination": "/images/react-native/upgrade/version-mismatch.png"
+    },
+    {
+      "Source": "/images/react-ottawa/cash_register_and_my_replica_small.png",
+      "Destination": "/images/react-ottawa/cash-register-and-my-replica-small.png"
+    },
+    {
+      "Source": "/images/react-native/responsive-tables/too_much_data.png",
+      "Destination": "/images/react-native/responsive-tables/too-much-data.png"
+    },
+    {
+      "Source": "/images/react-native/responsive-tables/responsive_with_hint.png",
+      "Destination": "/images/react-native/responsive-tables/responsive-with-hint.png"
+    },
+    {
+      "Source": "/images/react-native/responsive-tables/responsive_rotated.png",
+      "Destination": "/images/react-native/responsive-tables/responsive-rotated.png"
+    },
+    {
+      "Source": "/images/python/canada_data.png",
+      "Destination": "/images/python/canada-data.png"
+    },
+    {
+      "Source": "/images/python/scatter_matrix.png",
+      "Destination": "/images/python/scatter-matrix.png"
+    },
+    {
+      "Source": "/images/aem/dispatcher_post.png",
+      "Destination": "/images/aem/dispatcher-post.png"
+    },
+    {
+      "Source": "/images/aem/sling/sling_bundle_version.png",
+      "Destination": "/images/aem/sling/sling-bundle-version.png"
+    },
+    {
+      "Source": "/images/aem/sling/intellij_configurations.png",
+      "Destination": "/images/aem/sling/intellij-configurations.png"
+    },
+    {
+      "Source": "/images/aem/sling/debug_config.png",
+      "Destination": "/images/aem/sling/debug-config.png"
+    },
+    {
+      "Source": "/images/aem/sling/start_debug.png",
+      "Destination": "/images/aem/sling/start-debug.png"
+    },
+    {
+      "Source": "/images/aem/sling/intellij_connected.png",
+      "Destination": "/images/aem/sling/intellij-connected.png"
+    },
+    {
+      "Source": "/images/aem/sling/create_launch_file.png",
+      "Destination": "/images/aem/sling/create-launch-file.png"
+    },
+    {
+      "Source": "/images/aem/sling/click_play.png",
+      "Destination": "/images/aem/sling/click-play.png"
+    },
+    {
+      "Source": "/images/aem/sling/standard_mode.png",
+      "Destination": "/images/aem/sling/standard-mode.png"
+    },
+    {
+      "Source": "/images/aem/sling/intellij_breakpoint.png",
+      "Destination": "/images/aem/sling/intellij-breakpoint.png"
+    },
+    {
+      "Source": "/images/aem/sling/code_breakpoint.png",
+      "Destination": "/images/aem/sling/code-breakpoint.png"
+    },
+    {
+      "Source": "/images/aem/sling/variables_resource.png",
+      "Destination": "/images/aem/sling/variables-resource.png"
+    },
+    {
+      "Source": "/images/react-native/macos/macOS-build-target.png",
+      "Destination": "/images/react-native/macos/macos-build-target.png"
+    },
+    {
+      "Source": "/images/react-native/macos/macOS-no-sync.png",
+      "Destination": "/images/react-native/macos/macos-no-sync.png"
+    },
+    {
+      "Source": "/images/react-native/macos/macOS-react-native-post-image.png",
+      "Destination": "/images/react-native/macos/macos-react-native-post-image.png"
+    },
+    {
+      "Source": "/images/aem/dispatcher/introducing_the_aem_dot.png",
+      "Destination": "/images/aem/dispatcher/introducing-the-aem-dot.png"
+    }
+  ],
+  ":type": "sheet"
+}
