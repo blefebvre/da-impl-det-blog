@@ -357,11 +357,11 @@
 
 .blog-list .blog-list-signoff-card {
   display: grid;
-  grid-template-columns: 3rem 1fr;
-  gap: 1.25rem;
-  align-items: start;
+  grid-template-columns: 2.75rem 1fr;
+  gap: 1rem;
+  align-items: center;
   border-top: thin solid var(--border-light-color);
-  padding-top: 3rem;
+  padding-top: 2rem;
 }
 
 .blog-list .blog-list-signoff-card img {
@@ -374,16 +374,14 @@
 }
 
 .blog-list .blog-list-signoff-text p {
-  margin: 0 0 0.75rem;
-}
-
-.blog-list .blog-list-signoff-text p:first-child {
-  font-size: var(--body-font-size-l);
-  line-height: 1.55;
+  max-width: 34em;
+  margin: 0;
+  font-size: max(12px, var(--body-font-size-s));
+  line-height: 1.6;
 }
 
 .blog-list .blog-list-signoff-mark {
-  margin: 3rem 0 0;
+  margin: 2rem 0 0;
   font-size: 1.5rem;
   font-weight: 300;
 }
@@ -399,10 +397,6 @@
 
   .blog-list .blog-list-lead .blog-list-title-link h3 {
     font-size: var(--heading-font-size-xxl);
-  }
-
-  .blog-list .blog-list-signoff-card {
-    grid-template-columns: 4rem 1fr;
   }
 }
 
