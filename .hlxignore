@@ -7,8 +7,7 @@ karma.config.js
 migration-work/*
 package-lock.json
 package.json
-stardust/*
-!stardust/prototypes/
+stardust/
 sync-block-collection.sh
 test/*
 tools/config/*

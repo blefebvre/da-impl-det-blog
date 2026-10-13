@@ -288,6 +288,13 @@ main > .section:last-of-type {
   padding-bottom: var(--section-padding);
 }
 
+/* the listing section holds the reading column plus the post browser beside it */
+@media (width >= 64em) {
+  main > .section.blog-list-container > .blog-list-wrapper {
+    max-width: calc(var(--content-max-width) + var(--browser-gap) + var(--browser-width) + 2 * var(--section-padding));
+  }
+}
+
 @media (width >= 32em) {
   blockquote {
     margin-left: 2rem;
