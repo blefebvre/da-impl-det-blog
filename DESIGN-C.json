@@ -1,0 +1,297 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:direct",
+    "writtenAt": "2026-10-13T16:03:30.653Z",
+    "againstDirection": "stardust/direction.md#variant-c",
+    "readArtifacts": [
+      "stardust/current/_brand-extraction.json",
+      "stardust/direction.md",
+      "PRODUCT.md"
+    ],
+    "synthesizedInputs": [],
+    "stardustVersion": "see plugin"
+  },
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-13T16:03:30.653Z",
+  "title": "Design System: implementationDetails() — Variant C — The field notebook, at reading pace",
+  "variant": {
+    "id": "C",
+    "role": "visionary pitch"
+  },
+  "extensions": {
+    "colorMeta": {
+      "link-blue": {
+        "role": "primary",
+        "displayName": "Link Blue"
+      },
+      "wordmark-salmon": {
+        "role": "secondary",
+        "displayName": "Wordmark Salmon",
+        "usage": "underline only"
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Ink"
+      },
+      "quiet-ink": {
+        "role": "neutral",
+        "displayName": "Quiet Ink",
+        "derivedFrom": "#7a7a7a (captured muted-grey)"
+      },
+      "paper": {
+        "role": "neutral",
+        "displayName": "Paper"
+      },
+      "surface": {
+        "role": "neutral",
+        "displayName": "Surface"
+      }
+    },
+    "contrastAudit": [
+      {
+        "text": "ink",
+        "ground": "paper",
+        "ratio": 12.63
+      },
+      {
+        "text": "ink",
+        "ground": "surface",
+        "ratio": 12.1
+      },
+      {
+        "text": "quiet-ink",
+        "ground": "paper",
+        "ratio": 5.33
+      },
+      {
+        "text": "quiet-ink",
+        "ground": "surface",
+        "ratio": 5.11
+      },
+      {
+        "text": "quiet-ink",
+        "ground": "code-ground",
+        "ratio": 4.59
+      },
+      {
+        "text": "link-blue",
+        "ground": "paper",
+        "ratio": 4.51
+      },
+      {
+        "text": "link-ink",
+        "ground": "paper",
+        "ratio": 19.95
+      },
+      {
+        "text": "ink",
+        "ground": "code-ground",
+        "ratio": 10.89
+      }
+    ],
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "One per page — the lead entry title."
+      },
+      "lede": {
+        "displayName": "Lede",
+        "purpose": "Summary-led entries and the opening author line."
+      }
+    },
+    "shadows": [],
+    "breakpoints": [
+      {
+        "name": "sm",
+        "value": "32em"
+      },
+      {
+        "name": "md",
+        "value": "48em"
+      },
+      {
+        "name": "lg",
+        "value": "64em"
+      }
+    ],
+    "motion": {
+      "register": "editorial",
+      "registerRationale": "PRODUCT.md § Brand Commitments: 'publication-register, slow-paced' → editorial (motion-registers.md § Selection heuristic)",
+      "easings": {
+        "entrance": "cubic-bezier(0.16, 1, 0.3, 1)",
+        "transition": "cubic-bezier(0.42, 0, 0, 1)"
+      },
+      "durations": {
+        "enter": 900,
+        "stagger": 140
+      },
+      "parallax": {
+        "translate": 0,
+        "fade": 0,
+        "rangeStart": 0,
+        "range": 90,
+        "note": "the micro-parallax was dropped at finish review: every candidate target either rose into the header, closed the lede/latest separation, or delayed reveals of its children past the reading line"
+      }
+    },
+    "divergence": {
+      "toolkit_version": "v1.0 (stardust v2)",
+      "mode": "A",
+      "seed": {
+        "input": "implementationDetails()|2026-10-13",
+        "decade": "2025-now",
+        "craft": "web-native plain HTML",
+        "register": "personal field notes",
+        "ground_family": "stark-white",
+        "picked_by": "reasoned (research tier 2: overreacted.io, jvns.ca, simonwillison.net)",
+        "overrides": [
+          {
+            "dimension": "ground_family",
+            "override": "brand-faithful"
+          }
+        ]
+      },
+      "font_deck": {
+        "name": "brand-inherited",
+        "picked_by": "user-constraint"
+      },
+      "palette_source": {
+        "source": "inherited from _brand-extraction.json",
+        "picked_by": "user-constraint"
+      },
+      "brand_adjacent_refinements": [
+        {
+          "kind": "single-role-recolor",
+          "captured": "#7a7a7a",
+          "replacement": "#6b6b6b",
+          "evidence": "4.29:1 on #fff, 4.11:1 on #fafafa (T-contrast; Lighthouse color-contrast)",
+          "improvementsItem": 1
+        }
+      ],
+      "brand_faithful_inversions": [
+        "`#ffffff` retained as page ground (existing implementationDetails() decision). The impeccable \"no pure black/white\" rule is inverted per brand-faithful direction.",
+        "Color tokens retained in hex format (matches captured brand surface and Stitch frontmatter convention).",
+        "Saturated `#0076df` retained as the link colour (the brand's canonical voice). The tinted-neutral reflex is inverted per brand-faithful direction."
+      ],
+      "anti_toolbox_count": 0,
+      "anti_toolbox_hits": [],
+      "off_toolbox_moves": [
+        "summary-led entries (voice before title)"
+      ],
+      "references_used": [
+        {
+          "name": "overreacted.io",
+          "url": "https://overreacted.io/",
+          "tag": "off-toolbox",
+          "serves": "A archive + author line"
+        },
+        {
+          "name": "jvns.ca",
+          "url": "https://jvns.ca/",
+          "tag": "off-toolbox",
+          "serves": "A compact rows"
+        },
+        {
+          "name": "simonwillison.net",
+          "url": "https://simonwillison.net/",
+          "tag": "off-toolbox",
+          "serves": "B year rail"
+        }
+      ]
+    },
+    "componentStyle": {
+      "buttons": {
+        "secondary": {
+          "background": "#fafafa",
+          "color": "#333333",
+          "borderRadius": "3.75px",
+          "hover": {
+            "background": "#ffffff",
+            "color": "#0076df",
+            "note": "captured #477dca hover is 4.15:1 on white — hover text reuses link-blue (4.51:1)"
+          }
+        }
+      },
+      "links": {
+        "color": "#0076df",
+        "underline": "baseline gradient band",
+        "hover": "#000a13"
+      },
+      "dualCTAPattern": null
+    },
+    "systemComponentRoles": {
+      "header": {
+        "purpose": "identity + social links",
+        "position": "top, in flow (not sticky)"
+      },
+      "footer": {
+        "purpose": "credit line",
+        "position": "bottom band on surface"
+      }
+    },
+    "voice": {
+      "do": [
+        "First-person, specific product nouns (AEM, Dispatcher, React Native)",
+        "Plain, wry headings"
+      ],
+      "dont": [
+        "Marketing superlatives",
+        "Invented stats or counts"
+      ]
+    },
+    "iaPriorities": [
+      {
+        "signal": "identity-first",
+        "evidence": "pages/index.json — header wordmark + 5 social links are the first content",
+        "preserveAs": "first-viewport",
+        "scope": "site-wide",
+        "mutability": "movable"
+      },
+      {
+        "signal": "recency-led",
+        "evidence": "pages/index.json — newest post (Oct 17, 2023) is the first entry",
+        "preserveAs": "first-viewport",
+        "scope": "home",
+        "mutability": "movable"
+      },
+      {
+        "signal": "archive-reach",
+        "evidence": "pages/index.json — pager 'Page 1 of 10' is the only path to older posts",
+        "preserveAs": "every-post-reachable",
+        "scope": "home",
+        "mutability": "movable"
+      }
+    ]
+  },
+  "components": [],
+  "narrative": {
+    "northStar": "The author talks first",
+    "overview": "A’s sections and order, re-led by voice: the author’s one-line intro opens the page as a lede, and each entry leads with its first-person summary in the serif with the title as the secondary line. Motion is editorial — opacity-only reveals at reading pace, and a drawn-in link underline — and disappears entirely under reduced motion.",
+    "keyCharacteristics": [
+      "42rem reading column",
+      "Merriweather + Lato",
+      "gradient-underline links",
+      "salmon wordmark underline",
+      "flat, no shadows"
+    ],
+    "rules": [
+      {
+        "name": "Summary leads, title follows",
+        "body": "Entries show the summary (lede type) above the title (title-m) so the first-person voice is read first.",
+        "section": "typography"
+      },
+      {
+        "name": "Motion never hides text",
+        "body": "Reveals are opacity-only and complete within 900ms; nothing translates text, nothing loops.",
+        "section": "motion"
+      }
+    ],
+    "dos": [
+      "Let entries arrive at reading pace",
+      "Draw the link underline in on hover"
+    ],
+    "donts": [
+      "Count-ups, tickers, marquees, bouncy easing",
+      "Animate anything under prefers-reduced-motion"
+    ]
+  }
+}

@@ -17,3 +17,8 @@ tools/importer/*.bundle.js
 tools/importer/reports/
 migration-work/navigation-validation/
 migration-work/footer-validation/
+
+# >>> stardust
+.env
+.env.*
+# <<< stardust

@@ -1,0 +1,92 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:prototype",
+    "writtenAt": "2026-10-13T16:33:08Z",
+    "stardustVersion": "0.29.1"
+  },
+  "site": {
+    "originUrl": "https://main--da-impl-det-blog--blefebvre.aem.live",
+    "deployUrl": null,
+    "extractedAt": "2026-10-13T15:54:14.096Z",
+    "pageCap": 2,
+    "totalDiscovered": 2,
+    "crawled": 2
+  },
+  "direction": {
+    "resolvedAt": "2026-10-13T16:03:30.832Z",
+    "phrase": "uplift presales redesign \u2014 three variants per stardust/direction.md",
+    "directionFile": "stardust/direction.md",
+    "iaFidelity": "reimagined",
+    "variantMode": "role-differentiated",
+    "variants": [
+      "A",
+      "B",
+      "C"
+    ]
+  },
+  "pages": [
+    {
+      "slug": "index",
+      "url": "https://main--da-impl-det-blog--blefebvre.aem.live/",
+      "title": "implementationDetails()",
+      "type": null,
+      "status": "prototyped",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-10-13T15:47:08.869Z"
+        },
+        {
+          "status": "directed",
+          "at": "2026-10-13T16:03:30Z"
+        },
+        {
+          "status": "prototyped",
+          "at": "2026-10-13T16:33:08Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/index.json",
+      "prototypePath": "stardust/prototypes/index-A-proposed.html",
+      "migratedPath": null,
+      "variants": {
+        "A": {
+          "prototypePath": "stardust/prototypes/index-A-proposed.html",
+          "shape": "stardust/prototypes/index-A-shape.md",
+          "review": "pass"
+        },
+        "B": {
+          "prototypePath": "stardust/prototypes/index-B-proposed.html",
+          "shape": "stardust/prototypes/index-B-shape.md",
+          "review": "pass"
+        },
+        "C": {
+          "prototypePath": "stardust/prototypes/index-C-proposed.html",
+          "cinematicPath": "stardust/prototypes/index-C-cinematic.html",
+          "shape": "stardust/prototypes/index-C-shape.md",
+          "review": "pass",
+          "motionValidation": "stardust/validation/index/motion-validation.json"
+        }
+      }
+    },
+    {
+      "slug": "blog-2018-11-06-react-native-offline-first-db-with-sqlite",
+      "url": "https://main--da-impl-det-blog--blefebvre.aem.live/blog/2018/11/06/react-native-offline-first-db-with-sqlite",
+      "title": "Building an offline first app with React Native and SQLite",
+      "type": null,
+      "status": "extracted",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-10-13T15:58:07.796Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/blog-2018-11-06-react-native-offline-first-db-with-sqlite.json",
+      "prototypePath": null,
+      "migratedPath": null
+    }
+  ]
+}
