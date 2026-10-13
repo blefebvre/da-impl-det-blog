@@ -255,7 +255,7 @@ function buildBrowser(posts) {
 }
 
 /**
- * The sign-off: the author bio fragment (avatar + bio), then the wordmark again.
+ * The sign-off: the avatar and first bio paragraph from the author bio fragment, then the wordmark.
  * Filled after the listing renders so the fragment never delays the first paint.
  */
 async function fillSignOff(section, path) {
@@ -264,9 +264,10 @@ async function fillSignOff(section, path) {
     fetchNav().catch(() => null),
   ]);
   const picture = fragment?.querySelector('picture');
-  const paragraphs = fragment ? [...fragment.querySelectorAll('p')]
-    .filter((p) => !p.querySelector('picture') && p.textContent.trim()) : [];
-  if (!paragraphs.length) return;
+  // only the bio itself: the fragment's follow/contact line stays on the post pages
+  const bio = fragment ? [...fragment.querySelectorAll('p')]
+    .find((p) => !p.querySelector('picture') && p.textContent.trim()) : null;
+  if (!bio) return;
 
   const card = el('div', 'blog-list-signoff-card');
   if (picture) {
@@ -275,7 +276,7 @@ async function fillSignOff(section, path) {
     card.append(picture);
   }
   const text = el('div', 'blog-list-signoff-text');
-  text.append(...paragraphs);
+  text.append(bio);
   card.append(text);
   section.append(card);
 
