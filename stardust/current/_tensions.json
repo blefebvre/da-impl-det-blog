@@ -1,0 +1,43 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:extract",
+    "writtenAt": "2026-10-13T15:59:49.821Z"
+  },
+  "tensions": [
+    {
+      "id": "T-scale",
+      "badge": "synthesized",
+      "title": "Type scale is ad-hoc",
+      "body": "59.96px → 20px on the listing (ratio ≈3.0), no intermediate level. Direct will need to decide whether the target adopts a modular scale.",
+      "source": "_brand-extraction.json § type.scaleAudit"
+    },
+    {
+      "id": "T-logo-variants",
+      "badge": "home-only",
+      "title": "Only one logo variant captured",
+      "body": "The brand is a text wordmark (synthesized from header .nav-title); there is no image logo, monochrome or inverted variant. Direct should plan a mark set if one is needed.",
+      "source": "_brand-extraction.json § logo"
+    },
+    {
+      "id": "T-color-imbalance",
+      "badge": "home-only",
+      "title": "Several palette colors used in only one context",
+      "body": "#0076df (primary) as text only — never a fill or border; #7a7a7a (text-muted) text only; #477dca (accent-2) hover text only; #fafafa (surface) background only. Direct will need to decide: drop, expand, or keep as accents.",
+      "source": "_brand-extraction.json § palette[].usedAs"
+    },
+    {
+      "id": "T-img-alt-empty",
+      "badge": "home-only",
+      "title": "100% of images carry empty alt text",
+      "body": "5 of 5 images (the header social icons) have alt=\"\" — each link carries an aria-label, so they are decorative; still a content-sourcing decision for direct.",
+      "source": "pages/index.json § media.imgs[].alt"
+    },
+    {
+      "id": "T-contrast",
+      "badge": "observed",
+      "title": "Muted grey fails WCAG AA",
+      "body": "#7a7a7a is 4.29:1 on #fff and 4.11:1 on the #fafafa footer (dates, read time, footer); footer text renders ~9.9px at 360px. Lighthouse 2026-10-13 flagged both.",
+      "source": "_brand-extraction.json § palette[text-muted]; Lighthouse color-contrast, font-size"
+    }
+  ]
+}

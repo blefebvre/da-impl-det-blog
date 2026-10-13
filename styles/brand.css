@@ -5,7 +5,7 @@
   --light-color: #fafafa;
   --border-light-color: #f3f3f3;
   --rule-color: #ccc;
-  --dark-color: #7a7a7a;
+  --dark-color: #6b6b6b; /* deepened from the theme's #7a7a7a: 5.3:1 on white (WCAG AA) */
   --text-color: #333;
   --code-background-color: #eee;
   --image-border-color: #999;
@@ -13,7 +13,6 @@
   --link-hover-color: #000a13;
   --link-underline: linear-gradient(to top, transparent 13%, rgb(0 118 223 / 80%) 13%, rgb(0 118 223 / 80%) 18%, transparent 17%);
   --link-hover-underline: linear-gradient(to top, transparent 13%, rgb(0 10 19 / 80%) 13%, rgb(0 10 19 / 80%) 17%, transparent 17%);
-  --title-underline-color: rgb(255 105 97 / 50%);
 
   /* fonts */
   --body-font-family: merriweather, merriweather-fallback, 'PT Serif', georgia, 'Times New Roman', serif;
@@ -38,8 +37,14 @@
   --heading-font-size-s: 0.875rem;
   --heading-font-size-xs: 0.75rem;
 
+  /* listing: the wordmark (h1) and the section calls (h2), major-third steps */
+  --heading-font-size-title: 1.953rem;
+  --heading-font-size-call: 1.563rem;
+
   /* layout */
   --content-max-width: 42rem;
+  --browser-width: 17.5rem;
+  --browser-gap: 3rem;
   --section-padding: 1rem;
   --nav-height: 5.8rem;
 }

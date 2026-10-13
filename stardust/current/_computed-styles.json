@@ -1,0 +1,3616 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:extract",
+    "writtenAt": "2026-10-13T15:58:51.578Z",
+    "script": "style-census.mjs",
+    "readArtifacts": [
+      "https://main--da-impl-det-blog--blefebvre.aem.live/blog/2018/11/06/react-native-offline-first-db-with-sqlite",
+      "https://main--da-impl-det-blog--blefebvre.aem.live/"
+    ],
+    "widths": [
+      1440,
+      360
+    ],
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36",
+    "synthesizedInputs": [],
+    "failed": []
+  },
+  "pages": {
+    "https://main--da-impl-det-blog--blefebvre.aem.live/blog/2018/11/06/react-native-offline-first-db-with-sqlite": {
+      "360": {
+        "title": "Building an offline first app with React Native and SQLite",
+        "viewport": {
+          "width": 360,
+          "height": 900
+        },
+        "elements": {
+          "total": 290,
+          "visible": 269
+        },
+        "occluders": [],
+        "headings": [
+          {
+            "tag": "h1",
+            "text": "Building an offline first app with Reac…",
+            "selector": "main > div:nth-of-type(1) > div > h1",
+            "fontFamily": "lato, lato-fallback, \"Helvetica Neue\", helvetica, sans-serif",
+            "fontSize": "41.972px",
+            "fontWeight": "900",
+            "lineHeight": "52.465px",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(51, 51, 51)"
+          },
+          {
+            "tag": "h2",
+            "text": "What are we building?",
+            "selector": "#what-are-we-building",
+            "fontFamily": "lato, lato-fallback, \"Helvetica Neue\", helvetica, sans-serif",
+            "fontSize": "21px",
+            "fontWeight": "900",
+            "lineHeight": "26.25px",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(51, 51, 51)"
+          },
+          {
+            "tag": "h2",
+            "text": "Installing the SQLite plugin",
+            "selector": "#installing-the-sqlite-plugin",
+            "fontFamily": "lato, lato-fallback, \"Helvetica Neue\", helvetica, sans-serif",
+            "fontSize": "21px",
+            "fontWeight": "900",
+            "lineHeight": "26.25px",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(51, 51, 51)"
+          },
+          {
+            "tag": "h2",
+            "text": "Don’t forget the Types",
+            "selector": "#dont-forget-the-types",
+            "fontFamily": "lato, lato-fallback, \"Helvetica Neue\", helvetica, sans-serif",
+            "fontSize": "21px",
+            "fontWeight": "900",
+            "lineHeight": "26.25px",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(51, 51, 51)"
+          },
+          {
+            "tag": "h2",
+            "text": "Build and Run the app",
+            "selector": "#build-and-run-the-app",
+            "fontFamily": "lato, lato-fallback, \"Helvetica Neue\", helvetica, sans-serif",
+            "fontSize": "21px",
+            "fontWeight": "900",
+            "lineHeight": "26.25px",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(51, 51, 51)"
+          },
+          {
+            "tag": "h2",
+            "text": "Project architecture",
+            "selector": "#project-architecture",
+            "fontFamily": "lato, lato-fallback, \"Helvetica Neue\", helvetica, sans-serif",
+            "fontSize": "21px",
+            "fontWeight": "900",
+            "lineHeight": "26.25px",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(51, 51, 51)"
+          },
+          {
+            "tag": "h2",
+            "text": "Connection management",
+            "selector": "#connection-management",
+            "fontFamily": "lato, lato-fallback, \"Helvetica Neue\", helvetica, sans-serif",
+            "fontSize": "21px",
+            "fontWeight": "900",
+            "lineHeight": "26.25px",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(51, 51, 51)"
+          },
+          {
+            "tag": "h2",
+            "text": "A TypeScript + React sidebar",
+            "selector": "#a-typescript--react-sidebar",
+            "fontFamily": "lato, lato-fallback, \"Helvetica Neue\", helvetica, sans-serif",
+            "fontSize": "21px",
+            "fontWeight": "900",
+            "lineHeight": "26.25px",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(51, 51, 51)"
+          },
+          {
+            "tag": "h2",
+            "text": "Initializing your database",
+            "selector": "#initializing-your-database",
+            "fontFamily": "lato, lato-fallback, \"Helvetica Neue\", helvetica, sans-serif",
+            "fontSize": "21px",
+            "fontWeight": "900",
+            "lineHeight": "26.25px",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(51, 51, 51)"
+          },
+          {
+            "tag": "h2",
+            "text": "CRUD operations",
+            "selector": "#crud-operations",
+            "fontFamily": "lato, lato-fallback, \"Helvetica Neue\", helvetica, sans-serif",
+            "fontSize": "21px",
+            "fontWeight": "900",
+            "lineHeight": "26.25px",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(51, 51, 51)"
+          },
+          {
+            "tag": "h2",
+            "text": "In conclusion",
+            "selector": "#in-conclusion",
+            "fontFamily": "lato, lato-fallback, \"Helvetica Neue\", helvetica, sans-serif",
+            "fontSize": "21px",
+            "fontWeight": "900",
+            "lineHeight": "26.25px",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(51, 51, 51)"
+          },
+          {
+            "tag": "h2",
+            "text": "Further reading",
+            "selector": "#further-reading",
+            "fontFamily": "lato, lato-fallback, \"Helvetica Neue\", helvetica, sans-serif",
+            "fontSize": "21px",
+            "fontWeight": "900",
+            "lineHeight": "26.25px",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(51, 51, 51)"
+          }
+        ],
+        "text": [
+          {
+            "tag": "p",
+            "text": "Nov 6, 2018, by Bruce Lefebvre19 minute…",
+            "selector": "main > div:nth-of-type(1) > div > p:nth-of-type(1)",
+            "fontFamily": "merriweather, merriweather-fallback, \"PT Serif\", georgia, \"Times New Roman\", serif",
+            "fontSize": "14px",
+            "fontWeight": "300",
+            "lineHeight": "21px",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(122, 122, 122)"
+          },
+          {
+            "tag": "p",
+            "text": "Hello! This post has been updated and t…",
+            "selector": "main > div:nth-of-type(1) > div > blockquote > p:nth-of-type(1)",
+            "fontFamily": "merriweather, merriweather-fallback, \"PT Serif\", georgia, \"Times New Roman\", serif",
+            "fontSize": "17.5px",
+            "fontWeight": "400",
+            "lineHeight": "26.25px",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(51, 51, 51)"
+          },
+          {
+            "tag": "p",
+            "text": "Building an offline first app with Reac…",
+            "selector": "main > div:nth-of-type(1) > div > blockquote > p:nth-of-type(2)",
+            "fontFamily": "merriweather, merriweather-fallback, \"PT Serif\", georgia, \"Times New Roman\", serif",
+            "fontSize": "17.5px",
+            "fontWeight": "400",
+            "lineHeight": "26.25px",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(51, 51, 51)"
+          },
+          {
+            "tag": "p",
+            "text": "This article walks through how I built …",
+            "selector": "main > div:nth-of-type(1) > div > p:nth-of-type(2)",
+            "fontFamily": "merriweather, merriweather-fallback, \"PT Serif\", georgia, \"Times New Roman\", serif",
+            "fontSize": "14px",
+            "fontWeight": "400",
+            "lineHeight": "21px",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(51, 51, 51)"
+          },
+          {
+            "tag": "li",
+            "text": "There would be no server for us to mana…",
+            "selector": "main > div:nth-of-type(1) > div > ul:nth-of-type(1) > li:nth-of-type(1)",
+            "fontFamily": "merriweather, merriweather-fallback, \"PT Serif\", georgia, \"Times New Roman\", serif",
+            "fontSize": "14px",
+            "fontWeight": "400",
+            "lineHeight": "21px",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(51, 51, 51)"
+          },
+          {
+            "tag": "li",
+            "text": "There would be no server-side code to d…",
+            "selector": "main > div:nth-of-type(1) > div > ul:nth-of-type(1) > li:nth-of-type(2)",
+            "fontFamily": "merriweather, merriweather-fallback, \"PT Serif\", georgia, \"Times New Roman\", serif",
+            "fontSize": "14px",
+            "fontWeight": "400",
+            "lineHeight": "21px",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(51, 51, 51)"
+          },
+          {
+            "tag": "li",
+            "text": "The app would work offline without any …",
+            "selector": "main > div:nth-of-type(1) > div > ul:nth-of-type(1) > li:nth-of-type(3)",
+            "fontFamily": "merriweather, merriweather-fallback, \"PT Serif\", georgia, \"Times New Roman\", serif",
+            "fontSize": "14px",
+            "fontWeight": "400",
+            "lineHeight": "21px",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(51, 51, 51)"
+          },
+          {
+            "tag": "li",
+            "text": "If our users’ wished to sync their data…",
+            "selector": "main > div:nth-of-type(1) > div > ul:nth-of-type(1) > li:nth-of-type(4)",
+            "fontFamily": "merriweather, merriweather-fallback, \"PT Serif\", georgia, \"Times New Roman\", serif",
+            "fontSize": "14px",
+            "fontWeight": "400",
+            "lineHeight": "21px",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(51, 51, 51)"
+          },
+          {
+            "tag": "p",
+            "text": "We were sold on the approach, and began…",
+            "selector": "main > div:nth-of-type(1) > div > p:nth-of-type(3)",
+            "fontFamily": "merriweather, merriweather-fallback, \"PT Serif\", georgia, \"Times New Roman\", serif",
+            "fontSize": "14px",
+            "fontWeight": "400",
+            "lineHeight": "21px",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(51, 51, 51)"
+          },
+          {
+            "tag": "p",
+            "text": "Let’s start by working through adding S…",
+            "selector": "main > div:nth-of-type(1) > div > p:nth-of-type(4)",
+            "fontFamily": "merriweather, merriweather-fallback, \"PT Serif\", georgia, \"Times New Roman\", serif",
+            "fontSize": "14px",
+            "fontWeight": "400",
+            "lineHeight": "21px",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(51, 51, 51)"
+          },
+          {
+            "tag": "p",
+            "text": "I created a basic List app using the ap…",
+            "selector": "main > div:nth-of-type(1) > div > p:nth-of-type(5)",
+            "fontFamily": "merriweather, merriweather-fallback, \"PT Serif\", georgia, \"Times New Roman\", serif",
+            "fontSize": "14px",
+            "fontWeight": "400",
+            "lineHeight": "21px",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(51, 51, 51)"
+          },
+          {
+            "tag": "p",
+            "text": "Check out React Native SQLite Demo on G…",
+            "selector": "main > div:nth-of-type(1) > div > p:nth-of-type(6)",
+            "fontFamily": "merriweather, merriweather-fallback, \"PT Serif\", georgia, \"Times New Roman\", serif",
+            "fontSize": "14px",
+            "fontWeight": "400",
+            "lineHeight": "21px",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(51, 51, 51)"
+          }
+        ],
+        "buttons": [],
+        "links": [
+          {
+            "text": "Bruce Lefebvre",
+            "selector": "main > div:nth-of-type(1) > div > p:nth-of-type(1) > a",
+            "count": 1,
+            "color": "rgb(122, 122, 122)",
+            "textDecoration": "none",
+            "fontWeight": "300",
+            "hover": {
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(122, 122, 122)",
+              "borderColor": "rgb(122, 122, 122)",
+              "boxShadow": "none",
+              "changed": true
+            }
+          },
+          {
+            "text": "Building an offline first app with Reac…",
+            "selector": "main > div:nth-of-type(1) > div > blockquote > p:nth-of-type(2) > a",
+            "count": 32,
+            "color": "rgb(0, 118, 223)",
+            "textDecoration": "none",
+            "fontWeight": "400",
+            "hover": {
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(0, 10, 19)",
+              "borderColor": "rgb(0, 10, 19)",
+              "boxShadow": "none",
+              "changed": true
+            }
+          }
+        ],
+        "surfaces": [
+          {
+            "matched": "header",
+            "selector": "header",
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 360,
+              "h": 151
+            },
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "color": "rgb(51, 51, 51)",
+            "padding": "56px 14px 14px",
+            "maxWidth": "none",
+            "borderRadius": "0px",
+            "boxShadow": "none",
+            "position": "static",
+            "fontFamily": "merriweather, merriweather-fallback, \"PT Serif\", georgia, \"Times New Roman\", serif",
+            "fontSize": "14px"
+          },
+          {
+            "matched": "nav",
+            "selector": "#nav",
+            "rect": {
+              "x": 14,
+              "y": 70,
+              "w": 332,
+              "h": 65
+            },
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "color": "rgb(51, 51, 51)",
+            "padding": "0px",
+            "maxWidth": "588px",
+            "borderRadius": "0px",
+            "boxShadow": "none",
+            "position": "static",
+            "fontFamily": "merriweather, merriweather-fallback, \"PT Serif\", georgia, \"Times New Roman\", serif",
+            "fontSize": "14px"
+          },
+          {
+            "matched": "main",
+            "selector": "main",
+            "rect": {
+              "x": 0,
+              "y": 151,
+              "w": 360,
+              "h": 14664
+            },
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "color": "rgb(51, 51, 51)",
+            "padding": "0px",
+            "maxWidth": "none",
+            "borderRadius": "0px",
+            "boxShadow": "none",
+            "position": "static",
+            "fontFamily": "merriweather, merriweather-fallback, \"PT Serif\", georgia, \"Times New Roman\", serif",
+            "fontSize": "14px"
+          },
+          {
+            "matched": "footer",
+            "selector": "footer",
+            "rect": {
+              "x": 0,
+              "y": 14815,
+              "w": 360,
+              "h": 89
+            },
+            "backgroundColor": "rgb(250, 250, 250)",
+            "color": "rgb(122, 122, 122)",
+            "padding": "28px",
+            "maxWidth": "none",
+            "borderRadius": "0px",
+            "boxShadow": "none",
+            "position": "static",
+            "fontFamily": "merriweather, merriweather-fallback, \"PT Serif\", georgia, \"Times New Roman\", serif",
+            "fontSize": "10.5px"
+          },
+          {
+            "matched": "main > *",
+            "selector": "main > div:nth-of-type(1)",
+            "rect": {
+              "x": 0,
+              "y": 151,
+              "w": 360,
+              "h": 14035
+            },
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "color": "rgb(51, 51, 51)",
+            "padding": "14px 0px 0px",
+            "maxWidth": "none",
+            "borderRadius": "0px",
+            "boxShadow": "none",
+            "position": "static",
+            "fontFamily": "merriweather, merriweather-fallback, \"PT Serif\", georgia, \"Times New Roman\", serif",
+            "fontSize": "14px"
+          },
+          {
+            "matched": "main > *",
+            "selector": "main > div:nth-of-type(2)",
+            "rect": {
+              "x": 0,
+              "y": 14200,
+              "w": 360,
+              "h": 615
+            },
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "color": "rgb(51, 51, 51)",
+            "padding": "0px 0px 14px",
+            "maxWidth": "none",
+            "borderRadius": "0px",
+            "boxShadow": "none",
+            "position": "static",
+            "fontFamily": "merriweather, merriweather-fallback, \"PT Serif\", georgia, \"Times New Roman\", serif",
+            "fontSize": "14px"
+          }
+        ],
+        "radii": [
+          {
+            "value": "3px",
+            "count": 45,
+            "area": 83075,
+            "sources": [
+              "main > div:nth-of-type(1) > div > p:nth-of-type(6) > code",
+              "main > div:nth-of-type(1) > div > p:nth-of-type(13) > code",
+              "main > div:nth-of-type(1) > div > p:nth-of-type(14) > code"
+            ]
+          },
+          {
+            "value": "5px",
+            "count": 4,
+            "area": 236212,
+            "sources": [
+              "main > div:nth-of-type(1) > div > p:nth-of-type(7) > picture > img",
+              "main > div:nth-of-type(1) > div > p:nth-of-type(26) > picture > img",
+              "main > div:nth-of-type(1) > div > p:nth-of-type(30) > picture > img"
+            ]
+          },
+          {
+            "value": "50%",
+            "count": 1,
+            "area": 10000,
+            "sources": [
+              "main > div:nth-of-type(2) > div:nth-of-type(2) > div > div > p:nth-of-type(1) > picture > img"
+            ]
+          }
+        ],
+        "shadows": [],
+        "gradients": [
+          {
+            "value": "linear-gradient(to top, rgba(0, 0, 0, 0) 13%, rgba(0, 118, 223, 0.8) 13%, rgba(0, 118, 223, 0.8) 18%, rgba(0, 0, 0, 0) 17%)",
+            "count": 35,
+            "area": 150281,
+            "sources": [
+              "main > div:nth-of-type(1) > div > p:nth-of-type(1) > a",
+              "main > div:nth-of-type(1) > div > blockquote > p:nth-of-type(2) > a",
+              "main > div:nth-of-type(1) > div > p:nth-of-type(2) > a"
+            ]
+          }
+        ],
+        "bgColors": [
+          {
+            "value": "rgb(238, 238, 238)",
+            "count": 45,
+            "area": 83075,
+            "sources": [
+              "main > div:nth-of-type(1) > div > p:nth-of-type(6) > code",
+              "main > div:nth-of-type(1) > div > p:nth-of-type(13) > code",
+              "main > div:nth-of-type(1) > div > p:nth-of-type(14) > code"
+            ]
+          },
+          {
+            "value": "rgb(250, 250, 250)",
+            "count": 16,
+            "area": 1333443,
+            "sources": [
+              "main > div:nth-of-type(1) > div > pre:nth-of-type(1)",
+              "main > div:nth-of-type(1) > div > pre:nth-of-type(2)",
+              "main > div:nth-of-type(1) > div > pre:nth-of-type(3)"
+            ]
+          },
+          {
+            "value": "rgb(255, 255, 255)",
+            "count": 1,
+            "area": 5365322,
+            "sources": [
+              "body"
+            ]
+          }
+        ],
+        "textColors": [
+          {
+            "value": "rgb(51, 51, 51)",
+            "count": 86,
+            "sources": [
+              "#nav > div:nth-of-type(1) > a",
+              "main > div:nth-of-type(1) > div > h1",
+              "main > div:nth-of-type(1) > div > blockquote > p:nth-of-type(1)"
+            ]
+          },
+          {
+            "value": "rgb(122, 122, 122)",
+            "count": 66,
+            "sources": [
+              "main > div:nth-of-type(1) > div > p:nth-of-type(1)",
+              "main > div:nth-of-type(1) > div > p:nth-of-type(1) > time",
+              "main > div:nth-of-type(1) > div > p:nth-of-type(1) > a"
+            ]
+          },
+          {
+            "value": "rgb(0, 118, 223)",
+            "count": 34,
+            "sources": [
+              "main > div:nth-of-type(1) > div > blockquote > p:nth-of-type(2) > a",
+              "main > div:nth-of-type(1) > div > p:nth-of-type(2) > a",
+              "main > div:nth-of-type(1) > div > ul:nth-of-type(1) > li:nth-of-type(3) > a"
+            ]
+          }
+        ],
+        "borderColors": [
+          {
+            "value": "rgb(153, 153, 153)",
+            "count": 4,
+            "sources": [
+              "main > div:nth-of-type(1) > div > p:nth-of-type(7) > picture > img",
+              "main > div:nth-of-type(1) > div > p:nth-of-type(26) > picture > img",
+              "main > div:nth-of-type(1) > div > p:nth-of-type(30) > picture > img"
+            ]
+          },
+          {
+            "value": "rgb(122, 122, 122)",
+            "count": 1,
+            "sources": [
+              "main > div:nth-of-type(1) > div > blockquote"
+            ]
+          },
+          {
+            "value": "rgb(221, 221, 221)",
+            "count": 1,
+            "sources": [
+              "main > div:nth-of-type(2) > div:nth-of-type(1) > div"
+            ]
+          },
+          {
+            "value": "rgb(243, 243, 243)",
+            "count": 1,
+            "sources": [
+              "footer"
+            ]
+          }
+        ],
+        "customProps": {
+          "--background-color": {
+            "declared": "#fff",
+            "computed": "#fff"
+          },
+          "--light-color": {
+            "declared": "#fafafa",
+            "computed": "#fafafa"
+          },
+          "--border-light-color": {
+            "declared": "#f3f3f3",
+            "computed": "#f3f3f3"
+          },
+          "--rule-color": {
+            "declared": "#ccc",
+            "computed": "#ccc"
+          },
+          "--dark-color": {
+            "declared": "#7a7a7a",
+            "computed": "#7a7a7a"
+          },
+          "--text-color": {
+            "declared": "#333",
+            "computed": "#333"
+          },
+          "--code-background-color": {
+            "declared": "#eee",
+            "computed": "#eee"
+          },
+          "--image-border-color": {
+            "declared": "#999",
+            "computed": "#999"
+          },
+          "--link-color": {
+            "declared": "#0076df",
+            "computed": "#0076df"
+          },
+          "--link-hover-color": {
+            "declared": "#000a13",
+            "computed": "#000a13"
+          },
+          "--link-underline": {
+            "declared": "linear-gradient(to top, transparent 13%, rgb(0 118 223 / 80%) 13%, rgb(0 118 223 / 80%) 18%, transparent 17%)",
+            "computed": "linear-gradient(to top, transparent 13%, rgb(0 118 223 / 80%) 13%, rgb(0 118 223 / 80%) 18%, transparent 17%)"
+          },
+          "--link-hover-underline": {
+            "declared": "linear-gradient(to top, transparent 13%, rgb(0 10 19 / 80%) 13%, rgb(0 10 19 / 80%) 17%, transparent 17%)",
+            "computed": "linear-gradient(to top, transparent 13%, rgb(0 10 19 / 80%) 13%, rgb(0 10 19 / 80%) 17%, transparent 17%)"
+          },
+          "--title-underline-color": {
+            "declared": "rgb(255 105 97 / 50%)",
+            "computed": "rgb(255 105 97 / 50%)"
+          },
+          "--body-font-family": {
+            "declared": "merriweather, merriweather-fallback, 'PT Serif', georgia, 'Times New Roman', serif",
+            "computed": "merriweather, merriweather-fallback, 'PT Serif', georgia, 'Times New Roman', serif"
+          },
+          "--heading-font-family": {
+            "declared": "lato, lato-fallback, 'Helvetica Neue', helvetica, sans-serif",
+            "computed": "lato, lato-fallback, 'Helvetica Neue', helvetica, sans-serif"
+          },
+          "--code-font-family": {
+            "declared": "'Source Code Pro', consolas, monospace",
+            "computed": "'Source Code Pro', consolas, monospace"
+          },
+          "--root-font-size": {
+            "declared": "20px",
+            "computed": "14px"
+          },
+          "--body-font-size-m": {
+            "declared": "1rem",
+            "computed": "1rem"
+          },
+          "--body-font-size-l": {
+            "declared": "1.25rem",
+            "computed": "1.25rem"
+          },
+          "--body-font-size-s": {
+            "declared": "0.875rem",
+            "computed": "0.875rem"
+          },
+          "--body-font-size-xs": {
+            "declared": "0.75rem",
+            "computed": "0.75rem"
+          },
+          "--heading-font-size-xxl": {
+            "declared": "2.998rem",
+            "computed": "2.998rem"
+          },
+          "--heading-font-size-xl": {
+            "declared": "1.5rem",
+            "computed": "1.5rem"
+          },
+          "--heading-font-size-l": {
+            "declared": "1.25rem",
+            "computed": "1.25rem"
+          },
+          "--heading-font-size-m": {
+            "declared": "1rem",
+            "computed": "1rem"
+          },
+          "--heading-font-size-s": {
+            "declared": "0.875rem",
+            "computed": "0.875rem"
+          },
+          "--heading-font-size-xs": {
+            "declared": "0.75rem",
+            "computed": "0.75rem"
+          },
+          "--content-max-width": {
+            "declared": "42rem",
+            "computed": "42rem"
+          },
+          "--section-padding": {
+            "declared": "1rem",
+            "computed": "1rem"
+          },
+          "--nav-height": {
+            "declared": "2.875rem",
+            "computed": "5.8rem"
+          }
+        },
+        "fonts": [
+          {
+            "family": "merriweather-fallback",
+            "weight": "normal",
+            "style": "normal",
+            "status": "error"
+          },
+          {
+            "family": "lato-fallback",
+            "weight": "normal",
+            "style": "normal",
+            "status": "error"
+          },
+          {
+            "family": "Merriweather",
+            "weight": "300",
+            "style": "normal",
+            "status": "loaded"
+          },
+          {
+            "family": "Merriweather",
+            "weight": "900",
+            "style": "normal",
+            "status": "unloaded"
+          },
+          {
+            "family": "Merriweather",
+            "weight": "300",
+            "style": "italic",
+            "status": "loaded"
+          },
+          {
+            "family": "Merriweather",
+            "weight": "900",
+            "style": "italic",
+            "status": "unloaded"
+          },
+          {
+            "family": "Lato",
+            "weight": "300",
+            "style": "normal",
+            "status": "unloaded"
+          },
+          {
+            "family": "Lato",
+            "weight": "900",
+            "style": "normal",
+            "status": "loaded"
+          }
+        ],
+        "logoCandidates": [
+          {
+            "tag": "img",
+            "selector": "#nav > div:nth-of-type(2) > ul > li:nth-of-type(1) > a > img",
+            "src": "https://main--da-impl-det-blog--blefebvre.aem.live/media_12b927f5256cea67490f241af4867507d2b645302.svg?width=2000&format=svg&optimize=medium",
+            "inlineSvg": false,
+            "alt": "",
+            "ariaLabel": "GitHub",
+            "class": "",
+            "id": null,
+            "href": "https://github.com/blefebvre",
+            "inHomeLink": false,
+            "rect": {
+              "x": 119,
+              "y": 114,
+              "w": 15,
+              "h": 18
+            }
+          },
+          {
+            "tag": "img",
+            "selector": "#nav > div:nth-of-type(2) > ul > li:nth-of-type(2) > a > img",
+            "src": "https://main--da-impl-det-blog--blefebvre.aem.live/media_12de984baf8251ef6d8f16da9d4eaf30053f2f071.svg?width=2000&format=svg&optimize=medium",
+            "inlineSvg": false,
+            "alt": "",
+            "ariaLabel": "Twitter",
+            "class": "",
+            "id": null,
+            "href": "https://twitter.com/brucelefebvre",
+            "inHomeLink": false,
+            "rect": {
+              "x": 145,
+              "y": 114,
+              "w": 16,
+              "h": 18
+            }
+          },
+          {
+            "tag": "img",
+            "selector": "#nav > div:nth-of-type(2) > ul > li:nth-of-type(3) > a > img",
+            "src": "https://main--da-impl-det-blog--blefebvre.aem.live/media_10b5ca4cae7ac8bc6ac4d977fb0d041c05662bd67.svg?width=2000&format=svg&optimize=medium",
+            "inlineSvg": false,
+            "alt": "",
+            "ariaLabel": "Email",
+            "class": "",
+            "id": null,
+            "href": "mailto:bruce@brucelefebvre.com",
+            "inHomeLink": false,
+            "rect": {
+              "x": 173,
+              "y": 114,
+              "w": 18,
+              "h": 18
+            }
+          },
+          {
+            "tag": "img",
+            "selector": "#nav > div:nth-of-type(2) > ul > li:nth-of-type(4) > a > img",
+            "src": "https://main--da-impl-det-blog--blefebvre.aem.live/media_1ad438501beffa1ea36cc7e26a4295a98a2af95e1.svg?width=2000&format=svg&optimize=medium",
+            "inlineSvg": false,
+            "alt": "",
+            "ariaLabel": "LinkedIn",
+            "class": "",
+            "id": null,
+            "href": "https://www.linkedin.com/in/brucelefebvre",
+            "inHomeLink": false,
+            "rect": {
+              "x": 201,
+              "y": 114,
+              "w": 15,
+              "h": 18
+            }
+          },
+          {
+            "tag": "img",
+            "selector": "#nav > div:nth-of-type(2) > ul > li:nth-of-type(5) > a > img",
+            "src": "https://main--da-impl-det-blog--blefebvre.aem.live/media_1f46f74dc0f93ac84d1611c1bddef640300c8d294.svg?width=2000&format=svg&optimize=medium",
+            "inlineSvg": false,
+            "alt": "",
+            "ariaLabel": "RSS feed",
+            "class": "",
+            "id": null,
+            "href": "/feed.xml",
+            "inHomeLink": false,
+            "rect": {
+              "x": 227,
+              "y": 114,
+              "w": 14,
+              "h": 18
+            }
+          }
+        ],
+        "iconFont": null,
+        "consent": {
+          "dismissed": null
+        },
+        "finalUrl": "https://main--da-impl-det-blog--blefebvre.aem.live/blog/2018/11/06/react-native-offline-first-db-with-sqlite"
+      },
+      "1440": {
+        "title": "Building an offline first app with React Native and SQLite",
+        "viewport": {
+          "width": 1440,
+          "height": 900
+        },
+        "elements": {
+          "total": 290,
+          "visible": 269
+        },
+        "occluders": [],
+        "headings": [
+          {
+            "tag": "h1",
+            "text": "Building an offline first app with Reac…",
+            "selector": "main > div:nth-of-type(1) > div > h1",
+            "fontFamily": "lato, lato-fallback, \"Helvetica Neue\", helvetica, sans-serif",
+            "fontSize": "59.96px",
+            "fontWeight": "900",
+            "lineHeight": "74.95px",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(51, 51, 51)"
+          },
+          {
+            "tag": "h2",
+            "text": "What are we building?",
+            "selector": "#what-are-we-building",
+            "fontFamily": "lato, lato-fallback, \"Helvetica Neue\", helvetica, sans-serif",
+            "fontSize": "30px",
+            "fontWeight": "900",
+            "lineHeight": "37.5px",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(51, 51, 51)"
+          },
+          {
+            "tag": "h2",
+            "text": "Installing the SQLite plugin",
+            "selector": "#installing-the-sqlite-plugin",
+            "fontFamily": "lato, lato-fallback, \"Helvetica Neue\", helvetica, sans-serif",
+            "fontSize": "30px",
+            "fontWeight": "900",
+            "lineHeight": "37.5px",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(51, 51, 51)"
+          },
+          {
+            "tag": "h2",
+            "text": "Don’t forget the Types",
+            "selector": "#dont-forget-the-types",
+            "fontFamily": "lato, lato-fallback, \"Helvetica Neue\", helvetica, sans-serif",
+            "fontSize": "30px",
+            "fontWeight": "900",
+            "lineHeight": "37.5px",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(51, 51, 51)"
+          },
+          {
+            "tag": "h2",
+            "text": "Build and Run the app",
+            "selector": "#build-and-run-the-app",
+            "fontFamily": "lato, lato-fallback, \"Helvetica Neue\", helvetica, sans-serif",
+            "fontSize": "30px",
+            "fontWeight": "900",
+            "lineHeight": "37.5px",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(51, 51, 51)"
+          },
+          {
+            "tag": "h2",
+            "text": "Project architecture",
+            "selector": "#project-architecture",
+            "fontFamily": "lato, lato-fallback, \"Helvetica Neue\", helvetica, sans-serif",
+            "fontSize": "30px",
+            "fontWeight": "900",
+            "lineHeight": "37.5px",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(51, 51, 51)"
+          },
+          {
+            "tag": "h2",
+            "text": "Connection management",
+            "selector": "#connection-management",
+            "fontFamily": "lato, lato-fallback, \"Helvetica Neue\", helvetica, sans-serif",
+            "fontSize": "30px",
+            "fontWeight": "900",
+            "lineHeight": "37.5px",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(51, 51, 51)"
+          },
+          {
+            "tag": "h2",
+            "text": "A TypeScript + React sidebar",
+            "selector": "#a-typescript--react-sidebar",
+            "fontFamily": "lato, lato-fallback, \"Helvetica Neue\", helvetica, sans-serif",
+            "fontSize": "30px",
+            "fontWeight": "900",
+            "lineHeight": "37.5px",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(51, 51, 51)"
+          },
+          {
+            "tag": "h2",
+            "text": "Initializing your database",
+            "selector": "#initializing-your-database",
+            "fontFamily": "lato, lato-fallback, \"Helvetica Neue\", helvetica, sans-serif",
+            "fontSize": "30px",
+            "fontWeight": "900",
+            "lineHeight": "37.5px",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(51, 51, 51)"
+          },
+          {
+            "tag": "h2",
+            "text": "CRUD operations",
+            "selector": "#crud-operations",
+            "fontFamily": "lato, lato-fallback, \"Helvetica Neue\", helvetica, sans-serif",
+            "fontSize": "30px",
+            "fontWeight": "900",
+            "lineHeight": "37.5px",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(51, 51, 51)"
+          },
+          {
+            "tag": "h2",
+            "text": "In conclusion",
+            "selector": "#in-conclusion",
+            "fontFamily": "lato, lato-fallback, \"Helvetica Neue\", helvetica, sans-serif",
+            "fontSize": "30px",
+            "fontWeight": "900",
+            "lineHeight": "37.5px",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(51, 51, 51)"
+          },
+          {
+            "tag": "h2",
+            "text": "Further reading",
+            "selector": "#further-reading",
+            "fontFamily": "lato, lato-fallback, \"Helvetica Neue\", helvetica, sans-serif",
+            "fontSize": "30px",
+            "fontWeight": "900",
+            "lineHeight": "37.5px",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(51, 51, 51)"
+          }
+        ],
+        "text": [
+          {
+            "tag": "p",
+            "text": "Nov 6, 2018, by Bruce Lefebvre19 minute…",
+            "selector": "main > div:nth-of-type(1) > div > p:nth-of-type(1)",
+            "fontFamily": "merriweather, merriweather-fallback, \"PT Serif\", georgia, \"Times New Roman\", serif",
+            "fontSize": "20px",
+            "fontWeight": "300",
+            "lineHeight": "30px",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(122, 122, 122)"
+          },
+          {
+            "tag": "p",
+            "text": "Hello! This post has been updated and t…",
+            "selector": "main > div:nth-of-type(1) > div > blockquote > p:nth-of-type(1)",
+            "fontFamily": "merriweather, merriweather-fallback, \"PT Serif\", georgia, \"Times New Roman\", serif",
+            "fontSize": "25px",
+            "fontWeight": "400",
+            "lineHeight": "37.5px",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(51, 51, 51)"
+          },
+          {
+            "tag": "p",
+            "text": "Building an offline first app with Reac…",
+            "selector": "main > div:nth-of-type(1) > div > blockquote > p:nth-of-type(2)",
+            "fontFamily": "merriweather, merriweather-fallback, \"PT Serif\", georgia, \"Times New Roman\", serif",
+            "fontSize": "25px",
+            "fontWeight": "400",
+            "lineHeight": "37.5px",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(51, 51, 51)"
+          },
+          {
+            "tag": "p",
+            "text": "This article walks through how I built …",
+            "selector": "main > div:nth-of-type(1) > div > p:nth-of-type(2)",
+            "fontFamily": "merriweather, merriweather-fallback, \"PT Serif\", georgia, \"Times New Roman\", serif",
+            "fontSize": "20px",
+            "fontWeight": "400",
+            "lineHeight": "30px",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(51, 51, 51)"
+          },
+          {
+            "tag": "li",
+            "text": "There would be no server for us to mana…",
+            "selector": "main > div:nth-of-type(1) > div > ul:nth-of-type(1) > li:nth-of-type(1)",
+            "fontFamily": "merriweather, merriweather-fallback, \"PT Serif\", georgia, \"Times New Roman\", serif",
+            "fontSize": "20px",
+            "fontWeight": "400",
+            "lineHeight": "30px",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(51, 51, 51)"
+          },
+          {
+            "tag": "li",
+            "text": "There would be no server-side code to d…",
+            "selector": "main > div:nth-of-type(1) > div > ul:nth-of-type(1) > li:nth-of-type(2)",
+            "fontFamily": "merriweather, merriweather-fallback, \"PT Serif\", georgia, \"Times New Roman\", serif",
+            "fontSize": "20px",
+            "fontWeight": "400",
+            "lineHeight": "30px",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(51, 51, 51)"
+          },
+          {
+            "tag": "li",
+            "text": "The app would work offline without any …",
+            "selector": "main > div:nth-of-type(1) > div > ul:nth-of-type(1) > li:nth-of-type(3)",
+            "fontFamily": "merriweather, merriweather-fallback, \"PT Serif\", georgia, \"Times New Roman\", serif",
+            "fontSize": "20px",
+            "fontWeight": "400",
+            "lineHeight": "30px",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(51, 51, 51)"
+          },
+          {
+            "tag": "li",
+            "text": "If our users’ wished to sync their data…",
+            "selector": "main > div:nth-of-type(1) > div > ul:nth-of-type(1) > li:nth-of-type(4)",
+            "fontFamily": "merriweather, merriweather-fallback, \"PT Serif\", georgia, \"Times New Roman\", serif",
+            "fontSize": "20px",
+            "fontWeight": "400",
+            "lineHeight": "30px",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(51, 51, 51)"
+          },
+          {
+            "tag": "p",
+            "text": "We were sold on the approach, and began…",
+            "selector": "main > div:nth-of-type(1) > div > p:nth-of-type(3)",
+            "fontFamily": "merriweather, merriweather-fallback, \"PT Serif\", georgia, \"Times New Roman\", serif",
+            "fontSize": "20px",
+            "fontWeight": "400",
+            "lineHeight": "30px",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(51, 51, 51)"
+          },
+          {
+            "tag": "p",
+            "text": "Let’s start by working through adding S…",
+            "selector": "main > div:nth-of-type(1) > div > p:nth-of-type(4)",
+            "fontFamily": "merriweather, merriweather-fallback, \"PT Serif\", georgia, \"Times New Roman\", serif",
+            "fontSize": "20px",
+            "fontWeight": "400",
+            "lineHeight": "30px",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(51, 51, 51)"
+          },
+          {
+            "tag": "p",
+            "text": "I created a basic List app using the ap…",
+            "selector": "main > div:nth-of-type(1) > div > p:nth-of-type(5)",
+            "fontFamily": "merriweather, merriweather-fallback, \"PT Serif\", georgia, \"Times New Roman\", serif",
+            "fontSize": "20px",
+            "fontWeight": "400",
+            "lineHeight": "30px",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(51, 51, 51)"
+          },
+          {
+            "tag": "p",
+            "text": "Check out React Native SQLite Demo on G…",
+            "selector": "main > div:nth-of-type(1) > div > p:nth-of-type(6)",
+            "fontFamily": "merriweather, merriweather-fallback, \"PT Serif\", georgia, \"Times New Roman\", serif",
+            "fontSize": "20px",
+            "fontWeight": "400",
+            "lineHeight": "30px",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(51, 51, 51)"
+          }
+        ],
+        "buttons": [],
+        "links": [
+          {
+            "text": "Bruce Lefebvre",
+            "selector": "main > div:nth-of-type(1) > div > p:nth-of-type(1) > a",
+            "count": 1,
+            "color": "rgb(122, 122, 122)",
+            "textDecoration": "none",
+            "fontWeight": "300",
+            "hover": {
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(122, 122, 122)",
+              "borderColor": "rgb(122, 122, 122)",
+              "boxShadow": "none",
+              "changed": true
+            }
+          },
+          {
+            "text": "Building an offline first app with Reac…",
+            "selector": "main > div:nth-of-type(1) > div > blockquote > p:nth-of-type(2) > a",
+            "count": 32,
+            "color": "rgb(0, 118, 223)",
+            "textDecoration": "none",
+            "fontWeight": "400",
+            "hover": {
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(0, 10, 19)",
+              "borderColor": "rgb(0, 10, 19)",
+              "boxShadow": "none",
+              "changed": true
+            }
+          }
+        ],
+        "surfaces": [
+          {
+            "matched": "header",
+            "selector": "header",
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 1440,
+              "h": 88
+            },
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "color": "rgb(51, 51, 51)",
+            "padding": "10px 20px 20px",
+            "maxWidth": "none",
+            "borderRadius": "0px",
+            "boxShadow": "none",
+            "position": "static",
+            "fontFamily": "merriweather, merriweather-fallback, \"PT Serif\", georgia, \"Times New Roman\", serif",
+            "fontSize": "20px"
+          },
+          {
+            "matched": "nav",
+            "selector": "#nav",
+            "rect": {
+              "x": 300,
+              "y": 30,
+              "w": 840,
+              "h": 38
+            },
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "color": "rgb(51, 51, 51)",
+            "padding": "0px",
+            "maxWidth": "840px",
+            "borderRadius": "0px",
+            "boxShadow": "none",
+            "position": "static",
+            "fontFamily": "merriweather, merriweather-fallback, \"PT Serif\", georgia, \"Times New Roman\", serif",
+            "fontSize": "20px"
+          },
+          {
+            "matched": "main",
+            "selector": "main",
+            "rect": {
+              "x": 0,
+              "y": 88,
+              "w": 1440,
+              "h": 16622
+            },
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "color": "rgb(51, 51, 51)",
+            "padding": "0px",
+            "maxWidth": "none",
+            "borderRadius": "0px",
+            "boxShadow": "none",
+            "position": "static",
+            "fontFamily": "merriweather, merriweather-fallback, \"PT Serif\", georgia, \"Times New Roman\", serif",
+            "fontSize": "20px"
+          },
+          {
+            "matched": "footer",
+            "selector": "footer",
+            "rect": {
+              "x": 0,
+              "y": 16709,
+              "w": 1440,
+              "h": 126
+            },
+            "backgroundColor": "rgb(250, 250, 250)",
+            "color": "rgb(122, 122, 122)",
+            "padding": "40px",
+            "maxWidth": "none",
+            "borderRadius": "0px",
+            "boxShadow": "none",
+            "position": "static",
+            "fontFamily": "merriweather, merriweather-fallback, \"PT Serif\", georgia, \"Times New Roman\", serif",
+            "fontSize": "15px"
+          },
+          {
+            "matched": "main > *",
+            "selector": "main > div:nth-of-type(1)",
+            "rect": {
+              "x": 0,
+              "y": 88,
+              "w": 1440,
+              "h": 15934
+            },
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "color": "rgb(51, 51, 51)",
+            "padding": "20px 0px 0px",
+            "maxWidth": "none",
+            "borderRadius": "0px",
+            "boxShadow": "none",
+            "position": "static",
+            "fontFamily": "merriweather, merriweather-fallback, \"PT Serif\", georgia, \"Times New Roman\", serif",
+            "fontSize": "20px"
+          },
+          {
+            "matched": "main > *",
+            "selector": "main > div:nth-of-type(2)",
+            "rect": {
+              "x": 0,
+              "y": 16041,
+              "w": 1440,
+              "h": 668
+            },
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "color": "rgb(51, 51, 51)",
+            "padding": "0px 0px 20px",
+            "maxWidth": "none",
+            "borderRadius": "0px",
+            "boxShadow": "none",
+            "position": "static",
+            "fontFamily": "merriweather, merriweather-fallback, \"PT Serif\", georgia, \"Times New Roman\", serif",
+            "fontSize": "20px"
+          }
+        ],
+        "radii": [
+          {
+            "value": "3px",
+            "count": 45,
+            "area": 137275,
+            "sources": [
+              "main > div:nth-of-type(1) > div > p:nth-of-type(6) > code",
+              "main > div:nth-of-type(1) > div > p:nth-of-type(13) > code",
+              "main > div:nth-of-type(1) > div > p:nth-of-type(14) > code"
+            ]
+          },
+          {
+            "value": "5px",
+            "count": 4,
+            "area": 797230,
+            "sources": [
+              "main > div:nth-of-type(1) > div > p:nth-of-type(7) > picture > img",
+              "main > div:nth-of-type(1) > div > p:nth-of-type(26) > picture > img",
+              "main > div:nth-of-type(1) > div > p:nth-of-type(30) > picture > img"
+            ]
+          },
+          {
+            "value": "50%",
+            "count": 1,
+            "area": 10000,
+            "sources": [
+              "main > div:nth-of-type(2) > div:nth-of-type(2) > div > div > p:nth-of-type(1) > picture > img"
+            ]
+          }
+        ],
+        "shadows": [],
+        "gradients": [
+          {
+            "value": "linear-gradient(to top, rgba(0, 0, 0, 0) 13%, rgba(0, 118, 223, 0.8) 13%, rgba(0, 118, 223, 0.8) 18%, rgba(0, 0, 0, 0) 17%)",
+            "count": 35,
+            "area": 353469,
+            "sources": [
+              "main > div:nth-of-type(1) > div > p:nth-of-type(1) > a",
+              "main > div:nth-of-type(1) > div > blockquote > p:nth-of-type(2) > a",
+              "main > div:nth-of-type(1) > div > p:nth-of-type(2) > a"
+            ]
+          }
+        ],
+        "bgColors": [
+          {
+            "value": "rgb(238, 238, 238)",
+            "count": 45,
+            "area": 137275,
+            "sources": [
+              "main > div:nth-of-type(1) > div > p:nth-of-type(6) > code",
+              "main > div:nth-of-type(1) > div > p:nth-of-type(13) > code",
+              "main > div:nth-of-type(1) > div > p:nth-of-type(14) > code"
+            ]
+          },
+          {
+            "value": "rgb(250, 250, 250)",
+            "count": 16,
+            "area": 4885970,
+            "sources": [
+              "main > div:nth-of-type(1) > div > pre:nth-of-type(1)",
+              "main > div:nth-of-type(1) > div > pre:nth-of-type(2)",
+              "main > div:nth-of-type(1) > div > pre:nth-of-type(3)"
+            ]
+          },
+          {
+            "value": "rgb(255, 255, 255)",
+            "count": 1,
+            "area": 24242850,
+            "sources": [
+              "body"
+            ]
+          }
+        ],
+        "textColors": [
+          {
+            "value": "rgb(51, 51, 51)",
+            "count": 86,
+            "sources": [
+              "#nav > div:nth-of-type(1) > a",
+              "main > div:nth-of-type(1) > div > h1",
+              "main > div:nth-of-type(1) > div > blockquote > p:nth-of-type(1)"
+            ]
+          },
+          {
+            "value": "rgb(122, 122, 122)",
+            "count": 66,
+            "sources": [
+              "main > div:nth-of-type(1) > div > p:nth-of-type(1)",
+              "main > div:nth-of-type(1) > div > p:nth-of-type(1) > time",
+              "main > div:nth-of-type(1) > div > p:nth-of-type(1) > a"
+            ]
+          },
+          {
+            "value": "rgb(0, 118, 223)",
+            "count": 34,
+            "sources": [
+              "main > div:nth-of-type(1) > div > blockquote > p:nth-of-type(2) > a",
+              "main > div:nth-of-type(1) > div > p:nth-of-type(2) > a",
+              "main > div:nth-of-type(1) > div > ul:nth-of-type(1) > li:nth-of-type(3) > a"
+            ]
+          }
+        ],
+        "borderColors": [
+          {
+            "value": "rgb(153, 153, 153)",
+            "count": 4,
+            "sources": [
+              "main > div:nth-of-type(1) > div > p:nth-of-type(7) > picture > img",
+              "main > div:nth-of-type(1) > div > p:nth-of-type(26) > picture > img",
+              "main > div:nth-of-type(1) > div > p:nth-of-type(30) > picture > img"
+            ]
+          },
+          {
+            "value": "rgb(122, 122, 122)",
+            "count": 1,
+            "sources": [
+              "main > div:nth-of-type(1) > div > blockquote"
+            ]
+          },
+          {
+            "value": "rgb(221, 221, 221)",
+            "count": 1,
+            "sources": [
+              "main > div:nth-of-type(2) > div:nth-of-type(1) > div"
+            ]
+          },
+          {
+            "value": "rgb(243, 243, 243)",
+            "count": 1,
+            "sources": [
+              "footer"
+            ]
+          }
+        ],
+        "customProps": {
+          "--background-color": {
+            "declared": "#fff",
+            "computed": "#fff"
+          },
+          "--light-color": {
+            "declared": "#fafafa",
+            "computed": "#fafafa"
+          },
+          "--border-light-color": {
+            "declared": "#f3f3f3",
+            "computed": "#f3f3f3"
+          },
+          "--rule-color": {
+            "declared": "#ccc",
+            "computed": "#ccc"
+          },
+          "--dark-color": {
+            "declared": "#7a7a7a",
+            "computed": "#7a7a7a"
+          },
+          "--text-color": {
+            "declared": "#333",
+            "computed": "#333"
+          },
+          "--code-background-color": {
+            "declared": "#eee",
+            "computed": "#eee"
+          },
+          "--image-border-color": {
+            "declared": "#999",
+            "computed": "#999"
+          },
+          "--link-color": {
+            "declared": "#0076df",
+            "computed": "#0076df"
+          },
+          "--link-hover-color": {
+            "declared": "#000a13",
+            "computed": "#000a13"
+          },
+          "--link-underline": {
+            "declared": "linear-gradient(to top, transparent 13%, rgb(0 118 223 / 80%) 13%, rgb(0 118 223 / 80%) 18%, transparent 17%)",
+            "computed": "linear-gradient(to top, transparent 13%, rgb(0 118 223 / 80%) 13%, rgb(0 118 223 / 80%) 18%, transparent 17%)"
+          },
+          "--link-hover-underline": {
+            "declared": "linear-gradient(to top, transparent 13%, rgb(0 10 19 / 80%) 13%, rgb(0 10 19 / 80%) 17%, transparent 17%)",
+            "computed": "linear-gradient(to top, transparent 13%, rgb(0 10 19 / 80%) 13%, rgb(0 10 19 / 80%) 17%, transparent 17%)"
+          },
+          "--title-underline-color": {
+            "declared": "rgb(255 105 97 / 50%)",
+            "computed": "rgb(255 105 97 / 50%)"
+          },
+          "--body-font-family": {
+            "declared": "merriweather, merriweather-fallback, 'PT Serif', georgia, 'Times New Roman', serif",
+            "computed": "merriweather, merriweather-fallback, 'PT Serif', georgia, 'Times New Roman', serif"
+          },
+          "--heading-font-family": {
+            "declared": "lato, lato-fallback, 'Helvetica Neue', helvetica, sans-serif",
+            "computed": "lato, lato-fallback, 'Helvetica Neue', helvetica, sans-serif"
+          },
+          "--code-font-family": {
+            "declared": "'Source Code Pro', consolas, monospace",
+            "computed": "'Source Code Pro', consolas, monospace"
+          },
+          "--root-font-size": {
+            "declared": "20px",
+            "computed": "20px"
+          },
+          "--body-font-size-m": {
+            "declared": "1rem",
+            "computed": "1rem"
+          },
+          "--body-font-size-l": {
+            "declared": "1.25rem",
+            "computed": "1.25rem"
+          },
+          "--body-font-size-s": {
+            "declared": "0.875rem",
+            "computed": "0.875rem"
+          },
+          "--body-font-size-xs": {
+            "declared": "0.75rem",
+            "computed": "0.75rem"
+          },
+          "--heading-font-size-xxl": {
+            "declared": "2.998rem",
+            "computed": "2.998rem"
+          },
+          "--heading-font-size-xl": {
+            "declared": "1.5rem",
+            "computed": "1.5rem"
+          },
+          "--heading-font-size-l": {
+            "declared": "1.25rem",
+            "computed": "1.25rem"
+          },
+          "--heading-font-size-m": {
+            "declared": "1rem",
+            "computed": "1rem"
+          },
+          "--heading-font-size-s": {
+            "declared": "0.875rem",
+            "computed": "0.875rem"
+          },
+          "--heading-font-size-xs": {
+            "declared": "0.75rem",
+            "computed": "0.75rem"
+          },
+          "--content-max-width": {
+            "declared": "42rem",
+            "computed": "42rem"
+          },
+          "--section-padding": {
+            "declared": "1rem",
+            "computed": "1rem"
+          },
+          "--nav-height": {
+            "declared": "2.875rem",
+            "computed": "2.875rem"
+          }
+        },
+        "fonts": [
+          {
+            "family": "merriweather-fallback",
+            "weight": "normal",
+            "style": "normal",
+            "status": "error"
+          },
+          {
+            "family": "lato-fallback",
+            "weight": "normal",
+            "style": "normal",
+            "status": "error"
+          },
+          {
+            "family": "Merriweather",
+            "weight": "300",
+            "style": "normal",
+            "status": "loaded"
+          },
+          {
+            "family": "Merriweather",
+            "weight": "900",
+            "style": "normal",
+            "status": "unloaded"
+          },
+          {
+            "family": "Merriweather",
+            "weight": "300",
+            "style": "italic",
+            "status": "loaded"
+          },
+          {
+            "family": "Merriweather",
+            "weight": "900",
+            "style": "italic",
+            "status": "unloaded"
+          },
+          {
+            "family": "Lato",
+            "weight": "300",
+            "style": "normal",
+            "status": "unloaded"
+          },
+          {
+            "family": "Lato",
+            "weight": "900",
+            "style": "normal",
+            "status": "loaded"
+          }
+        ],
+        "logoCandidates": [
+          {
+            "tag": "img",
+            "selector": "#nav > div:nth-of-type(2) > ul > li:nth-of-type(1) > a > img",
+            "src": "https://main--da-impl-det-blog--blefebvre.aem.live/media_12b927f5256cea67490f241af4867507d2b645302.svg?width=2000&format=svg&optimize=medium",
+            "inlineSvg": false,
+            "alt": "",
+            "ariaLabel": "GitHub",
+            "class": "",
+            "id": null,
+            "href": "https://github.com/blefebvre",
+            "inHomeLink": false,
+            "rect": {
+              "x": 991,
+              "y": 39,
+              "w": 17,
+              "h": 20
+            }
+          },
+          {
+            "tag": "img",
+            "selector": "#nav > div:nth-of-type(2) > ul > li:nth-of-type(2) > a > img",
+            "src": "https://main--da-impl-det-blog--blefebvre.aem.live/media_12de984baf8251ef6d8f16da9d4eaf30053f2f071.svg?width=2000&format=svg&optimize=medium",
+            "inlineSvg": false,
+            "alt": "",
+            "ariaLabel": "Twitter",
+            "class": "",
+            "id": null,
+            "href": "https://twitter.com/brucelefebvre",
+            "inHomeLink": false,
+            "rect": {
+              "x": 1023,
+              "y": 39,
+              "w": 19,
+              "h": 20
+            }
+          },
+          {
+            "tag": "img",
+            "selector": "#nav > div:nth-of-type(2) > ul > li:nth-of-type(3) > a > img",
+            "src": "https://main--da-impl-det-blog--blefebvre.aem.live/media_10b5ca4cae7ac8bc6ac4d977fb0d041c05662bd67.svg?width=2000&format=svg&optimize=medium",
+            "inlineSvg": false,
+            "alt": "",
+            "ariaLabel": "Email",
+            "class": "",
+            "id": null,
+            "href": "mailto:bruce@brucelefebvre.com",
+            "inHomeLink": false,
+            "rect": {
+              "x": 1055,
+              "y": 39,
+              "w": 20,
+              "h": 20
+            }
+          },
+          {
+            "tag": "img",
+            "selector": "#nav > div:nth-of-type(2) > ul > li:nth-of-type(4) > a > img",
+            "src": "https://main--da-impl-det-blog--blefebvre.aem.live/media_1ad438501beffa1ea36cc7e26a4295a98a2af95e1.svg?width=2000&format=svg&optimize=medium",
+            "inlineSvg": false,
+            "alt": "",
+            "ariaLabel": "LinkedIn",
+            "class": "",
+            "id": null,
+            "href": "https://www.linkedin.com/in/brucelefebvre",
+            "inHomeLink": false,
+            "rect": {
+              "x": 1089,
+              "y": 39,
+              "w": 17,
+              "h": 20
+            }
+          },
+          {
+            "tag": "img",
+            "selector": "#nav > div:nth-of-type(2) > ul > li:nth-of-type(5) > a > img",
+            "src": "https://main--da-impl-det-blog--blefebvre.aem.live/media_1f46f74dc0f93ac84d1611c1bddef640300c8d294.svg?width=2000&format=svg&optimize=medium",
+            "inlineSvg": false,
+            "alt": "",
+            "ariaLabel": "RSS feed",
+            "class": "",
+            "id": null,
+            "href": "/feed.xml",
+            "inHomeLink": false,
+            "rect": {
+              "x": 1120,
+              "y": 39,
+              "w": 16,
+              "h": 20
+            }
+          }
+        ],
+        "iconFont": null,
+        "consent": {
+          "dismissed": null
+        },
+        "finalUrl": "https://main--da-impl-det-blog--blefebvre.aem.live/blog/2018/11/06/react-native-offline-first-db-with-sqlite"
+      }
+    },
+    "https://main--da-impl-det-blog--blefebvre.aem.live/": {
+      "360": {
+        "title": "implementationDetails()",
+        "viewport": {
+          "width": 360,
+          "height": 900
+        },
+        "elements": {
+          "total": 65,
+          "visible": 64
+        },
+        "occluders": [],
+        "headings": [
+          {
+            "tag": "h3",
+            "text": "What can you do with an AEM Headless Tr…",
+            "selector": "main > div > div > div > ul > li:nth-of-type(1) > a > h3",
+            "fontFamily": "lato, lato-fallback, \"Helvetica Neue\", helvetica, sans-serif",
+            "fontSize": "41.972px",
+            "fontWeight": "600",
+            "lineHeight": "52.465px",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(51, 51, 51)"
+          },
+          {
+            "tag": "h3",
+            "text": "AEM Content Transfer Tool: Tips and tri…",
+            "selector": "main > div > div > div > ul > li:nth-of-type(2) > a > h3",
+            "fontFamily": "lato, lato-fallback, \"Helvetica Neue\", helvetica, sans-serif",
+            "fontSize": "41.972px",
+            "fontWeight": "600",
+            "lineHeight": "52.465px",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(51, 51, 51)"
+          },
+          {
+            "tag": "h3",
+            "text": "Introducing the AEM Dispatcher Optimize…",
+            "selector": "main > div > div > div > ul > li:nth-of-type(3) > a > h3",
+            "fontFamily": "lato, lato-fallback, \"Helvetica Neue\", helvetica, sans-serif",
+            "fontSize": "41.972px",
+            "fontWeight": "600",
+            "lineHeight": "52.465px",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(51, 51, 51)"
+          },
+          {
+            "tag": "h3",
+            "text": "Adding macOS support to an existing Rea…",
+            "selector": "main > div > div > div > ul > li:nth-of-type(4) > a > h3",
+            "fontFamily": "lato, lato-fallback, \"Helvetica Neue\", helvetica, sans-serif",
+            "fontSize": "41.972px",
+            "fontWeight": "600",
+            "lineHeight": "52.465px",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(51, 51, 51)"
+          }
+        ],
+        "text": [
+          {
+            "tag": "li",
+            "text": "Oct 17, 2023What can you do with an AEM…",
+            "selector": "main > div > div > div > ul > li:nth-of-type(1)",
+            "fontFamily": "merriweather, merriweather-fallback, \"PT Serif\", georgia, \"Times New Roman\", serif",
+            "fontSize": "14px",
+            "fontWeight": "400",
+            "lineHeight": "21px",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(51, 51, 51)"
+          },
+          {
+            "tag": "p",
+            "text": "Let's dig into an Adobe Experience Mana…",
+            "selector": "main > div > div > div > ul > li:nth-of-type(1) > p:nth-of-type(2)",
+            "fontFamily": "merriweather, merriweather-fallback, \"PT Serif\", georgia, \"Times New Roman\", serif",
+            "fontSize": "14px",
+            "fontWeight": "400",
+            "lineHeight": "21px",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(51, 51, 51)"
+          },
+          {
+            "tag": "li",
+            "text": "Aug 5, 2021AEM Content Transfer Tool: T…",
+            "selector": "main > div > div > div > ul > li:nth-of-type(2)",
+            "fontFamily": "merriweather, merriweather-fallback, \"PT Serif\", georgia, \"Times New Roman\", serif",
+            "fontSize": "14px",
+            "fontWeight": "400",
+            "lineHeight": "21px",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(51, 51, 51)"
+          },
+          {
+            "tag": "p",
+            "text": "From content paths to 'Overwrite stagin…",
+            "selector": "main > div > div > div > ul > li:nth-of-type(2) > p:nth-of-type(2)",
+            "fontFamily": "merriweather, merriweather-fallback, \"PT Serif\", georgia, \"Times New Roman\", serif",
+            "fontSize": "14px",
+            "fontWeight": "400",
+            "lineHeight": "21px",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(51, 51, 51)"
+          },
+          {
+            "tag": "li",
+            "text": "Mar 8, 2021Introducing the AEM Dispatch…",
+            "selector": "main > div > div > div > ul > li:nth-of-type(3)",
+            "fontFamily": "merriweather, merriweather-fallback, \"PT Serif\", georgia, \"Times New Roman\", serif",
+            "fontSize": "14px",
+            "fontWeight": "400",
+            "lineHeight": "21px",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(51, 51, 51)"
+          },
+          {
+            "tag": "p",
+            "text": "We've released a new tool to help on yo…",
+            "selector": "main > div > div > div > ul > li:nth-of-type(3) > p:nth-of-type(2)",
+            "fontFamily": "merriweather, merriweather-fallback, \"PT Serif\", georgia, \"Times New Roman\", serif",
+            "fontSize": "14px",
+            "fontWeight": "400",
+            "lineHeight": "21px",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(51, 51, 51)"
+          },
+          {
+            "tag": "li",
+            "text": "Jan 31, 2021Adding macOS support to an …",
+            "selector": "main > div > div > div > ul > li:nth-of-type(4)",
+            "fontFamily": "merriweather, merriweather-fallback, \"PT Serif\", georgia, \"Times New Roman\", serif",
+            "fontSize": "14px",
+            "fontWeight": "400",
+            "lineHeight": "21px",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(51, 51, 51)"
+          },
+          {
+            "tag": "p",
+            "text": "Microsoft recently introduced a package…",
+            "selector": "main > div > div > div > ul > li:nth-of-type(4) > p:nth-of-type(2)",
+            "fontFamily": "merriweather, merriweather-fallback, \"PT Serif\", georgia, \"Times New Roman\", serif",
+            "fontSize": "14px",
+            "fontWeight": "400",
+            "lineHeight": "21px",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(51, 51, 51)"
+          }
+        ],
+        "buttons": [
+          {
+            "text": "Older",
+            "selector": "nav > a",
+            "count": 1,
+            "backgroundColor": "rgb(250, 250, 250)",
+            "color": "rgb(51, 51, 51)",
+            "borderRadius": "2.625px",
+            "padding": "14px 21px",
+            "border": "1px solid rgb(243, 243, 243)",
+            "borderColor": "rgb(243, 243, 243)",
+            "boxShadow": "none",
+            "fontFamily": "lato, lato-fallback, \"Helvetica Neue\", helvetica, sans-serif",
+            "fontSize": "14px",
+            "fontWeight": "300",
+            "textTransform": "none",
+            "letterSpacing": "normal",
+            "hover": {
+              "backgroundColor": "rgb(255, 255, 255)",
+              "color": "rgb(71, 125, 202)",
+              "borderColor": "rgb(243, 243, 243)",
+              "boxShadow": "none",
+              "changed": true
+            }
+          }
+        ],
+        "links": [
+          {
+            "text": "What can you do with an AEM Headless Tr…",
+            "selector": "main > div > div > div > ul > li:nth-of-type(1) > a",
+            "count": 4,
+            "color": "rgb(0, 118, 223)",
+            "textDecoration": "none",
+            "fontWeight": "400",
+            "hover": {
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(0, 10, 19)",
+              "borderColor": "rgb(0, 10, 19)",
+              "boxShadow": "none",
+              "changed": true
+            }
+          }
+        ],
+        "surfaces": [
+          {
+            "matched": "header",
+            "selector": "header",
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 360,
+              "h": 151
+            },
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "color": "rgb(51, 51, 51)",
+            "padding": "56px 14px 14px",
+            "maxWidth": "none",
+            "borderRadius": "0px",
+            "boxShadow": "none",
+            "position": "static",
+            "fontFamily": "merriweather, merriweather-fallback, \"PT Serif\", georgia, \"Times New Roman\", serif",
+            "fontSize": "14px"
+          },
+          {
+            "matched": "nav",
+            "selector": "#nav",
+            "rect": {
+              "x": 14,
+              "y": 70,
+              "w": 332,
+              "h": 65
+            },
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "color": "rgb(51, 51, 51)",
+            "padding": "0px",
+            "maxWidth": "588px",
+            "borderRadius": "0px",
+            "boxShadow": "none",
+            "position": "static",
+            "fontFamily": "merriweather, merriweather-fallback, \"PT Serif\", georgia, \"Times New Roman\", serif",
+            "fontSize": "14px"
+          },
+          {
+            "matched": "nav",
+            "selector": "nav",
+            "rect": {
+              "x": 14,
+              "y": 1718,
+              "w": 332,
+              "h": 21
+            },
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "color": "rgb(51, 51, 51)",
+            "padding": "0px",
+            "maxWidth": "none",
+            "borderRadius": "0px",
+            "boxShadow": "none",
+            "position": "static",
+            "fontFamily": "lato, lato-fallback, \"Helvetica Neue\", helvetica, sans-serif",
+            "fontSize": "14px"
+          },
+          {
+            "matched": "main",
+            "selector": "main",
+            "rect": {
+              "x": 0,
+              "y": 151,
+              "w": 360,
+              "h": 1609
+            },
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "color": "rgb(51, 51, 51)",
+            "padding": "0px",
+            "maxWidth": "none",
+            "borderRadius": "0px",
+            "boxShadow": "none",
+            "position": "static",
+            "fontFamily": "merriweather, merriweather-fallback, \"PT Serif\", georgia, \"Times New Roman\", serif",
+            "fontSize": "14px"
+          },
+          {
+            "matched": "footer",
+            "selector": "footer",
+            "rect": {
+              "x": 0,
+              "y": 1760,
+              "w": 360,
+              "h": 89
+            },
+            "backgroundColor": "rgb(250, 250, 250)",
+            "color": "rgb(122, 122, 122)",
+            "padding": "28px",
+            "maxWidth": "none",
+            "borderRadius": "0px",
+            "boxShadow": "none",
+            "position": "static",
+            "fontFamily": "merriweather, merriweather-fallback, \"PT Serif\", georgia, \"Times New Roman\", serif",
+            "fontSize": "10.5px"
+          },
+          {
+            "matched": "main > *",
+            "selector": "main > div",
+            "rect": {
+              "x": 0,
+              "y": 151,
+              "w": 360,
+              "h": 1609
+            },
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "color": "rgb(51, 51, 51)",
+            "padding": "14px 0px",
+            "maxWidth": "none",
+            "borderRadius": "0px",
+            "boxShadow": "none",
+            "position": "static",
+            "fontFamily": "merriweather, merriweather-fallback, \"PT Serif\", georgia, \"Times New Roman\", serif",
+            "fontSize": "14px"
+          }
+        ],
+        "radii": [
+          {
+            "value": "2.625px",
+            "count": 2,
+            "area": 8364,
+            "sources": [
+              "nav > span",
+              "nav > a"
+            ]
+          }
+        ],
+        "shadows": [],
+        "gradients": [
+          {
+            "value": "linear-gradient(to top, rgba(0, 0, 0, 0) 13%, rgba(0, 118, 223, 0.8) 13%, rgba(0, 118, 223, 0.8) 18%, rgba(0, 0, 0, 0) 17%)",
+            "count": 2,
+            "area": 1248,
+            "sources": [
+              "footer > div > div > p > a:nth-of-type(1)",
+              "footer > div > div > p > a:nth-of-type(2)"
+            ]
+          }
+        ],
+        "bgColors": [
+          {
+            "value": "rgb(250, 250, 250)",
+            "count": 3,
+            "area": 40224,
+            "sources": [
+              "nav > span",
+              "nav > a",
+              "footer"
+            ]
+          },
+          {
+            "value": "rgb(255, 255, 255)",
+            "count": 1,
+            "area": 665415,
+            "sources": [
+              "body"
+            ]
+          }
+        ],
+        "textColors": [
+          {
+            "value": "rgb(51, 51, 51)",
+            "count": 12,
+            "sources": [
+              "#nav > div:nth-of-type(1) > a",
+              "main > div > div > div > ul > li:nth-of-type(1) > a > h3",
+              "main > div > div > div > ul > li:nth-of-type(1) > p:nth-of-type(2)"
+            ]
+          },
+          {
+            "value": "rgb(122, 122, 122)",
+            "count": 5,
+            "sources": [
+              "main > div > div > div > ul > li:nth-of-type(1) > p:nth-of-type(1) > time",
+              "main > div > div > div > ul > li:nth-of-type(2) > p:nth-of-type(1) > time",
+              "main > div > div > div > ul > li:nth-of-type(3) > p:nth-of-type(1) > time"
+            ]
+          },
+          {
+            "value": "rgb(0, 118, 223)",
+            "count": 2,
+            "sources": [
+              "footer > div > div > p > a:nth-of-type(1)",
+              "footer > div > div > p > a:nth-of-type(2)"
+            ]
+          }
+        ],
+        "borderColors": [
+          {
+            "value": "rgb(243, 243, 243)",
+            "count": 6,
+            "sources": [
+              "main > div > div > div > ul > li:nth-of-type(1)",
+              "main > div > div > div > ul > li:nth-of-type(2)",
+              "main > div > div > div > ul > li:nth-of-type(3)"
+            ]
+          }
+        ],
+        "customProps": {
+          "--background-color": {
+            "declared": "#fff",
+            "computed": "#fff"
+          },
+          "--light-color": {
+            "declared": "#fafafa",
+            "computed": "#fafafa"
+          },
+          "--border-light-color": {
+            "declared": "#f3f3f3",
+            "computed": "#f3f3f3"
+          },
+          "--rule-color": {
+            "declared": "#ccc",
+            "computed": "#ccc"
+          },
+          "--dark-color": {
+            "declared": "#7a7a7a",
+            "computed": "#7a7a7a"
+          },
+          "--text-color": {
+            "declared": "#333",
+            "computed": "#333"
+          },
+          "--code-background-color": {
+            "declared": "#eee",
+            "computed": "#eee"
+          },
+          "--image-border-color": {
+            "declared": "#999",
+            "computed": "#999"
+          },
+          "--link-color": {
+            "declared": "#0076df",
+            "computed": "#0076df"
+          },
+          "--link-hover-color": {
+            "declared": "#000a13",
+            "computed": "#000a13"
+          },
+          "--link-underline": {
+            "declared": "linear-gradient(to top, transparent 13%, rgb(0 118 223 / 80%) 13%, rgb(0 118 223 / 80%) 18%, transparent 17%)",
+            "computed": "linear-gradient(to top, transparent 13%, rgb(0 118 223 / 80%) 13%, rgb(0 118 223 / 80%) 18%, transparent 17%)"
+          },
+          "--link-hover-underline": {
+            "declared": "linear-gradient(to top, transparent 13%, rgb(0 10 19 / 80%) 13%, rgb(0 10 19 / 80%) 17%, transparent 17%)",
+            "computed": "linear-gradient(to top, transparent 13%, rgb(0 10 19 / 80%) 13%, rgb(0 10 19 / 80%) 17%, transparent 17%)"
+          },
+          "--title-underline-color": {
+            "declared": "rgb(255 105 97 / 50%)",
+            "computed": "rgb(255 105 97 / 50%)"
+          },
+          "--body-font-family": {
+            "declared": "merriweather, merriweather-fallback, 'PT Serif', georgia, 'Times New Roman', serif",
+            "computed": "merriweather, merriweather-fallback, 'PT Serif', georgia, 'Times New Roman', serif"
+          },
+          "--heading-font-family": {
+            "declared": "lato, lato-fallback, 'Helvetica Neue', helvetica, sans-serif",
+            "computed": "lato, lato-fallback, 'Helvetica Neue', helvetica, sans-serif"
+          },
+          "--code-font-family": {
+            "declared": "'Source Code Pro', consolas, monospace",
+            "computed": "'Source Code Pro', consolas, monospace"
+          },
+          "--root-font-size": {
+            "declared": "20px",
+            "computed": "14px"
+          },
+          "--body-font-size-m": {
+            "declared": "1rem",
+            "computed": "1rem"
+          },
+          "--body-font-size-l": {
+            "declared": "1.25rem",
+            "computed": "1.25rem"
+          },
+          "--body-font-size-s": {
+            "declared": "0.875rem",
+            "computed": "0.875rem"
+          },
+          "--body-font-size-xs": {
+            "declared": "0.75rem",
+            "computed": "0.75rem"
+          },
+          "--heading-font-size-xxl": {
+            "declared": "2.998rem",
+            "computed": "2.998rem"
+          },
+          "--heading-font-size-xl": {
+            "declared": "1.5rem",
+            "computed": "1.5rem"
+          },
+          "--heading-font-size-l": {
+            "declared": "1.25rem",
+            "computed": "1.25rem"
+          },
+          "--heading-font-size-m": {
+            "declared": "1rem",
+            "computed": "1rem"
+          },
+          "--heading-font-size-s": {
+            "declared": "0.875rem",
+            "computed": "0.875rem"
+          },
+          "--heading-font-size-xs": {
+            "declared": "0.75rem",
+            "computed": "0.75rem"
+          },
+          "--content-max-width": {
+            "declared": "42rem",
+            "computed": "42rem"
+          },
+          "--section-padding": {
+            "declared": "1rem",
+            "computed": "1rem"
+          },
+          "--nav-height": {
+            "declared": "2.875rem",
+            "computed": "5.8rem"
+          }
+        },
+        "fonts": [
+          {
+            "family": "merriweather-fallback",
+            "weight": "normal",
+            "style": "normal",
+            "status": "error"
+          },
+          {
+            "family": "lato-fallback",
+            "weight": "normal",
+            "style": "normal",
+            "status": "error"
+          },
+          {
+            "family": "Merriweather",
+            "weight": "300",
+            "style": "normal",
+            "status": "loaded"
+          },
+          {
+            "family": "Merriweather",
+            "weight": "900",
+            "style": "normal",
+            "status": "unloaded"
+          },
+          {
+            "family": "Merriweather",
+            "weight": "300",
+            "style": "italic",
+            "status": "loaded"
+          },
+          {
+            "family": "Merriweather",
+            "weight": "900",
+            "style": "italic",
+            "status": "unloaded"
+          },
+          {
+            "family": "Lato",
+            "weight": "300",
+            "style": "normal",
+            "status": "loaded"
+          },
+          {
+            "family": "Lato",
+            "weight": "900",
+            "style": "normal",
+            "status": "loaded"
+          }
+        ],
+        "logoCandidates": [
+          {
+            "tag": "img",
+            "selector": "#nav > div:nth-of-type(2) > ul > li:nth-of-type(1) > a > img",
+            "src": "https://main--da-impl-det-blog--blefebvre.aem.live/media_12b927f5256cea67490f241af4867507d2b645302.svg?width=2000&format=svg&optimize=medium",
+            "inlineSvg": false,
+            "alt": "",
+            "ariaLabel": "GitHub",
+            "class": "",
+            "id": null,
+            "href": "https://github.com/blefebvre",
+            "inHomeLink": false,
+            "rect": {
+              "x": 119,
+              "y": 114,
+              "w": 15,
+              "h": 18
+            }
+          },
+          {
+            "tag": "img",
+            "selector": "#nav > div:nth-of-type(2) > ul > li:nth-of-type(2) > a > img",
+            "src": "https://main--da-impl-det-blog--blefebvre.aem.live/media_12de984baf8251ef6d8f16da9d4eaf30053f2f071.svg?width=2000&format=svg&optimize=medium",
+            "inlineSvg": false,
+            "alt": "",
+            "ariaLabel": "Twitter",
+            "class": "",
+            "id": null,
+            "href": "https://twitter.com/brucelefebvre",
+            "inHomeLink": false,
+            "rect": {
+              "x": 145,
+              "y": 114,
+              "w": 16,
+              "h": 18
+            }
+          },
+          {
+            "tag": "img",
+            "selector": "#nav > div:nth-of-type(2) > ul > li:nth-of-type(3) > a > img",
+            "src": "https://main--da-impl-det-blog--blefebvre.aem.live/media_10b5ca4cae7ac8bc6ac4d977fb0d041c05662bd67.svg?width=2000&format=svg&optimize=medium",
+            "inlineSvg": false,
+            "alt": "",
+            "ariaLabel": "Email",
+            "class": "",
+            "id": null,
+            "href": "mailto:bruce@brucelefebvre.com",
+            "inHomeLink": false,
+            "rect": {
+              "x": 173,
+              "y": 114,
+              "w": 18,
+              "h": 18
+            }
+          },
+          {
+            "tag": "img",
+            "selector": "#nav > div:nth-of-type(2) > ul > li:nth-of-type(4) > a > img",
+            "src": "https://main--da-impl-det-blog--blefebvre.aem.live/media_1ad438501beffa1ea36cc7e26a4295a98a2af95e1.svg?width=2000&format=svg&optimize=medium",
+            "inlineSvg": false,
+            "alt": "",
+            "ariaLabel": "LinkedIn",
+            "class": "",
+            "id": null,
+            "href": "https://www.linkedin.com/in/brucelefebvre",
+            "inHomeLink": false,
+            "rect": {
+              "x": 201,
+              "y": 114,
+              "w": 15,
+              "h": 18
+            }
+          },
+          {
+            "tag": "img",
+            "selector": "#nav > div:nth-of-type(2) > ul > li:nth-of-type(5) > a > img",
+            "src": "https://main--da-impl-det-blog--blefebvre.aem.live/media_1f46f74dc0f93ac84d1611c1bddef640300c8d294.svg?width=2000&format=svg&optimize=medium",
+            "inlineSvg": false,
+            "alt": "",
+            "ariaLabel": "RSS feed",
+            "class": "",
+            "id": null,
+            "href": "/feed.xml",
+            "inHomeLink": false,
+            "rect": {
+              "x": 227,
+              "y": 114,
+              "w": 14,
+              "h": 18
+            }
+          }
+        ],
+        "iconFont": null,
+        "consent": {
+          "dismissed": null
+        },
+        "finalUrl": "https://main--da-impl-det-blog--blefebvre.aem.live/"
+      },
+      "1440": {
+        "title": "implementationDetails()",
+        "viewport": {
+          "width": 1440,
+          "height": 900
+        },
+        "elements": {
+          "total": 65,
+          "visible": 64
+        },
+        "occluders": [],
+        "headings": [
+          {
+            "tag": "h3",
+            "text": "What can you do with an AEM Headless Tr…",
+            "selector": "main > div > div > div > ul > li:nth-of-type(1) > a > h3",
+            "fontFamily": "lato, lato-fallback, \"Helvetica Neue\", helvetica, sans-serif",
+            "fontSize": "59.96px",
+            "fontWeight": "600",
+            "lineHeight": "74.95px",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(51, 51, 51)"
+          },
+          {
+            "tag": "h3",
+            "text": "AEM Content Transfer Tool: Tips and tri…",
+            "selector": "main > div > div > div > ul > li:nth-of-type(2) > a > h3",
+            "fontFamily": "lato, lato-fallback, \"Helvetica Neue\", helvetica, sans-serif",
+            "fontSize": "59.96px",
+            "fontWeight": "600",
+            "lineHeight": "74.95px",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(51, 51, 51)"
+          },
+          {
+            "tag": "h3",
+            "text": "Introducing the AEM Dispatcher Optimize…",
+            "selector": "main > div > div > div > ul > li:nth-of-type(3) > a > h3",
+            "fontFamily": "lato, lato-fallback, \"Helvetica Neue\", helvetica, sans-serif",
+            "fontSize": "59.96px",
+            "fontWeight": "600",
+            "lineHeight": "74.95px",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(51, 51, 51)"
+          },
+          {
+            "tag": "h3",
+            "text": "Adding macOS support to an existing Rea…",
+            "selector": "main > div > div > div > ul > li:nth-of-type(4) > a > h3",
+            "fontFamily": "lato, lato-fallback, \"Helvetica Neue\", helvetica, sans-serif",
+            "fontSize": "59.96px",
+            "fontWeight": "600",
+            "lineHeight": "74.95px",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(51, 51, 51)"
+          }
+        ],
+        "text": [
+          {
+            "tag": "li",
+            "text": "Oct 17, 2023What can you do with an AEM…",
+            "selector": "main > div > div > div > ul > li:nth-of-type(1)",
+            "fontFamily": "merriweather, merriweather-fallback, \"PT Serif\", georgia, \"Times New Roman\", serif",
+            "fontSize": "20px",
+            "fontWeight": "400",
+            "lineHeight": "30px",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(51, 51, 51)"
+          },
+          {
+            "tag": "p",
+            "text": "Let's dig into an Adobe Experience Mana…",
+            "selector": "main > div > div > div > ul > li:nth-of-type(1) > p:nth-of-type(2)",
+            "fontFamily": "merriweather, merriweather-fallback, \"PT Serif\", georgia, \"Times New Roman\", serif",
+            "fontSize": "20px",
+            "fontWeight": "400",
+            "lineHeight": "30px",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(51, 51, 51)"
+          },
+          {
+            "tag": "li",
+            "text": "Aug 5, 2021AEM Content Transfer Tool: T…",
+            "selector": "main > div > div > div > ul > li:nth-of-type(2)",
+            "fontFamily": "merriweather, merriweather-fallback, \"PT Serif\", georgia, \"Times New Roman\", serif",
+            "fontSize": "20px",
+            "fontWeight": "400",
+            "lineHeight": "30px",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(51, 51, 51)"
+          },
+          {
+            "tag": "p",
+            "text": "From content paths to 'Overwrite stagin…",
+            "selector": "main > div > div > div > ul > li:nth-of-type(2) > p:nth-of-type(2)",
+            "fontFamily": "merriweather, merriweather-fallback, \"PT Serif\", georgia, \"Times New Roman\", serif",
+            "fontSize": "20px",
+            "fontWeight": "400",
+            "lineHeight": "30px",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(51, 51, 51)"
+          },
+          {
+            "tag": "li",
+            "text": "Mar 8, 2021Introducing the AEM Dispatch…",
+            "selector": "main > div > div > div > ul > li:nth-of-type(3)",
+            "fontFamily": "merriweather, merriweather-fallback, \"PT Serif\", georgia, \"Times New Roman\", serif",
+            "fontSize": "20px",
+            "fontWeight": "400",
+            "lineHeight": "30px",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(51, 51, 51)"
+          },
+          {
+            "tag": "p",
+            "text": "We've released a new tool to help on yo…",
+            "selector": "main > div > div > div > ul > li:nth-of-type(3) > p:nth-of-type(2)",
+            "fontFamily": "merriweather, merriweather-fallback, \"PT Serif\", georgia, \"Times New Roman\", serif",
+            "fontSize": "20px",
+            "fontWeight": "400",
+            "lineHeight": "30px",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(51, 51, 51)"
+          },
+          {
+            "tag": "li",
+            "text": "Jan 31, 2021Adding macOS support to an …",
+            "selector": "main > div > div > div > ul > li:nth-of-type(4)",
+            "fontFamily": "merriweather, merriweather-fallback, \"PT Serif\", georgia, \"Times New Roman\", serif",
+            "fontSize": "20px",
+            "fontWeight": "400",
+            "lineHeight": "30px",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(51, 51, 51)"
+          },
+          {
+            "tag": "p",
+            "text": "Microsoft recently introduced a package…",
+            "selector": "main > div > div > div > ul > li:nth-of-type(4) > p:nth-of-type(2)",
+            "fontFamily": "merriweather, merriweather-fallback, \"PT Serif\", georgia, \"Times New Roman\", serif",
+            "fontSize": "20px",
+            "fontWeight": "400",
+            "lineHeight": "30px",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(51, 51, 51)"
+          }
+        ],
+        "buttons": [
+          {
+            "text": "Older",
+            "selector": "nav > a",
+            "count": 1,
+            "backgroundColor": "rgb(250, 250, 250)",
+            "color": "rgb(51, 51, 51)",
+            "borderRadius": "3.75px",
+            "padding": "20px 30px",
+            "border": "1px solid rgb(243, 243, 243)",
+            "borderColor": "rgb(243, 243, 243)",
+            "boxShadow": "none",
+            "fontFamily": "lato, lato-fallback, \"Helvetica Neue\", helvetica, sans-serif",
+            "fontSize": "20px",
+            "fontWeight": "300",
+            "textTransform": "none",
+            "letterSpacing": "normal",
+            "hover": {
+              "backgroundColor": "rgb(255, 255, 255)",
+              "color": "rgb(71, 125, 202)",
+              "borderColor": "rgb(243, 243, 243)",
+              "boxShadow": "none",
+              "changed": true
+            }
+          }
+        ],
+        "links": [
+          {
+            "text": "What can you do with an AEM Headless Tr…",
+            "selector": "main > div > div > div > ul > li:nth-of-type(1) > a",
+            "count": 4,
+            "color": "rgb(0, 118, 223)",
+            "textDecoration": "none",
+            "fontWeight": "400",
+            "hover": {
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(0, 10, 19)",
+              "borderColor": "rgb(0, 10, 19)",
+              "boxShadow": "none",
+              "changed": true
+            }
+          }
+        ],
+        "surfaces": [
+          {
+            "matched": "header",
+            "selector": "header",
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 1440,
+              "h": 88
+            },
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "color": "rgb(51, 51, 51)",
+            "padding": "10px 20px 20px",
+            "maxWidth": "none",
+            "borderRadius": "0px",
+            "boxShadow": "none",
+            "position": "static",
+            "fontFamily": "merriweather, merriweather-fallback, \"PT Serif\", georgia, \"Times New Roman\", serif",
+            "fontSize": "20px"
+          },
+          {
+            "matched": "nav",
+            "selector": "#nav",
+            "rect": {
+              "x": 300,
+              "y": 30,
+              "w": 840,
+              "h": 38
+            },
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "color": "rgb(51, 51, 51)",
+            "padding": "0px",
+            "maxWidth": "840px",
+            "borderRadius": "0px",
+            "boxShadow": "none",
+            "position": "static",
+            "fontFamily": "merriweather, merriweather-fallback, \"PT Serif\", georgia, \"Times New Roman\", serif",
+            "fontSize": "20px"
+          },
+          {
+            "matched": "nav",
+            "selector": "nav",
+            "rect": {
+              "x": 300,
+              "y": 1740,
+              "w": 840,
+              "h": 30
+            },
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "color": "rgb(51, 51, 51)",
+            "padding": "0px",
+            "maxWidth": "none",
+            "borderRadius": "0px",
+            "boxShadow": "none",
+            "position": "static",
+            "fontFamily": "lato, lato-fallback, \"Helvetica Neue\", helvetica, sans-serif",
+            "fontSize": "20px"
+          },
+          {
+            "matched": "main",
+            "selector": "main",
+            "rect": {
+              "x": 0,
+              "y": 88,
+              "w": 1440,
+              "h": 1712
+            },
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "color": "rgb(51, 51, 51)",
+            "padding": "0px",
+            "maxWidth": "none",
+            "borderRadius": "0px",
+            "boxShadow": "none",
+            "position": "static",
+            "fontFamily": "merriweather, merriweather-fallback, \"PT Serif\", georgia, \"Times New Roman\", serif",
+            "fontSize": "20px"
+          },
+          {
+            "matched": "footer",
+            "selector": "footer",
+            "rect": {
+              "x": 0,
+              "y": 1800,
+              "w": 1440,
+              "h": 126
+            },
+            "backgroundColor": "rgb(250, 250, 250)",
+            "color": "rgb(122, 122, 122)",
+            "padding": "40px",
+            "maxWidth": "none",
+            "borderRadius": "0px",
+            "boxShadow": "none",
+            "position": "static",
+            "fontFamily": "merriweather, merriweather-fallback, \"PT Serif\", georgia, \"Times New Roman\", serif",
+            "fontSize": "15px"
+          },
+          {
+            "matched": "main > *",
+            "selector": "main > div",
+            "rect": {
+              "x": 0,
+              "y": 88,
+              "w": 1440,
+              "h": 1712
+            },
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "color": "rgb(51, 51, 51)",
+            "padding": "20px 0px",
+            "maxWidth": "none",
+            "borderRadius": "0px",
+            "boxShadow": "none",
+            "position": "static",
+            "fontFamily": "merriweather, merriweather-fallback, \"PT Serif\", georgia, \"Times New Roman\", serif",
+            "fontSize": "20px"
+          }
+        ],
+        "radii": [
+          {
+            "value": "3.75px",
+            "count": 2,
+            "area": 16704,
+            "sources": [
+              "nav > span",
+              "nav > a"
+            ]
+          }
+        ],
+        "shadows": [],
+        "gradients": [
+          {
+            "value": "linear-gradient(to top, rgba(0, 0, 0, 0) 13%, rgba(0, 118, 223, 0.8) 13%, rgba(0, 118, 223, 0.8) 18%, rgba(0, 0, 0, 0) 17%)",
+            "count": 2,
+            "area": 2430,
+            "sources": [
+              "footer > div > div > p > a:nth-of-type(1)",
+              "footer > div > div > p > a:nth-of-type(2)"
+            ]
+          }
+        ],
+        "bgColors": [
+          {
+            "value": "rgb(250, 250, 250)",
+            "count": 3,
+            "area": 198144,
+            "sources": [
+              "nav > span",
+              "nav > a",
+              "footer"
+            ]
+          },
+          {
+            "value": "rgb(255, 255, 255)",
+            "count": 1,
+            "area": 2773170,
+            "sources": [
+              "body"
+            ]
+          }
+        ],
+        "textColors": [
+          {
+            "value": "rgb(51, 51, 51)",
+            "count": 12,
+            "sources": [
+              "#nav > div:nth-of-type(1) > a",
+              "main > div > div > div > ul > li:nth-of-type(1) > a > h3",
+              "main > div > div > div > ul > li:nth-of-type(1) > p:nth-of-type(2)"
+            ]
+          },
+          {
+            "value": "rgb(122, 122, 122)",
+            "count": 5,
+            "sources": [
+              "main > div > div > div > ul > li:nth-of-type(1) > p:nth-of-type(1) > time",
+              "main > div > div > div > ul > li:nth-of-type(2) > p:nth-of-type(1) > time",
+              "main > div > div > div > ul > li:nth-of-type(3) > p:nth-of-type(1) > time"
+            ]
+          },
+          {
+            "value": "rgb(0, 118, 223)",
+            "count": 2,
+            "sources": [
+              "footer > div > div > p > a:nth-of-type(1)",
+              "footer > div > div > p > a:nth-of-type(2)"
+            ]
+          }
+        ],
+        "borderColors": [
+          {
+            "value": "rgb(243, 243, 243)",
+            "count": 6,
+            "sources": [
+              "main > div > div > div > ul > li:nth-of-type(1)",
+              "main > div > div > div > ul > li:nth-of-type(2)",
+              "main > div > div > div > ul > li:nth-of-type(3)"
+            ]
+          }
+        ],
+        "customProps": {
+          "--background-color": {
+            "declared": "#fff",
+            "computed": "#fff"
+          },
+          "--light-color": {
+            "declared": "#fafafa",
+            "computed": "#fafafa"
+          },
+          "--border-light-color": {
+            "declared": "#f3f3f3",
+            "computed": "#f3f3f3"
+          },
+          "--rule-color": {
+            "declared": "#ccc",
+            "computed": "#ccc"
+          },
+          "--dark-color": {
+            "declared": "#7a7a7a",
+            "computed": "#7a7a7a"
+          },
+          "--text-color": {
+            "declared": "#333",
+            "computed": "#333"
+          },
+          "--code-background-color": {
+            "declared": "#eee",
+            "computed": "#eee"
+          },
+          "--image-border-color": {
+            "declared": "#999",
+            "computed": "#999"
+          },
+          "--link-color": {
+            "declared": "#0076df",
+            "computed": "#0076df"
+          },
+          "--link-hover-color": {
+            "declared": "#000a13",
+            "computed": "#000a13"
+          },
+          "--link-underline": {
+            "declared": "linear-gradient(to top, transparent 13%, rgb(0 118 223 / 80%) 13%, rgb(0 118 223 / 80%) 18%, transparent 17%)",
+            "computed": "linear-gradient(to top, transparent 13%, rgb(0 118 223 / 80%) 13%, rgb(0 118 223 / 80%) 18%, transparent 17%)"
+          },
+          "--link-hover-underline": {
+            "declared": "linear-gradient(to top, transparent 13%, rgb(0 10 19 / 80%) 13%, rgb(0 10 19 / 80%) 17%, transparent 17%)",
+            "computed": "linear-gradient(to top, transparent 13%, rgb(0 10 19 / 80%) 13%, rgb(0 10 19 / 80%) 17%, transparent 17%)"
+          },
+          "--title-underline-color": {
+            "declared": "rgb(255 105 97 / 50%)",
+            "computed": "rgb(255 105 97 / 50%)"
+          },
+          "--body-font-family": {
+            "declared": "merriweather, merriweather-fallback, 'PT Serif', georgia, 'Times New Roman', serif",
+            "computed": "merriweather, merriweather-fallback, 'PT Serif', georgia, 'Times New Roman', serif"
+          },
+          "--heading-font-family": {
+            "declared": "lato, lato-fallback, 'Helvetica Neue', helvetica, sans-serif",
+            "computed": "lato, lato-fallback, 'Helvetica Neue', helvetica, sans-serif"
+          },
+          "--code-font-family": {
+            "declared": "'Source Code Pro', consolas, monospace",
+            "computed": "'Source Code Pro', consolas, monospace"
+          },
+          "--root-font-size": {
+            "declared": "20px",
+            "computed": "20px"
+          },
+          "--body-font-size-m": {
+            "declared": "1rem",
+            "computed": "1rem"
+          },
+          "--body-font-size-l": {
+            "declared": "1.25rem",
+            "computed": "1.25rem"
+          },
+          "--body-font-size-s": {
+            "declared": "0.875rem",
+            "computed": "0.875rem"
+          },
+          "--body-font-size-xs": {
+            "declared": "0.75rem",
+            "computed": "0.75rem"
+          },
+          "--heading-font-size-xxl": {
+            "declared": "2.998rem",
+            "computed": "2.998rem"
+          },
+          "--heading-font-size-xl": {
+            "declared": "1.5rem",
+            "computed": "1.5rem"
+          },
+          "--heading-font-size-l": {
+            "declared": "1.25rem",
+            "computed": "1.25rem"
+          },
+          "--heading-font-size-m": {
+            "declared": "1rem",
+            "computed": "1rem"
+          },
+          "--heading-font-size-s": {
+            "declared": "0.875rem",
+            "computed": "0.875rem"
+          },
+          "--heading-font-size-xs": {
+            "declared": "0.75rem",
+            "computed": "0.75rem"
+          },
+          "--content-max-width": {
+            "declared": "42rem",
+            "computed": "42rem"
+          },
+          "--section-padding": {
+            "declared": "1rem",
+            "computed": "1rem"
+          },
+          "--nav-height": {
+            "declared": "2.875rem",
+            "computed": "2.875rem"
+          }
+        },
+        "fonts": [
+          {
+            "family": "merriweather-fallback",
+            "weight": "normal",
+            "style": "normal",
+            "status": "error"
+          },
+          {
+            "family": "lato-fallback",
+            "weight": "normal",
+            "style": "normal",
+            "status": "error"
+          },
+          {
+            "family": "Merriweather",
+            "weight": "300",
+            "style": "normal",
+            "status": "loaded"
+          },
+          {
+            "family": "Merriweather",
+            "weight": "900",
+            "style": "normal",
+            "status": "unloaded"
+          },
+          {
+            "family": "Merriweather",
+            "weight": "300",
+            "style": "italic",
+            "status": "loaded"
+          },
+          {
+            "family": "Merriweather",
+            "weight": "900",
+            "style": "italic",
+            "status": "unloaded"
+          },
+          {
+            "family": "Lato",
+            "weight": "300",
+            "style": "normal",
+            "status": "loaded"
+          },
+          {
+            "family": "Lato",
+            "weight": "900",
+            "style": "normal",
+            "status": "loaded"
+          }
+        ],
+        "logoCandidates": [
+          {
+            "tag": "img",
+            "selector": "#nav > div:nth-of-type(2) > ul > li:nth-of-type(1) > a > img",
+            "src": "https://main--da-impl-det-blog--blefebvre.aem.live/media_12b927f5256cea67490f241af4867507d2b645302.svg?width=2000&format=svg&optimize=medium",
+            "inlineSvg": false,
+            "alt": "",
+            "ariaLabel": "GitHub",
+            "class": "",
+            "id": null,
+            "href": "https://github.com/blefebvre",
+            "inHomeLink": false,
+            "rect": {
+              "x": 991,
+              "y": 39,
+              "w": 17,
+              "h": 20
+            }
+          },
+          {
+            "tag": "img",
+            "selector": "#nav > div:nth-of-type(2) > ul > li:nth-of-type(2) > a > img",
+            "src": "https://main--da-impl-det-blog--blefebvre.aem.live/media_12de984baf8251ef6d8f16da9d4eaf30053f2f071.svg?width=2000&format=svg&optimize=medium",
+            "inlineSvg": false,
+            "alt": "",
+            "ariaLabel": "Twitter",
+            "class": "",
+            "id": null,
+            "href": "https://twitter.com/brucelefebvre",
+            "inHomeLink": false,
+            "rect": {
+              "x": 1023,
+              "y": 39,
+              "w": 19,
+              "h": 20
+            }
+          },
+          {
+            "tag": "img",
+            "selector": "#nav > div:nth-of-type(2) > ul > li:nth-of-type(3) > a > img",
+            "src": "https://main--da-impl-det-blog--blefebvre.aem.live/media_10b5ca4cae7ac8bc6ac4d977fb0d041c05662bd67.svg?width=2000&format=svg&optimize=medium",
+            "inlineSvg": false,
+            "alt": "",
+            "ariaLabel": "Email",
+            "class": "",
+            "id": null,
+            "href": "mailto:bruce@brucelefebvre.com",
+            "inHomeLink": false,
+            "rect": {
+              "x": 1055,
+              "y": 39,
+              "w": 20,
+              "h": 20
+            }
+          },
+          {
+            "tag": "img",
+            "selector": "#nav > div:nth-of-type(2) > ul > li:nth-of-type(4) > a > img",
+            "src": "https://main--da-impl-det-blog--blefebvre.aem.live/media_1ad438501beffa1ea36cc7e26a4295a98a2af95e1.svg?width=2000&format=svg&optimize=medium",
+            "inlineSvg": false,
+            "alt": "",
+            "ariaLabel": "LinkedIn",
+            "class": "",
+            "id": null,
+            "href": "https://www.linkedin.com/in/brucelefebvre",
+            "inHomeLink": false,
+            "rect": {
+              "x": 1089,
+              "y": 39,
+              "w": 17,
+              "h": 20
+            }
+          },
+          {
+            "tag": "img",
+            "selector": "#nav > div:nth-of-type(2) > ul > li:nth-of-type(5) > a > img",
+            "src": "https://main--da-impl-det-blog--blefebvre.aem.live/media_1f46f74dc0f93ac84d1611c1bddef640300c8d294.svg?width=2000&format=svg&optimize=medium",
+            "inlineSvg": false,
+            "alt": "",
+            "ariaLabel": "RSS feed",
+            "class": "",
+            "id": null,
+            "href": "/feed.xml",
+            "inHomeLink": false,
+            "rect": {
+              "x": 1120,
+              "y": 39,
+              "w": 16,
+              "h": 20
+            }
+          }
+        ],
+        "iconFont": null,
+        "consent": {
+          "dismissed": null
+        },
+        "finalUrl": "https://main--da-impl-det-blog--blefebvre.aem.live/"
+      }
+    }
+  },
+  "aggregate": {
+    "counts": {
+      "pages": 2,
+      "widths": [
+        360,
+        1440
+      ],
+      "measurements": 4
+    },
+    "colors": [
+      {
+        "hex": "#333333",
+        "values": [
+          "rgb(51, 51, 51)"
+        ],
+        "weight": 230,
+        "by": {
+          "text": 196,
+          "button-text": 2,
+          "heading": 32
+        },
+        "roles": [
+          "text",
+          "heading"
+        ],
+        "sources": [
+          {
+            "url": "https://main--da-impl-det-blog--blefebvre.aem.live/blog/2018/11/06/react-native-offline-first-db-with-sqlite",
+            "selector": "#nav > div:nth-of-type(1) > a",
+            "prop": "text"
+          },
+          {
+            "url": "https://main--da-impl-det-blog--blefebvre.aem.live/",
+            "selector": "#nav > div:nth-of-type(1) > a",
+            "prop": "text"
+          },
+          {
+            "url": "https://main--da-impl-det-blog--blefebvre.aem.live/",
+            "selector": "nav > a",
+            "prop": "button-text"
+          },
+          {
+            "url": "https://main--da-impl-det-blog--blefebvre.aem.live/",
+            "selector": "main > div > div > div > ul > li:nth-of-type(1) > a > h3",
+            "prop": "heading"
+          },
+          {
+            "url": "https://main--da-impl-det-blog--blefebvre.aem.live/",
+            "selector": "main > div > div > div > ul > li:nth-of-type(2) > a > h3",
+            "prop": "heading"
+          }
+        ]
+      },
+      {
+        "hex": "#eeeeee",
+        "values": [
+          "rgb(238, 238, 238)",
+          "rgb(250, 250, 250)",
+          "rgb(243, 243, 243)"
+        ],
+        "weight": 146,
+        "bgArea": 6678131,
+        "by": {
+          "background": 128,
+          "border": 14,
+          "button-border": 2,
+          "button-background": 2
+        },
+        "roles": [
+          "surface",
+          "primary",
+          "border"
+        ],
+        "sources": [
+          {
+            "url": "https://main--da-impl-det-blog--blefebvre.aem.live/blog/2018/11/06/react-native-offline-first-db-with-sqlite",
+            "selector": "main > div:nth-of-type(1) > div > p:nth-of-type(6) > code",
+            "prop": "background"
+          },
+          {
+            "url": "https://main--da-impl-det-blog--blefebvre.aem.live/blog/2018/11/06/react-native-offline-first-db-with-sqlite",
+            "selector": "main > div:nth-of-type(1) > div > pre:nth-of-type(1)",
+            "prop": "background"
+          },
+          {
+            "url": "https://main--da-impl-det-blog--blefebvre.aem.live/",
+            "selector": "main > div > div > div > ul > li:nth-of-type(1)",
+            "prop": "border"
+          },
+          {
+            "url": "https://main--da-impl-det-blog--blefebvre.aem.live/",
+            "selector": "nav > span",
+            "prop": "background"
+          },
+          {
+            "url": "https://main--da-impl-det-blog--blefebvre.aem.live/blog/2018/11/06/react-native-offline-first-db-with-sqlite",
+            "selector": "footer",
+            "prop": "border"
+          }
+        ]
+      },
+      {
+        "hex": "#0076df",
+        "values": [
+          "rgb(0, 118, 223)"
+        ],
+        "weight": 144,
+        "by": {
+          "text": 72,
+          "link": 72
+        },
+        "roles": [
+          "accent"
+        ],
+        "sources": [
+          {
+            "url": "https://main--da-impl-det-blog--blefebvre.aem.live/blog/2018/11/06/react-native-offline-first-db-with-sqlite",
+            "selector": "main > div:nth-of-type(1) > div > blockquote > p:nth-of-type(2) > a",
+            "prop": "text"
+          },
+          {
+            "url": "https://main--da-impl-det-blog--blefebvre.aem.live/blog/2018/11/06/react-native-offline-first-db-with-sqlite",
+            "selector": "main > div:nth-of-type(1) > div > blockquote > p:nth-of-type(2) > a",
+            "prop": "link"
+          },
+          {
+            "url": "https://main--da-impl-det-blog--blefebvre.aem.live/",
+            "selector": "main > div > div > div > ul > li:nth-of-type(1) > a",
+            "prop": "link"
+          },
+          {
+            "url": "https://main--da-impl-det-blog--blefebvre.aem.live/",
+            "selector": "footer > div > div > p > a:nth-of-type(1)",
+            "prop": "text"
+          }
+        ]
+      },
+      {
+        "hex": "#ffffff",
+        "values": [
+          "rgb(255, 255, 255)"
+        ],
+        "weight": 4,
+        "bgArea": 33046757,
+        "by": {
+          "background": 4
+        },
+        "roles": [
+          "background"
+        ],
+        "sources": [
+          {
+            "url": "https://main--da-impl-det-blog--blefebvre.aem.live/blog/2018/11/06/react-native-offline-first-db-with-sqlite",
+            "selector": "body",
+            "prop": "background"
+          },
+          {
+            "url": "https://main--da-impl-det-blog--blefebvre.aem.live/",
+            "selector": "body",
+            "prop": "background"
+          }
+        ]
+      },
+      {
+        "hex": "#7a7a7a",
+        "values": [
+          "rgb(122, 122, 122)"
+        ],
+        "weight": 146,
+        "by": {
+          "text": 142,
+          "border": 2,
+          "link": 2
+        },
+        "roles": [],
+        "sources": [
+          {
+            "url": "https://main--da-impl-det-blog--blefebvre.aem.live/blog/2018/11/06/react-native-offline-first-db-with-sqlite",
+            "selector": "main > div:nth-of-type(1) > div > p:nth-of-type(1)",
+            "prop": "text"
+          },
+          {
+            "url": "https://main--da-impl-det-blog--blefebvre.aem.live/",
+            "selector": "main > div > div > div > ul > li:nth-of-type(1) > p:nth-of-type(1) > time",
+            "prop": "text"
+          },
+          {
+            "url": "https://main--da-impl-det-blog--blefebvre.aem.live/blog/2018/11/06/react-native-offline-first-db-with-sqlite",
+            "selector": "main > div:nth-of-type(1) > div > blockquote",
+            "prop": "border"
+          },
+          {
+            "url": "https://main--da-impl-det-blog--blefebvre.aem.live/blog/2018/11/06/react-native-offline-first-db-with-sqlite",
+            "selector": "main > div:nth-of-type(1) > div > p:nth-of-type(1) > a",
+            "prop": "link"
+          }
+        ]
+      },
+      {
+        "hex": "#999999",
+        "values": [
+          "rgb(153, 153, 153)"
+        ],
+        "weight": 8,
+        "by": {
+          "border": 8
+        },
+        "roles": [],
+        "sources": [
+          {
+            "url": "https://main--da-impl-det-blog--blefebvre.aem.live/blog/2018/11/06/react-native-offline-first-db-with-sqlite",
+            "selector": "main > div:nth-of-type(1) > div > p:nth-of-type(7) > picture > img",
+            "prop": "border"
+          }
+        ]
+      },
+      {
+        "hex": "#dddddd",
+        "values": [
+          "rgb(221, 221, 221)"
+        ],
+        "weight": 2,
+        "by": {
+          "border": 2
+        },
+        "roles": [],
+        "sources": [
+          {
+            "url": "https://main--da-impl-det-blog--blefebvre.aem.live/blog/2018/11/06/react-native-offline-first-db-with-sqlite",
+            "selector": "main > div:nth-of-type(2) > div:nth-of-type(1) > div",
+            "prop": "border"
+          }
+        ]
+      }
+    ],
+    "type": {
+      "families": [
+        {
+          "family": "merriweather",
+          "count": 40,
+          "headings": 0,
+          "text": 40,
+          "buttons": 0
+        },
+        {
+          "family": "lato",
+          "count": 34,
+          "headings": 32,
+          "text": 0,
+          "buttons": 2
+        }
+      ],
+      "headingFamily": "lato",
+      "bodyFamily": "merriweather",
+      "sizes": [
+        {
+          "px": 59.96,
+          "count": 5,
+          "headings": 5,
+          "text": 0,
+          "buttons": 0
+        },
+        {
+          "px": 41.97,
+          "count": 5,
+          "headings": 5,
+          "text": 0,
+          "buttons": 0
+        },
+        {
+          "px": 30,
+          "count": 11,
+          "headings": 11,
+          "text": 0,
+          "buttons": 0
+        },
+        {
+          "px": 25,
+          "count": 2,
+          "headings": 0,
+          "text": 2,
+          "buttons": 0
+        },
+        {
+          "px": 21,
+          "count": 11,
+          "headings": 11,
+          "text": 0,
+          "buttons": 0
+        },
+        {
+          "px": 20,
+          "count": 19,
+          "headings": 0,
+          "text": 18,
+          "buttons": 1
+        },
+        {
+          "px": 17.5,
+          "count": 2,
+          "headings": 0,
+          "text": 2,
+          "buttons": 0
+        },
+        {
+          "px": 14,
+          "count": 19,
+          "headings": 0,
+          "text": 18,
+          "buttons": 1
+        }
+      ],
+      "weights": [
+        {
+          "weight": "400",
+          "count": 38,
+          "headings": 0,
+          "text": 38,
+          "buttons": 0
+        },
+        {
+          "weight": "900",
+          "count": 24,
+          "headings": 24,
+          "text": 0,
+          "buttons": 0
+        },
+        {
+          "weight": "600",
+          "count": 8,
+          "headings": 8,
+          "text": 0,
+          "buttons": 0
+        },
+        {
+          "weight": "300",
+          "count": 4,
+          "headings": 0,
+          "text": 2,
+          "buttons": 2
+        }
+      ],
+      "levels": {
+        "h1": {
+          "fontSize": 59.96,
+          "fontWeight": "900",
+          "count": 1,
+          "score": 134.91
+        },
+        "h2": {
+          "fontSize": 30,
+          "fontWeight": "900",
+          "count": 11,
+          "score": 223.87
+        },
+        "h3": {
+          "fontSize": 59.96,
+          "fontWeight": "600",
+          "count": 4,
+          "score": 179.88
+        }
+      }
+    },
+    "motifs": {
+      "radius": {
+        "mode": "3px",
+        "areaMode": "5px",
+        "pill": "50%",
+        "values": [
+          {
+            "value": "3px",
+            "count": 90,
+            "area": 220350,
+            "sources": [
+              {
+                "url": "https://main--da-impl-det-blog--blefebvre.aem.live/blog/2018/11/06/react-native-offline-first-db-with-sqlite",
+                "selector": "main > div:nth-of-type(1) > div > p:nth-of-type(6) > code"
+              },
+              {
+                "url": "https://main--da-impl-det-blog--blefebvre.aem.live/blog/2018/11/06/react-native-offline-first-db-with-sqlite",
+                "selector": "main > div:nth-of-type(1) > div > p:nth-of-type(13) > code"
+              },
+              {
+                "url": "https://main--da-impl-det-blog--blefebvre.aem.live/blog/2018/11/06/react-native-offline-first-db-with-sqlite",
+                "selector": "main > div:nth-of-type(1) > div > p:nth-of-type(14) > code"
+              }
+            ]
+          },
+          {
+            "value": "5px",
+            "count": 8,
+            "area": 1033442,
+            "sources": [
+              {
+                "url": "https://main--da-impl-det-blog--blefebvre.aem.live/blog/2018/11/06/react-native-offline-first-db-with-sqlite",
+                "selector": "main > div:nth-of-type(1) > div > p:nth-of-type(7) > picture > img"
+              },
+              {
+                "url": "https://main--da-impl-det-blog--blefebvre.aem.live/blog/2018/11/06/react-native-offline-first-db-with-sqlite",
+                "selector": "main > div:nth-of-type(1) > div > p:nth-of-type(26) > picture > img"
+              },
+              {
+                "url": "https://main--da-impl-det-blog--blefebvre.aem.live/blog/2018/11/06/react-native-offline-first-db-with-sqlite",
+                "selector": "main > div:nth-of-type(1) > div > p:nth-of-type(30) > picture > img"
+              }
+            ]
+          },
+          {
+            "value": "2.625px",
+            "count": 2,
+            "area": 8364,
+            "sources": [
+              {
+                "url": "https://main--da-impl-det-blog--blefebvre.aem.live/",
+                "selector": "nav > span"
+              },
+              {
+                "url": "https://main--da-impl-det-blog--blefebvre.aem.live/",
+                "selector": "nav > a"
+              }
+            ]
+          },
+          {
+            "value": "3.75px",
+            "count": 2,
+            "area": 16704,
+            "sources": [
+              {
+                "url": "https://main--da-impl-det-blog--blefebvre.aem.live/",
+                "selector": "nav > span"
+              },
+              {
+                "url": "https://main--da-impl-det-blog--blefebvre.aem.live/",
+                "selector": "nav > a"
+              }
+            ]
+          },
+          {
+            "value": "50%",
+            "count": 2,
+            "area": 20000,
+            "sources": [
+              {
+                "url": "https://main--da-impl-det-blog--blefebvre.aem.live/blog/2018/11/06/react-native-offline-first-db-with-sqlite",
+                "selector": "main > div:nth-of-type(2) > div:nth-of-type(2) > div > div > p:nth-of-type(1) > picture > img"
+              }
+            ]
+          }
+        ]
+      },
+      "shadows": [],
+      "gradients": [
+        {
+          "value": "linear-gradient(to top, rgba(0, 0, 0, 0) 13%, rgba(0, 118, 223, 0.8) 13%, rgba(0, 118, 223, 0.8) 18%, rgba(0, 0, 0, 0) 17%)",
+          "count": 74,
+          "area": 507428,
+          "sources": [
+            {
+              "url": "https://main--da-impl-det-blog--blefebvre.aem.live/",
+              "selector": "footer > div > div > p > a:nth-of-type(1)"
+            },
+            {
+              "url": "https://main--da-impl-det-blog--blefebvre.aem.live/",
+              "selector": "footer > div > div > p > a:nth-of-type(2)"
+            },
+            {
+              "url": "https://main--da-impl-det-blog--blefebvre.aem.live/blog/2018/11/06/react-native-offline-first-db-with-sqlite",
+              "selector": "main > div:nth-of-type(1) > div > p:nth-of-type(1) > a"
+            },
+            {
+              "url": "https://main--da-impl-det-blog--blefebvre.aem.live/blog/2018/11/06/react-native-offline-first-db-with-sqlite",
+              "selector": "main > div:nth-of-type(1) > div > blockquote > p:nth-of-type(2) > a"
+            },
+            {
+              "url": "https://main--da-impl-det-blog--blefebvre.aem.live/blog/2018/11/06/react-native-offline-first-db-with-sqlite",
+              "selector": "main > div:nth-of-type(1) > div > p:nth-of-type(2) > a"
+            }
+          ]
+        }
+      ]
+    },
+    "hover": [
+      {
+        "kind": "link",
+        "from": {
+          "color": "rgb(0, 118, 223)"
+        },
+        "to": {
+          "color": "rgb(0, 10, 19)"
+        },
+        "count": 4,
+        "sources": [
+          {
+            "url": "https://main--da-impl-det-blog--blefebvre.aem.live/",
+            "selector": "main > div > div > div > ul > li:nth-of-type(1) > a"
+          },
+          {
+            "url": "https://main--da-impl-det-blog--blefebvre.aem.live/",
+            "selector": "main > div > div > div > ul > li:nth-of-type(1) > a"
+          },
+          {
+            "url": "https://main--da-impl-det-blog--blefebvre.aem.live/blog/2018/11/06/react-native-offline-first-db-with-sqlite",
+            "selector": "main > div:nth-of-type(1) > div > blockquote > p:nth-of-type(2) > a"
+          },
+          {
+            "url": "https://main--da-impl-det-blog--blefebvre.aem.live/blog/2018/11/06/react-native-offline-first-db-with-sqlite",
+            "selector": "main > div:nth-of-type(1) > div > blockquote > p:nth-of-type(2) > a"
+          }
+        ]
+      },
+      {
+        "kind": "button",
+        "from": {
+          "backgroundColor": "rgb(250, 250, 250)",
+          "color": "rgb(51, 51, 51)"
+        },
+        "to": {
+          "backgroundColor": "rgb(255, 255, 255)",
+          "color": "rgb(71, 125, 202)"
+        },
+        "count": 2,
+        "sources": [
+          {
+            "url": "https://main--da-impl-det-blog--blefebvre.aem.live/",
+            "selector": "nav > a"
+          },
+          {
+            "url": "https://main--da-impl-det-blog--blefebvre.aem.live/",
+            "selector": "nav > a"
+          }
+        ]
+      }
+    ],
+    "logo": {
+      "source": "none",
+      "url": null,
+      "selector": null
+    },
+    "iconFont": null
+  }
+}

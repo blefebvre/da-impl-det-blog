@@ -1,0 +1,16 @@
+{"ts":"2026-10-13T15:47:17Z","skill":"stardust:extract","phase":"discovery","event":"start"}
+{"ts":"2026-10-13T15:47:17Z","skill":"stardust:extract","phase":"discovery","event":"end","detail":"single page: /"}
+{"ts":"2026-10-13T15:47:17Z","skill":"stardust:extract","phase":"capture","event":"start"}
+{"ts":"2026-10-13T15:54:14Z","skill":"stardust:extract","phase":"capture","event":"end","detail":"1/1 live, vision ok"}
+{"ts":"2026-10-13T15:54:26Z","skill":"stardust:extract","phase":"per-page-extraction","event":"end","detail":"single-page uplift extract"}
+{"ts":"2026-10-13T15:54:26Z","skill":"stardust:extract","phase":"vision-verification","event":"end","detail":"single-page uplift extract"}
+{"ts":"2026-10-13T15:54:26Z","skill":"stardust:extract","phase":"brand-surface-extraction","event":"end","detail":"single-page uplift extract"}
+{"ts":"2026-10-13T15:54:26Z","skill":"stardust:extract","phase":"seed","event":"end","detail":"single-page uplift extract"}
+{"ts":"2026-10-13T15:54:26Z","skill":"stardust:extract","phase":"brand-review","event":"end","detail":"single-page uplift extract"}
+{"ts":"2026-10-13T15:54:26Z","skill":"stardust:extract","phase":"state-and-report","event":"end","detail":"single-page uplift extract"}
+{"ts":"2026-10-13T15:54:26Z","skill":"stardust:uplift","phase":"extract","event":"end","detail":"reused fresh single-page extract"}
+{"ts":"2026-10-13T15:58:00Z","skill":"stardust:extract","phase":"per-page-extraction","event":"start","detail":"widen: +1 post for type evidence (direct signal-thin guard)"}
+{"ts":"2026-10-13T15:59:49Z","skill":"stardust:extract","phase":"per-page-extraction","event":"end","detail":"2/2 live"}
+{"ts":"2026-10-13T16:03:31Z","skill":"stardust:direct","phase":"reasoning","event":"end","detail":"Mode A, 3 variants (A static, B static, C editorial)"}
+{"ts":"2026-10-13T16:33:13Z","skill":"stardust:prototype","phase":"render","event":"end","detail":"A/B/C rendered; finish review pass; adapt+audit pass; C motion Passes 1–6 pass (parallax dropped)","artifact":"stardust/prototypes/index-C-cinematic.html","next":"uplift summary"}
+{"ts":"2026-10-13T16:33:13Z","skill":"stardust:uplift","phase":"summary","event":"end","detail":"three variants opened and summarised","next":"user picks / iterates a variant"}

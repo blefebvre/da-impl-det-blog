@@ -1,0 +1,404 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:extract",
+    "writtenAt": "2026-10-13T15:59:49.688Z",
+    "readArtifacts": [
+      "https://main--da-impl-det-blog--blefebvre.aem.live/",
+      "stardust/current/pages/index.json",
+      "stardust/current/_computed-styles.json",
+      "stardust/.work/brand-probe.mjs (live computed-style probe)",
+      "stardust/current/pages/blog-2018-11-06-react-native-offline-first-db-with-sqlite.json"
+    ],
+    "synthesizedInputs": [],
+    "stardustVersion": "see plugin",
+    "notes": [
+      "two-page extract: home + one representative post (added to satisfy direct's signal-thin guard — the home page alone exposes a single heading level).",
+      "system component detection requires ≥ 3 pages; crawl too small — header/footer recorded from the home landmarks as observed, not frequency-detected.",
+      "palette entries #ffffff, #fafafa and rgba(255,105,97,.5) come from the live computed-style probe (body background, footer/pager surface, site-title text-decoration-color); the census records text/border/background of measured elements only.",
+      "heading family weight: computed 600 on post titles, but only Lato 300/900 faces are loaded, so titles render at 900.",
+      "palette capped at 8; dropped: #eeeeee (code-surface), #999999 (image-frame)"
+    ]
+  },
+  "site": {
+    "name": "implementationDetails()",
+    "tagline": "Articles on AEM, React Native, TypeScript, and more.",
+    "originUrl": "https://main--da-impl-det-blog--blefebvre.aem.live"
+  },
+  "origins": [
+    {
+      "origin": "https://main--da-impl-det-blog--blefebvre.aem.live",
+      "role": "primary",
+      "pagesCaptured": 2,
+      "contributedSignals": []
+    }
+  ],
+  "logo": {
+    "source": "synthesized",
+    "sourceSelector": "header .nav-title",
+    "localPath": null,
+    "format": null,
+    "intrinsicWidth": null,
+    "intrinsicHeight": null,
+    "synthesized": true,
+    "synthesizedBasis": "No logo image; the wordmark is the text \"implementationDetails()\" in Merriweather 300 with a 4px salmon underline (header .nav-title)."
+  },
+  "favicon": {
+    "localPath": "stardust/current/assets/favicon.png",
+    "sourceUrl": "https://main--da-impl-det-blog--blefebvre.aem.live/favicon.png",
+    "format": "png",
+    "size": "16x16"
+  },
+  "palette": [
+    {
+      "role": "background",
+      "value": "#ffffff",
+      "occurrences": null,
+      "sourceSelectors": [
+        "body"
+      ],
+      "usedAs": [
+        "background"
+      ]
+    },
+    {
+      "role": "text-primary",
+      "value": "#333333",
+      "occurrences": 34,
+      "sourceSelectors": [
+        "#nav > div:nth-of-type(1) > a [text]",
+        "nav > a [button-text]",
+        "main > div > div > div > ul > li:nth-of-type(1) > a > h3 [heading]"
+      ],
+      "usedAs": [
+        "text"
+      ]
+    },
+    {
+      "role": "primary",
+      "value": "#0076df",
+      "occurrences": 12,
+      "sourceSelectors": [
+        "main > div > div > div > ul > li:nth-of-type(1) > a [link]",
+        "footer > div > div > p > a:nth-of-type(1) [text]"
+      ],
+      "usedAs": [
+        "text"
+      ],
+      "note": "links only, drawn as a gradient underline (background-image) — never a fill/background"
+    },
+    {
+      "role": "text-muted",
+      "value": "#7a7a7a",
+      "occurrences": 10,
+      "sourceSelectors": [
+        "main > div > div > div > ul > li:nth-of-type(1) > p:nth-of-type(1) > time [text]"
+      ],
+      "usedAs": [
+        "text"
+      ],
+      "note": "dates, footer copy; 4.29:1 on #fff, 4.10:1 on #fafafa"
+    },
+    {
+      "role": "border",
+      "value": "#f3f3f3",
+      "occurrences": 24,
+      "sourceSelectors": [
+        "main > div > div > div > ul > li:nth-of-type(1) [border]",
+        "nav > span [background]",
+        "body [background]"
+      ],
+      "usedAs": [
+        "border",
+        "background"
+      ]
+    },
+    {
+      "role": "surface",
+      "value": "#fafafa",
+      "occurrences": null,
+      "sourceSelectors": [
+        "body > footer",
+        ".blog-list-older"
+      ],
+      "usedAs": [
+        "background"
+      ]
+    },
+    {
+      "role": "accent-1",
+      "value": "rgba(255, 105, 97, 0.5)",
+      "occurrences": 1,
+      "sourceSelectors": [
+        "header .nav-title [text-decoration-color]"
+      ],
+      "usedAs": [
+        "stroke"
+      ],
+      "note": "salmon wordmark underline; the only warm color on the page"
+    },
+    {
+      "role": "accent-2",
+      "value": "#477dca",
+      "occurrences": 2,
+      "sourceSelectors": [
+        "nav.blog-list-pagination a:hover [color]"
+      ],
+      "usedAs": [
+        "text"
+      ],
+      "note": "hover-only"
+    }
+  ],
+  "type": {
+    "headingFamily": {
+      "name": "Lato",
+      "stack": "lato, lato-fallback, \"Helvetica Neue\", helvetica, sans-serif",
+      "weights": [
+        300,
+        900
+      ],
+      "sizes": [
+        "2.998rem h1/listing (59.96px @1440, 41.97px @360) w900",
+        "1.5rem h2 (30px @1440, 21px @360) w900",
+        "1.25rem h3 (posts)",
+        "1rem h4 (posts)"
+      ],
+      "lineHeights": [
+        1.25
+      ],
+      "letterSpacing": [
+        "normal"
+      ],
+      "sourceSelectors": [
+        "main h1",
+        "main h2",
+        ".blog-list-post h3"
+      ]
+    },
+    "bodyFamily": {
+      "name": "Merriweather",
+      "stack": "merriweather, merriweather-fallback, \"PT Serif\", georgia, \"Times New Roman\", serif",
+      "weights": [
+        300
+      ],
+      "sizes": [
+        "20px (1rem @20px root)",
+        "14px @360"
+      ],
+      "lineHeights": [
+        1.5
+      ],
+      "letterSpacing": [
+        "normal"
+      ],
+      "sourceSelectors": [
+        "body",
+        ".blog-list-summary",
+        ".blog-list-date",
+        "header .nav-title"
+      ]
+    },
+    "monoFamily": {
+      "name": "Source Code Pro",
+      "stack": "\"Source Code Pro\", consolas, monospace",
+      "note": "declared, not loaded (renders as system monospace); inline code and ~15 code blocks per long post, #7a7a7a on #eee / #fafafa",
+      "sourceSelectors": [
+        "main pre code",
+        "main p code"
+      ]
+    },
+    "rootScale": {
+      "note": "root font-size steps 14/16/18/20px at 32/48/64em; all sizes are rem",
+      "observedRoot": "20px @1440"
+    },
+    "scaleRatio": null,
+    "scaleAudit": {
+      "kind": "ad-hoc",
+      "ratios": [
+        1.999,
+        1.2,
+        1.25
+      ],
+      "matchedScale": null,
+      "note": "2.998rem → 1.5rem → 1.25rem → 1rem; the first jump (≈2.0) breaks any single ratio"
+    },
+    "loadStrategy": "swap",
+    "files": [
+      {
+        "url": "https://main--da-impl-det-blog--blefebvre.aem.live/fonts/merriweather.woff2",
+        "family": "Merriweather",
+        "weight": 300,
+        "style": "normal",
+        "unicodeRange": "latin",
+        "localPath": "stardust/current/assets/fonts/merriweather.woff2",
+        "sourceCssRule": "/styles/fonts.css",
+        "licensingFlag": "open"
+      },
+      {
+        "url": "https://main--da-impl-det-blog--blefebvre.aem.live/fonts/merriweather-italic.woff2",
+        "family": "Merriweather",
+        "weight": 300,
+        "style": "italic",
+        "unicodeRange": "latin",
+        "localPath": "stardust/current/assets/fonts/merriweather-italic.woff2",
+        "sourceCssRule": "/styles/fonts.css",
+        "licensingFlag": "open"
+      },
+      {
+        "url": "https://main--da-impl-det-blog--blefebvre.aem.live/fonts/lato-300.woff2",
+        "family": "Lato",
+        "weight": 300,
+        "style": "normal",
+        "unicodeRange": "latin",
+        "localPath": "stardust/current/assets/fonts/lato-300.woff2",
+        "sourceCssRule": "/styles/fonts.css",
+        "licensingFlag": "open"
+      },
+      {
+        "url": "https://main--da-impl-det-blog--blefebvre.aem.live/fonts/lato-900.woff2",
+        "family": "Lato",
+        "weight": 900,
+        "style": "normal",
+        "unicodeRange": "latin",
+        "localPath": "stardust/current/assets/fonts/lato-900.woff2",
+        "sourceCssRule": "/styles/fonts.css",
+        "licensingFlag": "open"
+      }
+    ]
+  },
+  "spacing": {
+    "baseUnit": null,
+    "scale": [],
+    "sectionPadding": "2rem (post rows: padding 2rem 0)",
+    "containerMaxWidth": "42rem (840px @1440)",
+    "gridGap": null,
+    "note": "single reading column; no grid"
+  },
+  "motifs": {
+    "borderRadius": {
+      "primary": "3px",
+      "secondary": "5px",
+      "pill": "50%",
+      "primarySources": [
+        "post"
+      ],
+      "occurrences": {
+        "3px": 90,
+        "5px": 8,
+        "3.75px": 2,
+        "2.625px": 2,
+        "50%": 2
+      },
+      "note": "cross-page mode 3px (inline code) differs from the home-only 3.75px (pager); 5px framed content images; 50% author avatar"
+    },
+    "shadows": [],
+    "gradients": [
+      {
+        "value": "linear-gradient(to top, rgba(0, 0, 0, 0) 13%, rgba(0, 118, 223, 0.8) 13%, rgba(0, 118, 223, 0.8) 18%, rgba(0, 0, 0, 0) 17%)",
+        "uses": "link underline (a 5%-tall band at the baseline, drawn with background-image + white text-shadow knockout)"
+      }
+    ],
+    "patterns": [
+      {
+        "name": "text-wordmark-underline",
+        "evidence": "header .nav-title: underline 4px rgba(255,105,97,.5), text-underline-position: under"
+      },
+      {
+        "name": "post-list",
+        "evidence": "4 posts per page: italic date, 3rem Lato title, one-line summary, hairline #f3f3f3 divider"
+      },
+      {
+        "name": "boxed-pagination",
+        "evidence": "Newer / Page 1 of 10 / Older row, #fafafa boxes with #f3f3f3 border"
+      },
+      {
+        "name": "icon-row",
+        "evidence": "5 monochrome social icons at 0.8 opacity, top right"
+      },
+      {
+        "name": "framed-image",
+        "evidence": "post: images 1px #999 border, 5px radius, 6px padding"
+      },
+      {
+        "name": "code-block",
+        "evidence": "post: ~15 <pre><code> blocks, #fafafa ground, monospace"
+      },
+      {
+        "name": "author-bio-footer",
+        "evidence": "post: centred avatar (50% radius) + italic bio + share line"
+      }
+    ]
+  },
+  "componentStyle": {
+    "buttons": {
+      "secondary": {
+        "background": "#fafafa",
+        "color": "#333333",
+        "borderRadius": "3.75px",
+        "padding": "1em 1.5em",
+        "fontWeight": 300,
+        "border": "1px solid #f3f3f3",
+        "hoverDelta": "background #fff, color #477dca"
+      }
+    },
+    "dualCTAPattern": null,
+    "cards": null,
+    "inputs": null,
+    "links": {
+      "color": "#0076df",
+      "underline": "gradient band, rgba(0,118,223,.8) 13–18%",
+      "hover": "#000a13 with dark band"
+    }
+  },
+  "systemComponents": [],
+  "iconFont": null,
+  "voice": {
+    "heroHeadline": "What can you do with an AEM Headless Trial?",
+    "heroSubcopy": "Let's dig into an Adobe Experience Manager Headless trial and see what you get in the box.",
+    "heroImage": null,
+    "heroMedium": null,
+    "primaryCTALabel": null,
+    "ctaSamples": [
+      "Newer",
+      "Older"
+    ],
+    "navItems": [
+      "GitHub",
+      "Twitter",
+      "Email",
+      "LinkedIn",
+      "RSS feed"
+    ],
+    "footerHeadings": [],
+    "firstParagraph": "Let's dig into an Adobe Experience Manager Headless trial and see what you get in the box.",
+    "postTitles": [
+      "What can you do with an AEM Headless Trial?",
+      "AEM Content Transfer Tool: Tips and tricks for a successful (and fast!) Extraction",
+      "Introducing the AEM Dispatcher Optimizer Tool",
+      "Adding macOS support to an existing React Native app"
+    ],
+    "tone": {
+      "guess": "technical-precise",
+      "evidence": "first-person practitioner voice (\"We've released a new tool\", \"some gotchas that I encountered\"), product-specific nouns (AEM, CTT, Dispatcher, React Native), no marketing superlatives"
+    }
+  },
+  "voiceTable": {
+    "ctaFrequency": [],
+    "headingFrequency": [],
+    "toneMetrics": {
+      "headingsTotal": 4,
+      "headingsUppercasePercent": 0,
+      "distinctHeadings": 4,
+      "distinctCtaLabels": 2
+    }
+  },
+  "crossPromo": {
+    "detected": false,
+    "anchorHeading": null,
+    "cluster": null,
+    "pages": null,
+    "pageCount": null,
+    "totalPages": 1
+  },
+  "register": "brand"
+}

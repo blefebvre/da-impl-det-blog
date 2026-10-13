@@ -11,16 +11,15 @@ footer {
 footer .footer-section p {
   margin: 0;
   color: var(--dark-color);
-  font-size: 0.707rem;
-
-  /* the source sets its small text inside 0.75rem lines */
-  line-height: calc(var(--body-font-size-xs) * 1.5);
+  font-size: max(12px, var(--body-font-size-xs));
+  line-height: 1.6;
 }
 
+/* ink, not link blue: blue on the footer surface is 4.3:1, below AA */
 footer .footer-section a:any-link {
-  color: var(--link-color);
+  color: var(--text-color);
   background-image: var(--link-underline);
-  text-shadow: var(--background-color) 1px 0 0, var(--background-color) -1px 0 0;
+  text-shadow: var(--light-color) 1px 0 0, var(--light-color) -1px 0 0;
 }
 
 footer .footer-section a:hover,

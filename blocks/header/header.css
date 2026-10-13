@@ -10,21 +10,32 @@ header nav {
   text-align: center;
 }
 
+header .nav-heading {
+  margin: 0;
+  font: inherit;
+}
+
 header .nav-title:any-link {
   color: var(--text-color);
   font-family: var(--body-font-family);
   font-size: 1.5rem;
   font-weight: 300;
   line-height: 1.5;
-  text-decoration-line: underline;
-  text-decoration-color: var(--title-underline-color);
-  text-decoration-thickness: 4px;
-  text-underline-position: under;
 }
 
 header .nav-title:hover,
 header .nav-title:focus-visible {
   opacity: 0.88;
+}
+
+/* the title is a call: implementationDetails() — only the parentheses carry the accent */
+header .nav-title .call-paren {
+  color: var(--link-color);
+}
+
+/* on the listing the title is the page's h1, so it outranks the section calls (h2) */
+header .nav-heading .nav-title:any-link {
+  font-size: 1.6rem;
 }
 
 header .nav-tools {
@@ -75,7 +86,11 @@ header .nav-icon img {
 
   header .nav-title:any-link {
     display: block;
-    font-size: 1.25rem;
+    font-size: var(--heading-font-size-call);
+  }
+
+  header .nav-heading .nav-title:any-link {
+    font-size: var(--heading-font-size-title);
   }
 
   header .nav-tools {
@@ -85,5 +100,12 @@ header .nav-icon img {
 
   header .nav-tools ul {
     justify-content: flex-end;
+  }
+}
+
+/* the listing runs a reading column plus the post browser: the header spans both */
+@media (width >= 64em) {
+  body:has(main .blog-list) header nav {
+    max-width: calc(var(--content-max-width) + var(--browser-gap) + var(--browser-width));
   }
 }

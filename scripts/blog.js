@@ -36,3 +36,41 @@ export async function fetchPosts(prefix = '/blog/') {
     .filter((p) => !(p.robots || '').includes('noindex'))
     .sort((a, b) => b.date.localeCompare(a.date) || a.path.localeCompare(b.path));
 }
+
+/**
+ * Fetches the nav fragment: the local content folder first, then the site root (DA/EDS).
+ * @returns {Promise<{html: string, url: URL}|null>}
+ */
+export async function fetchNav() {
+  let resp = await fetch('/content/nav.plain.html');
+  if (!resp.ok) resp = await fetch('/nav.plain.html');
+  if (!resp.ok) return null;
+  return { html: await resp.text(), url: new URL(resp.url, window.location.href) };
+}
+
+/**
+ * Renders text written as a function call, e.g. "latest()" or "posts(2019)", into an element:
+ * the name stays in ink, the parentheses take the accent colour, an argument sits between them.
+ * Text that is not a call is rendered as is.
+ * @param {Element} el The element to fill
+ * @param {string} text The call text
+ * @returns {Element} The element
+ */
+export function renderCall(el, text) {
+  const match = (text || '').trim().match(/^(.*?)\((.*)\)$/);
+  if (!match) {
+    el.textContent = text;
+    return el;
+  }
+  const [, name, arg] = match;
+  const paren = (char) => {
+    const span = document.createElement('span');
+    span.className = 'call-paren';
+    span.textContent = char;
+    return span;
+  };
+  el.replaceChildren(name, paren('('));
+  if (arg) el.append(arg);
+  el.append(paren(')'));
+  return el;
+}

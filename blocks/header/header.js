@@ -1,17 +1,10 @@
-/**
- * Fetches the nav fragment: the local content folder first, then the site root (DA/EDS).
- * @returns {Promise<{html: string, url: URL}|null>}
- */
-async function fetchNav() {
-  let resp = await fetch('/content/nav.plain.html');
-  if (!resp.ok) resp = await fetch('/nav.plain.html');
-  if (!resp.ok) return null;
-  return { html: await resp.text(), url: new URL(resp.url, window.location.href) };
-}
+import { fetchNav, renderCall } from '../../scripts/blog.js';
 
 /**
  * Header: site title on the left, social icon links on the right; stacks centred on small screens.
  * The nav fragment holds one section per group: brand (title link), then tools (icon links).
+ * The title is written as a call, implementationDetails(): its parentheses take the accent colour.
+ * On pages without their own h1 (the listing), the title is the page's h1.
  * @param {Element} block The header block element
  */
 export default async function decorate(block) {
@@ -39,7 +32,15 @@ export default async function decorate(block) {
   const titleLink = brandSection?.querySelector('a');
   if (titleLink) {
     titleLink.className = 'nav-title';
-    brand.append(titleLink);
+    renderCall(titleLink, titleLink.textContent);
+    if (!document.querySelector('main h1')) {
+      const h1 = document.createElement('h1');
+      h1.className = 'nav-heading';
+      h1.append(titleLink);
+      brand.append(h1);
+    } else {
+      brand.append(titleLink);
+    }
   }
 
   const tools = document.createElement('div');
