@@ -100,30 +100,26 @@ function buildBrowser(posts) {
   kbd.append(' Press ', el('kbd', '', '/'), ' to start.');
   hint.append(kbd);
 
-  // year strip: every year in the span, so years without posts read as gaps
+  // year strip: oldest to newest, only years that have posts
   const strip = el('ol', 'blog-list-years');
   strip.setAttribute('aria-label', 'Posts per year');
-  const yearLinks = [];
-  for (let y = Number(years[years.length - 1]); y <= Number(years[0]); y += 1) {
-    const year = String(y);
-    const n = byYear.get(year)?.length || 0;
-    const li = el('li');
-    const mark = n ? el('a') : el('span', 'none');
+  const yearLinks = [...years].reverse().map((year) => {
+    const n = byYear.get(year).length;
+    const mark = el('a');
     mark.style.setProperty('--n', n);
     mark.style.setProperty('--max', maxCount);
-    mark.title = `${year} · ${n ? plural(n) : 'no posts'}`;
-    mark.setAttribute('aria-label', `${year}, ${n ? plural(n) : 'no posts'}`);
+    mark.title = `${year} · ${plural(n)}`;
+    mark.setAttribute('aria-label', `${year}, ${plural(n)}`);
     mark.append(el('i'), year.slice(2));
-    if (n) {
-      mark.href = `#blog-list-${year}`;
-      mark.dataset.year = year;
-      mark.setAttribute('role', 'button');
-      mark.setAttribute('aria-pressed', 'false');
-      yearLinks.push(mark);
-    }
+    mark.href = `#blog-list-${year}`;
+    mark.dataset.year = year;
+    mark.setAttribute('role', 'button');
+    mark.setAttribute('aria-pressed', 'false');
+    const li = el('li');
     li.append(mark);
     strip.append(li);
-  }
+    return mark;
+  });
 
   const count = el('p', 'blog-list-count');
   count.setAttribute('aria-live', 'polite');
