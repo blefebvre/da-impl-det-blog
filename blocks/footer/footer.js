@@ -1,10 +1,13 @@
+import { getMetadata } from '../../scripts/aem.js';
+
 /**
- * Fetches the footer fragment: the local content folder first, then the site root (DA/EDS).
+ * Fetches the footer fragment (the page's `footer` metadata, or /footer).
  * @returns {Promise<string|null>} The fragment HTML
  */
 async function fetchFooter() {
-  let resp = await fetch('/content/footer.plain.html');
-  if (!resp.ok) resp = await fetch('/footer.plain.html');
+  const meta = getMetadata('footer');
+  const path = meta ? new URL(meta, window.location).pathname : '/footer';
+  const resp = await fetch(`${path}.plain.html`);
   return resp.ok ? resp.text() : null;
 }
 

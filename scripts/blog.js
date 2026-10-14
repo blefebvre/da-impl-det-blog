@@ -1,3 +1,5 @@
+import { getMetadata } from './aem.js';
+
 /**
  * Formats an ISO date (YYYY-MM-DD) the way the original blog did, e.g. "Nov 6, 2018".
  * @param {string} iso ISO date string
@@ -38,12 +40,13 @@ export async function fetchPosts(prefix = '/blog/') {
 }
 
 /**
- * Fetches the nav fragment: the local content folder first, then the site root (DA/EDS).
+ * Fetches the nav fragment (the page's `nav` metadata, or /nav).
  * @returns {Promise<{html: string, url: URL}|null>}
  */
 export async function fetchNav() {
-  let resp = await fetch('/content/nav.plain.html');
-  if (!resp.ok) resp = await fetch('/nav.plain.html');
+  const meta = getMetadata('nav');
+  const path = meta ? new URL(meta, window.location).pathname : '/nav';
+  const resp = await fetch(`${path}.plain.html`);
   if (!resp.ok) return null;
   return { html: await resp.text(), url: new URL(resp.url, window.location.href) };
 }
