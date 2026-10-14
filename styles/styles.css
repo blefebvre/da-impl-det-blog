@@ -121,17 +121,20 @@ pre code {
   background-color: transparent;
 }
 
+/* quotes sit in the text at body size: italic and a rule set them apart, not scale */
 blockquote {
-  margin: 2rem 40px 2rem 0.5rem;
-  border-left: 5px solid var(--dark-color);
-  padding: 0.5rem;
+  margin: 1.5rem 0;
+  border-left: 3px solid var(--dark-color);
+  padding: 0.125rem 0 0.125rem 1.25rem;
   font-style: italic;
 }
 
-blockquote,
 blockquote p {
-  font-size: var(--body-font-size-l);
   font-style: italic;
+}
+
+blockquote > :last-child {
+  margin-bottom: 0;
 }
 
 hr {
@@ -297,8 +300,7 @@ main > .section:last-of-type {
 
 @media (width >= 32em) {
   blockquote {
-    margin-left: 2rem;
-    padding: 2rem;
+    margin-left: 1rem;
   }
 }
 
