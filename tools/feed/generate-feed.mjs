@@ -7,13 +7,14 @@
  *   node tools/feed/generate-feed.mjs --source <url>      # read a specific host's query index
  *   node tools/feed/generate-feed.mjs --content content   # read local imported .plain.html files
  *
- * GUIDs keep the trailing-slash form used by the original Jekyll feed so existing
- * subscribers don't see every post again after the migration.
+ * Links point at the www host. GUIDs keep the bare-domain, trailing-slash form used by the
+ * original Jekyll feed so existing subscribers don't see every post again.
  */
 import { readdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { join, relative } from 'node:path';
 
-const ORIGIN = 'https://implementationdetails.dev';
+const ORIGIN = 'https://www.implementationdetails.dev';
+const GUID_ORIGIN = 'https://implementationdetails.dev';
 const DEFAULT_SOURCE = 'https://main--da-impl-det-blog--blefebvre.aem.live';
 const TITLE = 'implementationDetails()';
 const DESCRIPTION = 'Articles on AEM, React Native, TypeScript, and more.';
@@ -84,7 +85,7 @@ function toItem(post) {
       <description>${escapeXml(post.description)}</description>
       <pubDate>${pubDate}</pubDate>
       <link>${escapeXml(link)}</link>
-      <guid isPermaLink="false">${escapeXml(`${link}/`)}</guid>
+      <guid isPermaLink="false">${escapeXml(`${GUID_ORIGIN}${post.path}/`)}</guid>
     </item>`;
 }
 
