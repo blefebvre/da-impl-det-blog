@@ -6,6 +6,13 @@
     <link>https://www.implementationdetails.dev/</link>
     <atom:link href="https://www.implementationdetails.dev/feed.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Giving EMA its own least-privilege token</title>
+      <description>Let EMA upload, preview, and publish on its own, without handing it your Adobe credentials.</description>
+      <pubDate>Fri, 23 Oct 2026 00:00:00 +0000</pubDate>
+      <link>https://www.implementationdetails.dev/blog/2026/10/23/using-a-technical-account-token-with-ema</link>
+      <guid isPermaLink="false">https://implementationdetails.dev/blog/2026/10/23/using-a-technical-account-token-with-ema/</guid>
+    </item>
+    <item>
       <title>Migrating my own site with the Experience Modernization Agent</title>
       <description>Tips and tricks from an EMA-powered migration of my personal site to AEM.</description>
       <pubDate>Tue, 13 Oct 2026 00:00:00 +0000</pubDate>
@@ -67,13 +74,6 @@
       <pubDate>Mon, 30 Dec 2019 00:00:00 +0000</pubDate>
       <link>https://www.implementationdetails.dev/blog/2019/12/30/basic-spa-with-deep-linking-and-analytics</link>
       <guid isPermaLink="false">https://implementationdetails.dev/blog/2019/12/30/basic-spa-with-deep-linking-and-analytics/</guid>
-    </item>
-    <item>
-      <title>Resolving React Native Paper 'No overload matches this call' TypeScript errors</title>
-      <description>Quick tip for getting past one of the more frustrating and cryptic TypeScript errors I've run into.</description>
-      <pubDate>Tue, 26 Nov 2019 00:00:00 +0000</pubDate>
-      <link>https://www.implementationdetails.dev/blog/2019/11/26/typescript-react-native-paper</link>
-      <guid isPermaLink="false">https://implementationdetails.dev/blog/2019/11/26/typescript-react-native-paper/</guid>
     </item>
   </channel>
 </rss>
