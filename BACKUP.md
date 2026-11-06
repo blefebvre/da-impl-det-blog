@@ -41,6 +41,13 @@ Runs are incremental:
 
 1. Refresh `IMS_TOKEN` in your shell.
 2. Run `npm run backup -- --out <path-to-backup-clone>` (or set `BACKUP_DIR` and run `npm run backup`). Add `--dry-run` to only list what would be downloaded.
+   By default, the backup clone lives next to this repo's checkout, so from the repo root run:
+
+   ```sh
+   npm run backup -- --out ../da-impl-det-blog-backup
+   ```
+
+   If you're working in a git worktree or another location, `..` won't point to the same folder. Pass the absolute path to the backup clone, or clone `blefebvre/da-impl-det-blog-backup` (private) first.
 3. In the backup clone, review the changes with `git status` / `git diff`, then commit and push.
 
 ## Restoring
