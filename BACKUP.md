@@ -21,11 +21,13 @@ Never commit, log, or paste the token anywhere. It only needs to exist in your s
 
 ## How it works
 
-1. Walk the DA tree with the admin list API (`https://admin.da.live/list/{org}/{site}/{path}`).
-2. For each document, download the source from `https://admin.da.live/source/{org}/{site}/{path}`.
-3. Download referenced media into the matching path under `.backup/`.
-4. Fetch the rendered `.md` for each published page from aem.live.
-5. Write a manifest of paths, `lastModified` timestamps, and content hashes.
+The script is [`tools/backup/backup.mjs`](tools/backup/backup.mjs). It is read-only: every request goes through a single GET-only function that refuses any URL other than this site's DA `list`/`source` endpoints and its aem.live pages.
+
+1. Walk the DA tree with the admin list API (`https://admin.da.live/list/{org}/{site}/{path}`), including each page's hidden `.<page-name>/` media folder.
+2. Download every file from `https://admin.da.live/source/{org}/{site}/{path}` into `.backup/da/`.
+3. Scan each page's HTML for `content.da.live` media references and download any the listing missed. The list API doesn't always return every file in hidden media folders.
+4. Fetch the rendered `.md` for each published page from aem.live into `.backup/md/`.
+5. Write `.backup/manifest.json` with each file's path, `lastModified` timestamp, size, and SHA-256 hash.
 
 Runs are incremental:
 
@@ -37,7 +39,7 @@ Runs are incremental:
 ## Running a backup
 
 1. Refresh `IMS_TOKEN` in your shell.
-2. Run the backup script.
+2. Run `npm run backup` (add `-- --dry-run` to only list what would be downloaded).
 3. Review the changes in `.backup/` with `git status` / `git diff`.
 4. Commit the result.
 
