@@ -1,14 +1,15 @@
 /* eslint-env node */
 /* eslint-disable no-console, no-await-in-loop, no-restricted-syntax */
 /**
- * Read-only backup of the DA content for blefebvre/da-impl-det-blog into .backup/.
- * See BACKUP.md. Requires IMS_TOKEN in the environment.
+ * Read-only backup of the DA content for blefebvre/da-impl-det-blog into a local folder,
+ * normally a clone of a private backup repo. See BACKUP.md. Requires IMS_TOKEN in the environment.
  *
- * Usage: node tools/backup/backup.mjs [--dry-run]
+ * Usage: node tools/backup/backup.mjs --out <dir> [--dry-run]
+ *        (or set BACKUP_DIR instead of passing --out)
  */
 import { createHash } from 'node:crypto';
 import {
-  mkdir, readFile, rename, stat, writeFile,
+  mkdir, readFile, realpath, rename, stat, writeFile,
 } from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -23,8 +24,10 @@ const DOCUMENT_EXTS = ['html', 'json'];
 const CONCURRENCY = 6;
 
 const REPO_ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../..');
-const BACKUP_DIR = path.join(REPO_ROOT, '.backup');
-const MANIFEST_PATH = path.join(BACKUP_DIR, 'manifest.json');
+const outIndex = process.argv.indexOf('--out');
+const OUT_ARG = outIndex > -1 ? process.argv[outIndex + 1] : process.env.BACKUP_DIR;
+let BACKUP_DIR;
+let MANIFEST_PATH;
 
 const DRY_RUN = process.argv.includes('--dry-run');
 const { IMS_TOKEN } = process.env;
@@ -54,7 +57,7 @@ async function safeGet(url, extraHeaders = {}) {
   return fetch(u, { method: 'GET', headers, redirect: 'error' });
 }
 
-/** Resolve a site-relative (decoded) path under .backup/<area>/, refusing anything outside it. */
+/** Resolve a site-relative (decoded) path under <out>/<area>/, refusing anything outside it. */
 function localPath(area, relPath) {
   const root = path.join(BACKUP_DIR, area);
   const out = path.resolve(root, `.${relPath}`);
@@ -170,6 +173,24 @@ async function main() {
     console.error('IMS_TOKEN is not set. Refresh your token and export it first (see BACKUP.md).');
     process.exit(2);
   }
+  if (!OUT_ARG) {
+    console.error('No output folder. Pass --out <dir> or set BACKUP_DIR (see BACKUP.md).');
+    process.exit(2);
+  }
+  try {
+    BACKUP_DIR = await realpath(path.resolve(OUT_ARG));
+    if (!(await stat(BACKUP_DIR)).isDirectory()) throw new Error();
+  } catch {
+    console.error(`Output folder does not exist: ${OUT_ARG}`);
+    process.exit(2);
+  }
+  const repoRoot = await realpath(REPO_ROOT);
+  if (BACKUP_DIR === repoRoot || BACKUP_DIR.startsWith(`${repoRoot}${path.sep}`)) {
+    console.error('Refusing to write the backup inside this (public) code repo. Use a separate folder.');
+    process.exit(2);
+  }
+  MANIFEST_PATH = path.join(BACKUP_DIR, 'manifest.json');
+  console.log(`Backing up to ${BACKUP_DIR}`);
 
   const manifest = (await exists(MANIFEST_PATH))
     ? JSON.parse(await readFile(MANIFEST_PATH, 'utf8'))
