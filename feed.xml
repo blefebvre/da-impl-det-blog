@@ -6,6 +6,13 @@
     <link>https://www.implementationdetails.dev/</link>
     <atom:link href="https://www.implementationdetails.dev/feed.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>I taught EMA to Slack me</title>
+      <description>How I set up Adobe's Experience Modernization Agent to Slack me when it needs input, so migrations keep moving while I'm a̶t̶ ̶t̶h̶e̶ ̶b̶e̶a̶c̶h̶ away.</description>
+      <pubDate>Fri, 06 Nov 2026 00:00:00 +0000</pubDate>
+      <link>https://www.implementationdetails.dev/blog/2026/11/teaching-ema-to-slack-me</link>
+      <guid isPermaLink="false">https://implementationdetails.dev/blog/2026/11/teaching-ema-to-slack-me/</guid>
+    </item>
+    <item>
       <title>Giving EMA its own least-privilege token</title>
       <description>Let EMA upload, preview, and publish on its own, without handing it your Adobe credentials.</description>
       <pubDate>Fri, 23 Oct 2026 00:00:00 +0000</pubDate>
@@ -67,13 +74,6 @@
       <pubDate>Sun, 03 May 2020 00:00:00 +0000</pubDate>
       <link>https://www.implementationdetails.dev/blog/2020/05/03/react-native-offline-first-db-with-sqlite-hooks</link>
       <guid isPermaLink="false">https://implementationdetails.dev/blog/2020/05/03/react-native-offline-first-db-with-sqlite-hooks/</guid>
-    </item>
-    <item>
-      <title>Building a basic single-page site with deep linking and analytics</title>
-      <description>Shedding all the frameworks and libraries in pursuit of a simple, accessible, highly performant site (and a perfect Lighthouse score).</description>
-      <pubDate>Mon, 30 Dec 2019 00:00:00 +0000</pubDate>
-      <link>https://www.implementationdetails.dev/blog/2019/12/30/basic-spa-with-deep-linking-and-analytics</link>
-      <guid isPermaLink="false">https://implementationdetails.dev/blog/2019/12/30/basic-spa-with-deep-linking-and-analytics/</guid>
     </item>
   </channel>
 </rss>
